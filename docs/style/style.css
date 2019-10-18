@@ -17,8 +17,15 @@ body {
 }
 .content {
   background-color: white;
-  margin: 3em 14em;
 }
+
+@media (min-width: 800px) {
+  .content {
+    width: 750px;
+    margin: auto;
+  }
+}
+
 .article {
   padding: 1em 4em;
 }
