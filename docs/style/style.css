@@ -1,0 +1,54 @@
+
+body { 
+  background-color: black;
+  margin: 1em;
+}
+#sitetitle {
+  color: #eeee00;
+  -webkit-text-stroke: 2px purple;
+  font-size: 5em;
+  text-align: center;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.content {
+  background-color: white;
+  margin: 3em 14em;
+}
+.article {
+  padding: 1em 4em;
+}
+.commentary {
+  background-color: beige;
+  font-family: "Comic Sans MS";
+  padding: 1em;
+  font-style: italic;
+}
+p, ul {
+  font-size: 21px;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  letter-spacing: -0.004em;
+  line-height: 1.58;
+}
+figcaption {
+  text-align: center;
+  color: grey;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 14px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  line-height: 1.4;
+}
+figure {
+  margin-top: 4em;
+}
+hr.divider {
+  width: 20%;
+  border-style: dashed;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
