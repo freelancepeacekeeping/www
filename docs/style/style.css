@@ -20,20 +20,6 @@
   padding: 1px 5px;
 }
 
-@media (min-width: 800px) {
-  .content {
-    width: 750px;
-    margin: auto;
-  }
-  body { 
-    background-color: black;
-    margin: 1em;
-  }
-  .article {
-    padding: 1em 4em;
-  }
-}
-
 .commentary {
   background-color: beige;
   font-family: "Comic Sans MS";
@@ -41,7 +27,7 @@
   font-style: italic;
 }
 p, ul {
-  font-size: 21px;
+  font-size: 15px;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   letter-spacing: -0.004em;
   line-height: 1.58;
@@ -68,3 +54,21 @@ hr.divider {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
+@media (min-width: 800px) {
+  .content {
+    width: 750px;
+    margin: auto;
+  }
+  body { 
+    background-color: black;
+    margin: 1em;
+  }
+  .article {
+    padding: 1em 4em;
+  }
+  p, ul {
+    font-size: 21px;
+  }
+}
+
