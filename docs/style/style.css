@@ -2,15 +2,9 @@
 #sitetitle {
   background-color: black;
   color: #eeee00;
-  -webkit-text-stroke: 2px purple;
-  font-size: 5em;
+  -webkit-text-stroke: 1px purple;
+  font-size: 3em;
   text-align: center;
-  text-shadow:
-    3px 3px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
 }
 .content {
   background-color: white;
@@ -72,6 +66,9 @@ hr.divider {
   }
   figure img {
     max-width: 90%;
+  }
+  #sitetitle {
+    font-size: 5em;
   }
 }
 
