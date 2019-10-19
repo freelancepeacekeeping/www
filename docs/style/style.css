@@ -1,9 +1,6 @@
 
-body { 
-  background-color: black;
-  margin: 1em;
-}
 #sitetitle {
+  background-color: black;
   color: #eeee00;
   -webkit-text-stroke: 2px purple;
   font-size: 5em;
@@ -19,16 +16,24 @@ body {
   background-color: white;
 }
 
+.article {
+  padding: 1px 5px;
+}
+
 @media (min-width: 800px) {
   .content {
     width: 750px;
     margin: auto;
   }
+  body { 
+    background-color: black;
+    margin: 1em;
+  }
+  .article {
+    padding: 1em 4em;
+  }
 }
 
-.article {
-  padding: 1em 4em;
-}
 .commentary {
   background-color: beige;
   font-family: "Comic Sans MS";
