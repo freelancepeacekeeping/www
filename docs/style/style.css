@@ -53,6 +53,10 @@ figcaption {
 figure {
   margin-top: 4em;
 }
+figure img {
+  max-width: 100%;
+  max-height: 70vh;
+}
 hr.divider {
   width: 20%;
   border-style: dashed;
