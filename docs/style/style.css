@@ -6,6 +6,10 @@
   font-size: 3em;
   text-align: center;
 }
+#sitetitle a {
+  color:inherit;
+  text-decoration: none;
+}
 .content {
   background-color: white;
 }
