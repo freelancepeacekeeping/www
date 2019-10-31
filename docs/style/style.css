@@ -24,7 +24,7 @@
   padding: 1em;
   font-style: italic;
 }
-p, ul {
+p, ul, ol {
   font-size: 15px;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   letter-spacing: -0.004em;
@@ -67,7 +67,7 @@ hr.divider {
   .article {
     padding: 1em 4em;
   }
-  p, ul {
+  p, ul, ol {
     font-size: 21px;
   }
   figure img {
