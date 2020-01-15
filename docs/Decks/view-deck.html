@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Deck Viewer</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1 id="pageTitle">Deck: </h1>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script>
+          function load_deck() {
+              var deck_name = new URLSearchParams(window.location.search).get("deck");
+              if(deck_name == null) {
+                  // change title to say no decks to show
+                  alert("No deck to show");
+              } else {
+  
+                  var url_base = "https://raw.githubusercontent.com/hen/Decks/master/docs/json/";
+  
+                  $.getJSON( url_base + deck_name + ".json", function( data ) {
+                      $( "<span>" + data.Title + "</span>" ).appendTo( "#pageTitle" );
+                      var total_price = 0;
+                      var wave_stat = new Map();
+                      var card_count = 0;
+
+                      $.each( data.Characters, function( idx, card ) {
+                          card_count++;
+                          var fields = card.details.fields;
+                          var price = parseFloat(card.price);
+                          total_price += price;
+                          if(wave_stat.has(fields.Set)) {
+                              wave_stat.set(fields.Set, wave_stat.get(fields.Set) + 1);
+                          } else {
+                              wave_stat.set(fields.Set, 1);
+                          }
+                          var description = fields.Name + " ("+ fields.Subtitle + ")" + " [" +
+                                            fields.Set.replace("Wave ", "W") + "][" +
+                                            fields.Rarity + "] " +
+                                            "$" + price.toFixed(2);
+                          var card_ui="<li id='" + card.id + "'>" + description + "</li>";
+//                          var card_ui="<li id='" + card.id + "'><img src='" + fields['Image(s)'][0].thumbnails.large.url + "'/>" + description + "</li>";
+                          $( card_ui ).appendTo("#cards");
+                      });
+
+                      $.each( data.Deck, function( idx, card ) {
+                          var fields = card.details.fields;
+                          card_count += card.quantity;
+//                          for (i=0; i<card.quantity; i++) {
+                              var price = parseFloat(card.price);
+                              total_price += card.quantity * price;
+                              if(wave_stat.has(fields.Set)) {
+                                  wave_stat.set(fields.Set, wave_stat.get(fields.Set) + parseInt(card.quantity));
+                              } else {
+                                  wave_stat.set(fields.Set, parseInt(card.quantity));
+                              }
+                              var description = card.quantity + "x " +
+                                                fields.Name + " [" +
+                                                fields.Set.replace("Wave ", "W") + "][" +
+                                                fields.Rarity + "] " +
+                                                "$" + price.toFixed(2);
+                              var card_ui="<li id='" + card.id + "'>" + description + "</li>";
+//                              var card_ui="<li id='" + card.id + "'><img src='" + fields['Image'][0].thumbnails.large.url + "'/>" + description + "</li>";
+                              $( card_ui ).appendTo("#cards");
+//                          }
+                      });
+
+                      var total_ui = "<li>Total Price: $" + total_price.toFixed(2) + "</li>";
+                      $( total_ui ).appendTo("#cards");
+
+                      var wave_stat_ui = "<li>Wave Breakdown: ";
+                      $.each( Array.from(wave_stat.keys()).sort(), function( idx, wave ) {
+                          wave_stat_ui += wave.replace("Wave ", "W") + "=" + wave_stat.get(wave) + " ";
+                      });
+                      wave_stat_ui += "</li>";
+                      $( wave_stat_ui ).appendTo("#cards");
+                  });
+              }
+  
+          }
+        </script>
+
+      <!-- Ugly and clunky; need to move to a UI framework -->
+      <div id="cards"/>
+
+      <script>
+          load_deck();
+      </script>
+
+    </body>
+</html>
