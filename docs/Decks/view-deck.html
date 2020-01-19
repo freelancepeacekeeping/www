@@ -24,17 +24,18 @@
           function load_deck() {
               var url_base = "https://raw.githubusercontent.com/hen/Decks/master/docs/json/";
               var deck_name = new URLSearchParams(window.location.search).get("deck");
-              var select = "<form><select name='deck'>";
 
               // create drop down menu
               $.getJSON( url_base + "decks.json", function( data ) {
+                  var select = "<form><select name='deck'>";
+
                   $.each( data.Decks, function( idx, deck_name ) {
                       select += "<option>" + deck_name + "</option>";
                   });
-              });
 
-              select += "</select></form>";
-              $( select ).appendTo("#cards");
+                  select += "</select></form>";
+                  $( select ).appendTo("#cards");
+              });
 
 
               if(deck_name != null) {
