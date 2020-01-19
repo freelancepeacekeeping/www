@@ -24,7 +24,7 @@
           function load_deck() {
               var url_base = "https://raw.githubusercontent.com/hen/Decks/master/docs/json/";
               var deck_name = new URLSearchParams(window.location.search).get("deck");
-              var select = "<select name='deck'>";
+              var select = "<form><select name='deck'>";
 
               // create drop down menu
               $.getJSON( url_base + "decks.json", function( data ) {
@@ -33,7 +33,7 @@
                   });
               });
 
-              select += "</select>";
+              select += "</select></form>";
               $( select ).appendTo("#cards");
 
 
