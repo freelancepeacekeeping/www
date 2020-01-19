@@ -22,14 +22,22 @@
 
         <script>
           function load_deck() {
+              var url_base = "https://raw.githubusercontent.com/hen/Decks/master/docs/json/";
               var deck_name = new URLSearchParams(window.location.search).get("deck");
-              if(deck_name == null) {
-                  // change title to say no decks to show
-                  alert("No deck to show");
-              } else {
-  
-                  var url_base = "https://raw.githubusercontent.com/hen/Decks/master/docs/json/";
-  
+              var select = "<select name='deck'>";
+
+              // create drop down menu
+              $.getJSON( url_base + "decks.json", function( data ) {
+                  $.each( data.Decks, function( idx, deck_name ) {
+                      select += "<option>" + deck_name + "</option>";
+                  });
+              });
+
+              select += "</select>";
+              $( select ).appendTo("#cards");
+
+
+              if(deck_name != null) {
                   $.getJSON( url_base + deck_name + ".json", function( data ) {
                       $( "<span>" + data.Title + "</span>" ).appendTo( "#pageTitle" );
                       var total_price = 0;
