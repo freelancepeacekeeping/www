@@ -29,12 +29,12 @@
               $.getJSON( url_base + "decks.json", function( data ) {
                   var select = "<form><select name='deck'>";
 
-                  $.each( data.Decks, function( idx, deck_name ) {
-                      select += "<option>" + deck_name + "</option>";
+                  $.each( data.Decks, function( idx, deck ) {
+                      select += "<option>" + deck.name + "</option>";
                   });
 
                   select += "</select></form>";
-                  $( select ).appendTo("#cards");
+                  $( select ).appendTo("#deck_choice");
               });
 
 
@@ -102,6 +102,7 @@
         </script>
 
       <!-- Ugly and clunky; need to move to a UI framework -->
+      <div id="deck_choice"/>
       <div id="cards"/>
 
       <script>
