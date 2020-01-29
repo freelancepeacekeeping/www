@@ -18,7 +18,7 @@
   padding: 1px 5px;
 }
 
-.commentary {
+.commentary, .footer {
   background-color: beige;
   font-family: "Comic Sans MS";
   padding: 1em;
