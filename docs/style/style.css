@@ -30,6 +30,11 @@ p, ul, ol {
   letter-spacing: -0.004em;
   line-height: 1.58;
 }
+.diary p:not(.commentary), .diary ul, .diary ol {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: italic;
+}
 figcaption {
   text-align: center;
   color: grey;
