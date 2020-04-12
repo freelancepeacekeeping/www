@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/brushed-metal.svg");
+    background: lightgrey;
 }
 .character {
     /* For larger screens 
@@ -8,7 +8,6 @@ body {
     */
       font-size: large;
 }
-
 
 /*
  * Card sizes:   Large is 5" x 3.5"
