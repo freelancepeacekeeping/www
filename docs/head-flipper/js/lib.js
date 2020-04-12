@@ -55,8 +55,8 @@
                 headText = headText.replace(/\+ /, '').replace(/ \[ATK\]/, '');
                 incrATK = parseInt(headText);
                 headText = "";
-            } else if(headText.includes("[HP]")) {
-                headText = headText.replace(/\+ /, '').replace(/ \[HP\]/, '');
+            } else if(headText.includes("[HEALTH]")) {
+                headText = headText.replace(/\+ /, '').replace(/ \[HEALTH\]/, '');
                 incrHP = parseInt(headText);
                 headText = "";
             } else {
