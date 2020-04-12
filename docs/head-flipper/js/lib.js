@@ -68,10 +68,10 @@
             $(head_Name).html(head['name']);
 
             // Set Body Mode Stats
-            $(body_ATK).html(body['bodyATK'] + incrATK);
+            $(body_ATK).html(body['botATK'] + incrATK);
             $(body_HP).html(body['HP'] + incrHP);
-            $(body_DEF).html(body['bodyDEF'] + incrDEF);
-            $(body_Text).html(body['bodyText'] + "<b>" + headText + "</b>");
+            $(body_DEF).html(body['botDEF'] + incrDEF);
+            $(body_Text).html(body['botText'] + "<b>" + headText + "</b>");
 
             // Set Alt Mode Stats
             $(alt_ATK).html(body['ATK'] + incrATK);
