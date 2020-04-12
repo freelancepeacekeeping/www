@@ -81,6 +81,8 @@
 
             // Set Stars
             $(star_count).html(body['Stars'] + head['Stars']);
+            $(body_star_count).html(body['Stars']);
+            $(head_star_count).html(head['Stars']);
 
             // Set Images
             document.getElementById('tfbody-img').src = "images/bodies/" + body['id'] + ".bot.png";
