@@ -79,6 +79,9 @@
             $(alt_DEF).html(body['DEF'] + incrDEF);
             $(alt_Text).html(body['Text'] + "<b>" + headText + "</b>");
 
+            // Set Stars
+            $(star_count).html(body['Stars'] + head['Stars']);
+
             // Set Images
             document.getElementById('tfbody-img').src = "images/bodies/" + body['id'] + ".bot.png";
             document.getElementById('tfhead-img').src = "images/heads/" + head['id'] + ".png";
