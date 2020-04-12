@@ -40,7 +40,7 @@
         function init() {
             let searchParams = new URLSearchParams(window.location.search);
             if(searchParams.has('h') && searchParams.has('b')) {
-                select(searchParams.has('h'), searchParams.has('b'));
+                select(searchParams.get('h'), searchParams.get('b'));
                 display();
             } else {
                 random();
