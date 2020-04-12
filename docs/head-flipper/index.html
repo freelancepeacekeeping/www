@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+        head_index = 0;
+        head_array = [
+                {
+id: "fcccddbb-13d3-4bda-9460-ec90f336a45a",
+name: "Arcana",
+Stars: 4,
+Faction: "Decepticon",
+Text:  "+ 2 [DEF]",
+ATK: 4,
+HP: 2,
+DEF: 2,
+botText: ""
+
+                },
+                {
+id: "8b606e12-a477-49e9-9e1d-469710b497aa",
+name: "Vorath",
+Stars: 1,
+Faction: "Decepticon",
+Text:  "+ Tough 1",
+ATK: 2,
+HP: 1,
+DEF: 0,
+altText: "Tough 1"
+
+                },
+            ];
+
+        body_index = 0;
+        body_array = [
+                { 
+id: "0778dae0-4a29-4c26-819c-8f246f3958e4",
+name: "Perceptor - Precise Sniper",
+ATK: 3,
+HP: 12,
+DEF: 2,
+Stars: 8,
+Faction: "Autobot",
+Text: "When you flip to this mode -> Reveal the top 4 cards of your deck. Your opponent separates those cards into 2 piles. Put 1 pile into your hand and the other under this face down. ",
+bodyATK: 3,
+bodyDEF: 1,
+bodyText: "This has +1 [ATK] for each card under him. "
+                },
+                { 
+                    // image:    "images/bodies/087d6419-0688-4152-a233-ff0ecad77fa5.bot.png",
+id: "087d6419-0688-4152-a233-ff0ecad77fa5",
+name: "Wolfwire - Ground Tracker",
+ATK: 5,
+HP: 12,
+DEF: 2,
+Stars: "9",
+Faction: "Decepticon",
+Text: "When you flip to this mode -> You may scrap a [G] card from your hand. If you do, draw 2 cards. ",
+bodyATK: 6,
+bodyDEF: 0,
+bodyText: "When this battles -> Instead of swapping a card from your hand with one of your flipped [G] cards after the battle, you may put one of those [G] cards into your hand. "
+                },
+        ];
+
+        function change(imageId, direction) {
+            if(imageId.includes('head')) {
+                if(direction == 'left') {
+                    head_index--;
+                    if(head_index == -1) {
+                        head_index = head_array.length - 1;
+                    }
+                } else {
+                    head_index++;
+                    if(head_index == head_array.length) {
+                        head_index = 0;
+                    }
+                }
+            } else {
+                if(direction == 'left') {
+                    body_index--;
+                    if(body_index == -1) {
+                        body_index = body_array.length - 1;
+                    }
+                } else {
+                    body_index++;
+                    if(body_index == body_array.length) {
+                        body_index = 0;
+                    }
+                }
+            }
+
+            display();
+        }
+
+        function random() {
+            head_index = Math.floor(Math.random() * head_array.length);
+            body_index = Math.floor(Math.random() * body_array.length);
+            display();
+        }
+
+        function display() {
+
+            head = head_array[head_index];
+            body = body_array[body_index];
+
+            // Add Head Value
+            headText = head['Text'];
+            incrATK = 0;
+            incrHP = 0;
+            incrDEF = 0;
+            if(headText.includes("[DEF]")) {
+                headText = headText.replace(/\+ /, '').replace(/ \[DEF\]/, '');
+                incrDEF = parseInt(headText);
+                headText = "";
+            } else if(headText.includes("[ATK]")) {
+                headText = headText.replace(/\+ /, '').replace(/ \[ATK\]/, '');
+                incrATK = parseInt(headText);
+                headText = "";
+            } else if(headText.includes("[HP]")) {
+                headText = headText.replace(/\+ /, '').replace(/ \[HP\]/, '');
+                incrHP = parseInt(headText);
+                headText = "";
+            } else {
+                headText = headText.replace(/\+ /, '') + ". ";
+            }
+
+            // Set Title
+            $(body_Name).html(body['name']);
+            $(head_Name).html(head['name']);
+
+            // Set Body Mode Stats
+            $(body_ATK).html(body['bodyATK'] + incrATK);
+            $(body_HP).html(body['HP'] + incrHP);
+            $(body_DEF).html(body['bodyDEF'] + incrDEF);
+            $(body_Text).html(body['bodyText'] + "<b>" + headText + "</b>");
+
+            // Set Alt Mode Stats
+            $(alt_ATK).html(body['ATK'] + incrATK);
+            $(alt_HP).html(body['HP'] + incrHP);
+            $(alt_DEF).html(body['DEF'] + incrDEF);
+            $(alt_Text).html(body['Text'] + "<b>" + headText + "</b>");
+
+            // Set Images
+            document.getElementById('tfbody-img').src = "images/bodies/" + body['id'] + ".bot.png";
+            document.getElementById('tfhead-img').src = "images/heads/" + head['id'] + ".png";
+        }
+    </script>
+    </head>
+    <body>
+
+
+
+        <h1>
+            <span id="head_Name">Arcana</span> on <span id="body_Name">Perceptor</span> 
+        </h1>
+        <img class="random-img" src="images/refresh-ccw.svg" onClick="random()"/>
+        <div class="character">
+            <div class="alt-stats" style="float: right;">
+                Alt Mode: 
+                <span id="alt_ATK"></span> &#9876;
+                - 
+                <span id="alt_HP"></span> &#9829;
+                - 
+                <span id="alt_DEF"></span> &#128737;
+            </div>
+            <div class="body-stats">
+                Body Mode: 
+                <span id="body_ATK"></span> &#9876;
+                - 
+                <span id="body_HP"></span> &#9829;
+                - 
+                <span id="body_DEF"></span> &#128737;
+            </div>
+            <ul class="tfhead" style="border: 1px solid red;">
+                <li><img class="tfhead-left-arrow" src="images/chevron-left.svg" onClick="change('tfhead-img', 'left')"/></li>
+                <li><img id="tfhead-img" src="images/heads/fcccddbb-13d3-4bda-9460-ec90f336a45a.png"/></li>
+                <li><img class="tfhead-right-arrow" src="images/chevron-right.svg" onClick="change('tfhead-img', 'right')"/></li>
+            </ul>
+            <br/>
+            <ul class="tfbody" style="border: 1px solid red;">
+                <li><img class="tfbody-left-arrow" src="images/chevron-left.svg" onClick="change('tfbody-img', 'left')"/></li>
+                <li><img id="tfbody-img" src="images/bodies/0778dae0-4a29-4c26-819c-8f246f3958e4.bot.png"/></li>
+                <li><img class="tfbody-right-arrow" src="images/chevron-right.svg" onClick="change('tfbody-img', 'right')"/></li>
+            </ul>
+                Alt Text: 
+                <span id="alt_Text"></span>
+                </br>
+                Body Text: 
+                <span id="body_Text"></span>
+
+        </div>
+
+    <script>
+        display();
+    </script>
+
+    </body>
+</html>
+
+<!-- TODO:
+
+    Need to build up a json structure of the head/body data.
+    Or, given the topic, could just embed it.
+    Ideally generate from W5 set.xml. 
+    heads: [ list of blocks of head data ]
+    bodies: [list of blocks of body data ]
+    Then JavaScript functions that rotate through the list of heads and bodies.
+        change('head', 'left')   (body and right as other options)
+    Then JavaScript function that does a random
+    Then JavaScript function to do a random just for head or just for body.
+-->

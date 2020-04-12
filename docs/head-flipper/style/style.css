@@ -1,0 +1,50 @@
+body {
+    background-image: url("../images/brushed-metal.svg");
+}
+.character {
+    margin: auto;
+    width: 50%;
+}
+#tfhead-img {
+    width: 205px;
+    height: 260px;
+}
+.tfhead {
+    position: relative;
+    left: 160px;
+}
+.tfhead li {
+    list-style: none;
+    display: inline;
+}
+.tfhead-left-arrow {
+    position: relative;
+    top: -130px;
+}
+.tfhead-right-arrow {
+    position: relative;
+    top: -130px;
+}
+.tfbody {
+    position: relative;
+    top: -160px;
+}
+.tfbody li {
+    list-style: none;
+    display: inline;
+}
+#tfbody-img {
+    width: 410px;
+    height: 520px;
+}
+.tfbody-left-arrow {
+    position: relative;
+    top: -230px;
+}
+.tfbody-right-arrow {
+    position: relative;
+    top: -230px;
+}
+.random-img {
+    float: right;
+}
