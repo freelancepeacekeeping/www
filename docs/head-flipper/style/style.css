@@ -69,6 +69,7 @@ body {
     margin: 5px;
     padding: 5px;
     width: 650px;
+    background: white;
 }
 #body-text-box {
     border: 2px solid black;
@@ -78,4 +79,13 @@ body {
     margin: 5px;
     padding: 5px;
     width: 650px;
+    background: white;
+}
+.stats {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    background: white;
 }
