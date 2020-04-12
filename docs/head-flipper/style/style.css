@@ -81,11 +81,16 @@ body {
     width: 650px;
     background: white;
 }
-.stats {
+.stats, .page-title {
     border: 2px solid black;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-    width: 300px;
     background: white;
+}
+.stats {
+    width: 300px;
+}
+.page-title {
+    width: 700px;
 }
