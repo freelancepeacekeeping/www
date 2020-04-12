@@ -37,6 +37,31 @@
             display();
         }
 
+        function init() {
+            let searchParams = new URLSearchParams(window.location.search);
+            if(searchParams.has('h') && searchParams.has('b')) {
+                select(searchParams.has('h'), searchParams.has('b'));
+                display();
+            } else {
+                random();
+            }
+        }
+
+        function select(head_id, body_id) {
+            for(let i=0; i<head_array.length; i++) {
+                if(head_array[i]['id'] == head_id) {
+                    head_index = i;
+                    break;
+                }
+            }
+            for(let i=0; i<body_array.length; i++) {
+                if(body_array[i]['id'] == body_id) {
+                    body_index = i;
+                    break;
+                }
+            }
+        }
+
         function display() {
 
             head = head_array[head_index];
@@ -83,6 +108,9 @@
             $(star_count).html(body['Stars'] + head['Stars']);
             $(body_star_count).html(body['Stars']);
             $(head_star_count).html(head['Stars']);
+
+            // Set permalink
+            $(permalink).attr('href', "?h=" + head['id'] + "&b=" + body['id']);
 
             // Set Images
             document.getElementById('tfbody-img').src = "images/bodies/" + body['id'] + ".bot.png";
