@@ -2,40 +2,56 @@ body {
     background-image: url("../images/brushed-metal.svg");
 }
 .character {
+    /* For larger screens 
     margin: auto;
-    width: 50%;
+    width: 80%;
+    */
+      font-size: large;
 }
+
+
+/*
+ * Card sizes:   Large is 5" x 3.5"
+ *               Small is 3.5" x 2.5"
+ *               Ratio is:  1.43x and 1.4x
+ **/
 #tfhead-img {
-    width: 205px;
-    height: 260px;
+    height: 364px;
+    width: 292px;
 }
 .tfhead {
     position: relative;
-    left: 160px;
+    left: 12px;
+    white-space:nowrap;
 }
 .tfhead li {
     list-style: none;
-    display: inline;
+    display: inline-block;
+}
+.random-img {
+    position: relative;
+    top: -200px;
 }
 .tfhead-left-arrow {
     position: relative;
-    top: -130px;
+    top: -200px;
 }
 .tfhead-right-arrow {
     position: relative;
-    top: -130px;
+    top: -200px;
 }
 .tfbody {
     position: relative;
-    top: -160px;
+    top: -220px;
+    white-space:nowrap;
 }
 .tfbody li {
     list-style: none;
-    display: inline;
+    display: inline-block;
 }
 #tfbody-img {
-    width: 410px;
     height: 520px;
+    width: 410px;
 }
 .tfbody-left-arrow {
     position: relative;
@@ -45,6 +61,21 @@ body {
     position: relative;
     top: -230px;
 }
-.random-img {
-    float: right;
+#alt-text-box {
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: -220px;
+    margin: 5px;
+    padding: 5px;
+    width: 650px;
+}
+#body-text-box {
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: -220px;
+    margin: 5px;
+    padding: 5px;
+    width: 650px;
 }
