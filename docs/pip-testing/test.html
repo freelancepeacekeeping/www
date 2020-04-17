@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        // Knuth Fisher-Yates algorithm
+        function deck_shuffle(arr) {
+            for(let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * i);
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+        }
+
+        function pattern_to_pip_set(pip_pattern) {
+            // convert [0-9]*[A-Z]* to array of [A-Z]* : [0-9]*
+            results = pip_pattern.split(/(\d+)/);
+            var pip_set = {};
+            for (var i = 0; i < results.length - 1; i += 2) {
+              pip_set[results[i]] = results[i+1];
+            }
+            return pip_set;
+        }
+
+        function pip_set_to_pattern(pip_set) {
+            text = "";
+            for (var key in pip_set) {
+                // check if the property/key is defined in the object itself, not in parent
+                if (pip_set.hasOwnProperty(key)) {           
+                    count = pip_set[key];
+                    text = text + key + count;
+                }
+            }
+            return text;
+        }
+
+        // Count how many colours show
+        function count_colours(flip_result, pip_match) {
+//                console.log("Result: " + flip_result);
+            colour_count = 0;
+            if(flip_result.length > 1) {
+                if(pip_match == '*' || pip_match.includes(flip_result.charAt(0))) {
+                    colour_count++;
+                }
+                last_char = flip_result.charAt(0);
+                for (i = 1; i < flip_result.length; i++) {
+                    if(flip_result.charAt(i) != last_char) {
+                        if(pip_match == '*' || pip_match.includes(flip_result.charAt(i))) {
+                            colour_count++;
+                        }
+                        last_char = flip_result.charAt(i);
+                    }
+                }
+            }
+            return colour_count;
+        }
+
+        function count_pips(flip_result, pip_match) {
+//                console.log("Result: " + flip_result);
+            colour_count = 0;
+            if(flip_result.length > 1) {
+                last_char = flip_result.charAt(0);
+                for (i = 0; i < flip_result.length; i++) {
+                    if(pip_match == '*' || pip_match.includes(flip_result.charAt(i))) {
+                        colour_count++;
+                    }
+                }
+            }
+            return colour_count;
+        }
+
+/*
+
+count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards would lead to a '2'
+               Or do I want to know the number of OB cards; i.e. 3 O and 2 B would be '0'
+
+               Maybe the former is has(OB). Or is it that it needs to be OB vs O+B. 
+               What is 'count all the pips hit'?
+               count(distinct(*)) would be the SQL. Painful here, so let's simplify to count_distinct(*).
+
+               So we have count(.) and count_distinct(.). 
+               Then we need to identify pip values.
+               count_distinct(OB) would mean the number of cards with an orange and a blue. 
+               Would a white/orange/blue be true?
+
+               Perhaps:
+
+               count_have(OB) would mean count the number of cards that have an O and a B on them
+               count_is(OB) would mean count the number of OB cards
+               count_unique_colours(*) would mean count the different pip colours
+
+
+               sum(O) would add up the number of O pips
+               sum(OB) would add up the number of ... wtf would it mean?
+
+               Support boolean logic?
+
+               count_have(O|B|K)
+               count_is(OB|OK|OO|O) ?
+
+               I AM CODING A DATABASE QUERY ENGINE AND QUERY OPTIMIZER. AARGGH.
+
+
+
+               .... reset.
+
+               colours(*) tells you how many pip colours showed.
+               count_cards_with(WOB) counts how many WOB cards there are
+               count(WOB) counts how many WOB pips show. ie: WOOBB would be 1.
+               count(W|O|B) counts how many W,O,B pips shows. ie: WOOBB would be 5.
+*/
+               
+
+        /*
+         * count(X) OP Y; where Y is an Integer; OP is < = >; and X is either * or a pip combination
+         */
+        function precompile_condition(condition, flip_result) {
+            // Parse the condition
+            let found = condition.match(/([a-z_]+)\(([*OBKGW]+)\)([=<>]+)(.*)/);
+            if(found) {
+                term = found[1]
+                pip_combination = found[2]
+                operator = found[3]
+                amount = parseInt(found[4])
+                //console.log("Parsed to term: "+term+", pc:"+pip_combination+", op:"+operator+", am:"+amount);
+
+                func_ptr = null;
+                if(term.match(/colou?rs/)) {
+                    func_ptr = function(fr) {
+                        return count_colours(fr, pip_combination);
+                    }
+                } else if(term.match(/count/)) {
+                    func_ptr = function(fr) {
+                        return count_pips(fr, pip_combination);
+                    }
+                } else {
+                    console.log("Need to code more combination handling code");
+                }
+
+                if(operator == '=') {
+                    return function(flip_result) {
+                        return func_ptr(flip_result) == amount;
+                    }
+                } else if(operator == '<') {
+                    return function(flip_result) {
+                        return func_ptr(flip_result) < amount;
+                    }
+                } else if(operator == '>') {
+                    return function(flip_result) {
+                        return func_ptr(flip_result) > amount;
+                    }
+                } else if(operator == '<=') {
+                    return function(flip_result) {
+                        return func_ptr(flip_result) <= amount;
+                    }
+                } else if(operator == '>=') {
+                    return function(flip_result) {
+                        return func_ptr(flip_result) >= amount;
+                    }
+                } else {
+                    console.log("Need to code more conditions...");
+                }
+            } else {
+                console.log("Condition '" + condition + "' is not supported. ");
+            }
+        }
+
+        // Need to represent the input of the cards.
+        // O, B, OB, etc.
+        function run_test(pip_set, conditions, iteration_count, flip_count) {
+            // TODO: Precompile the conditions to speed up each iteration
+            tester = precompile_condition(conditions[0])
+    
+            // Build Deck
+            deck = [];
+            for (var key in pip_set) {
+                // check if the property/key is defined in the object itself, not in parent
+                if (pip_set.hasOwnProperty(key)) {           
+                    count = pip_set[key];
+                    for (i = 0; i < count; i++) {
+                        deck.push(key);
+                    }
+                }
+            }
+    
+            condition_passed_count=0;
+    
+            // Need to then iterate the draws over the deck. For each draw we need to collate statistics.
+            for (iteration = 0; iteration < iteration_count; iteration++) {
+                deck_shuffle(deck);
+                result = "";
+                white_pipped = false;
+                flip_count_tmp = flip_count;
+                for (flip_index = 0; flip_index < flip_count_tmp; flip_index++) {
+                    result += deck[flip_index];
+                    if(!white_pipped) {
+                        if(deck[flip_index].includes("W")) {
+                            flip_count_tmp += 2;
+                            white_pipped = true;
+                        }
+                    }
+                }
+                result = result.split('').sort().join('');
+                if(tester(result)) {
+                    condition_passed_count++;
+                }
+            }
+
+            percentage = (condition_passed_count * 100) / iteration_count;
+            return percentage;
+        }
+
+        function test_from_form() {
+            console.log("Testing");
+            flip_count=parseInt($("#flip_count").val() );
+            iteration_count=parseInt( $("#iteration_count").val() );
+            query=$("#query").val();
+            pip_pattern=$("#pip_pattern").val();
+            // colours(*)=4
+            pip_set = pattern_to_pip_set(pip_pattern);
+            //console.log("Running: run_test(" + pip_set_to_pattern(pip_set) + ", " + query + ", " + iteration_count + ", " + flip_count + ")");
+            result = run_test( pip_set, [ query ], iteration_count, flip_count );
+            $("#percentage_result").html(Math.round(result) + "%");
+            return false;
+        }
+    </script>
+    </head>
+    <body>
+<h2>Pip Tester</h2>
+    <script>
+/*
+        run_test( { "WG" : 12, "OK" : 14, "BK" : 14 }, [ "colours(*)=4" ], 100000, 3 );   // 22.2% = 4
+        run_test( { "WG" : 12, "OK" : 28 }, [ "colors(*)=4" ], 100000, 3 );   // 50.5% = 4
+        run_test( { "W" : 12, "OK" : 14, "BK" : 14 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "W" : 20, "OK" : 10, "BK" : 10 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "Wg" : 20, "OK" : 14, "BK" : 6 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "WG" : 12, "OK" : 28 }, [ "count(*)=4" ], 100000, 2 );   // 50.5% = 4
+        run_test( { "WG" : 12, "W" : 3, "OK" : 25 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "WG" : 12, "W" : 6, "OK" : 22 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "WG" : 12, "W" : 9, "OK" : 19 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "WG" : 21, "OK" : 19 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "WG" : 24, "OK" : 16 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "WG" : 25, "OK" : 15 }, [ "count(*)=4" ], 100000, 2 );
+        run_test( { "WG" : 26, "OK" : 14 }, [ "count(*)=4" ], 100000, 2 );
+        */
+
+    </script>
+
+    <form>
+        <label>Deck Pips (eg: WG12OK28)</label><input id="pip_pattern"/><br/>
+        <label>Flips (eg: flip X cards)</label><input id="flip_count"/><br/>
+        <label>Iterations (how many times to test)</label><input id="iteration_count"/><br/>
+        <label>PIPQL Query (eg: colours(*)=4)</label><input id="query"/><br/>
+        <button type="button" onClick="test_from_form()">Calculate %age</button>
+    </form>
+    <br/><br/>
+    <span id="percentage_result"></span>
+
+    <!--
+
+        TODO: UI. Have a pip color chooser that lets you choose from the 5 colors. Have a data field for the number 
+                  with an up/down. Allow you to add new rows for new pips, and there are three columns. 
+                  Pip color chooser also needs a 'no pip' option.
+        TODO: UI. Be able to save a result so you can compare later. 
+    -->
+
+
+    </body>
+    </html>
