@@ -17,8 +17,8 @@
         function pattern_to_pip_set(pip_pattern) {
             // convert [0-9]*[A-Z]* to array of [A-Z]* : [0-9]*
             results = pip_pattern.split(/(\d+)/);
-            var pip_set = {};
-            for (var i = 0; i < results.length - 1; i += 2) {
+            let pip_set = {};
+            for (let i = 0; i < results.length - 1; i += 2) {
               pip_set[results[i]] = results[i+1];
             }
             return pip_set;
@@ -26,7 +26,7 @@
 
         function pip_set_to_pattern(pip_set) {
             text = "";
-            for (var key in pip_set) {
+            for (let key in pip_set) {
                 // check if the property/key is defined in the object itself, not in parent
                 if (pip_set.hasOwnProperty(key)) {           
                     count = pip_set[key];
@@ -45,7 +45,7 @@
                     colour_count++;
                 }
                 last_char = flip_result.charAt(0);
-                for (i = 1; i < flip_result.length; i++) {
+                for (let i = 1; i < flip_result.length; i++) {
                     if(flip_result.charAt(i) != last_char) {
                         if(pip_match == '*' || pip_match.includes(flip_result.charAt(i))) {
                             colour_count++;
@@ -63,7 +63,7 @@
             colour_count = 0;
             if(flip_result.length > 1) {
                 last_char = flip_result.charAt(0);
-                for (i = 0; i < flip_result.length; i++) {
+                for (let i = 0; i < flip_result.length; i++) {
                     if(pip_match == '*' || pip_match.includes(flip_result.charAt(i))) {
                         colour_count++;
                     }
@@ -114,20 +114,47 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
 */
                
 
+
+// TODO: Need to implement AND and OR. And probably NOT. First just AND.
+//       This means having a layer on top of the current code. 
+//    Example:   f(x)=p AND g(y)=q.  So we have a 'joiner', which can be AND or OR.
+        function precompile_condition(condition, flip_result) {
+            results = condition.split(/( AND )/);
+            if(results.length > 1) {
+                statements = [];
+                for (let result of results) {
+                    if(result != " AND ") {
+                        console.log("Precompiling: " + result);
+                        statements.push(precompile_statement(result, flip_result));
+                    }
+                }
+                compound_func_ptr = function(fr) {
+                    for (let statement of statements) {
+                        if(!statement(fr))  {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                return compound_func_ptr;
+            } else {
+                return precompile_statement(condition, flip_result);
+            }
+        }
         /*
          * count(X) OP Y; where Y is an Integer; OP is < = >; and X is either * or a pip combination
          */
-        function precompile_condition(condition, flip_result) {
+        function precompile_statement(condition, flip_result) {
             // Parse the condition
             let found = condition.match(/([a-z_]+)\(([*OBKGW]+)\)([=<>]+)(.*)/);
             if(found) {
-                term = found[1]
-                pip_combination = found[2]
-                operator = found[3]
-                amount = parseInt(found[4])
+                let term = found[1]
+                let pip_combination = found[2]
+                let operator = found[3]
+                let amount = parseInt(found[4])
                 //console.log("Parsed to term: "+term+", pc:"+pip_combination+", op:"+operator+", am:"+amount);
 
-                func_ptr = null;
+                let func_ptr = null;
                 if(term.match(/colou?rs/)) {
                     func_ptr = function(fr) {
                         return count_colours(fr, pip_combination);
@@ -141,24 +168,24 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
                 }
 
                 if(operator == '=') {
-                    return function(flip_result) {
-                        return func_ptr(flip_result) == amount;
+                    return function(fr) {
+                        return func_ptr(fr) == amount;
                     }
                 } else if(operator == '<') {
-                    return function(flip_result) {
-                        return func_ptr(flip_result) < amount;
+                    return function(fr) {
+                        return func_ptr(fr) < amount;
                     }
                 } else if(operator == '>') {
-                    return function(flip_result) {
-                        return func_ptr(flip_result) > amount;
+                    return function(fr) {
+                        return func_ptr(fr) > amount;
                     }
                 } else if(operator == '<=') {
-                    return function(flip_result) {
-                        return func_ptr(flip_result) <= amount;
+                    return function(fr) {
+                        return func_ptr(fr) <= amount;
                     }
                 } else if(operator == '>=') {
-                    return function(flip_result) {
-                        return func_ptr(flip_result) >= amount;
+                    return function(fr) {
+                        return func_ptr(fr) >= amount;
                     }
                 } else {
                     console.log("Need to code more conditions...");
@@ -175,30 +202,30 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
 
             test_conditions = [];
             result_list = [];
-            for (var condition of conditions) {
+            for (let condition of conditions) {
                 test_conditions.push(precompile_condition(condition));
                 result_list.push(0);
             }
     
             // Build Deck
             deck = [];
-            for (var key in pip_set) {
+            for (let key in pip_set) {
                 // check if the property/key is defined in the object itself, not in parent
                 if (pip_set.hasOwnProperty(key)) {           
                     count = pip_set[key];
-                    for (var i = 0; i < count; i++) {
+                    for (let i = 0; i < count; i++) {
                         deck.push(key);
                     }
                 }
             }
     
             // Need to then iterate the draws over the deck. For each draw we need to collate statistics.
-            for (iteration = 0; iteration < iteration_count; iteration++) {
+            for (let iteration = 0; iteration < iteration_count; iteration++) {
                 deck_shuffle(deck);
                 result = "";
                 white_pipped = false;
                 flip_count_tmp = flip_count;
-                for (flip_index = 0; flip_index < flip_count_tmp; flip_index++) {
+                for (let flip_index = 0; flip_index < flip_count_tmp; flip_index++) {
                     result += deck[flip_index];
                     if(!white_pipped) {
                         if(deck[flip_index].includes("W")) {
@@ -208,18 +235,17 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
                     }
                 }
                 result = result.split('').sort().join('');
-                for (var i = 0; i < test_conditions.length; i++) {
+                for (let i = 0; i < test_conditions.length; i++) {
                     if(test_conditions[i](result)) {
                         result_list[i] = result_list[i] + 1;
                     }
                 }
             }
 
-            for (var i = 0; i < test_conditions.length; i++) {
-                if(test_conditions[i](result)) {
-                    result_list[i] = (result_list[i] * 100) / iteration_count;
-                }
+            for (let i = 0; i < test_conditions.length; i++) {
+                result_list[i] = (result_list[i] * 100) / iteration_count;
             }
+            console.log("Results: " + result_list);
             return result_list;
         }
 
@@ -292,7 +318,7 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
     <ul>
         <li>Grapple flipping two pips:  colours(*)=4</li>
         <li>Chromia flipping at least WW: count(W)&gt;1</li>
-        <li>Ultra Magnus flipping OOBB: NotCurrentlyPossible; feels like it will be count(O)&gt;2 AND count(B)&gt;2</li>
+        <li>Ultra Magnus flipping OOBB: count(O)&gt;=2 AND count(B)&gt;=2</li>
         <li>Fortress Maximus flipping OK: colours(OK)=2</li>
         <li>Private Red Alert flipping WOB: colours(WOB)=3</li>
         <li>Slipstream flipping &gt;2 colours: colours(*)&gt;2</li>
