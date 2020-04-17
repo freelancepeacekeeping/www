@@ -57,6 +57,7 @@
             return colour_count;
         }
 
+        // Count how many times a colour shows
         function count_pips(flip_result, pip_match) {
 //                console.log("Result: " + flip_result);
             colour_count = 0;
@@ -266,6 +267,12 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
         TODO: UI. Be able to save a result so you can compare later. 
     -->
 
+    <h3>PIPQL Help</h3>
+    <p>There are currently two functions available in PIPQL: </p>
+    <ol>
+        <li>count. This counts the number of times a pip shows. Its parameter is unique, so count(O) is the same as count(OO); that is the second O is meaningless. Using count(*) is a shorthand to count all pips that show.  </li>
+        <li>colour. This counts the number of times a colour shows. Again the parameter is unique, so colour(OO) matches colour(O). colour(*) counts all the colours, colour(OB) would count how often an O or B shows. colour(OB) will never be greater than 2; as an example. To test Grapple's effect, use colour(*)=4. Note that color is also supported. </li>
+    </ol>
 
     </body>
     </html>
