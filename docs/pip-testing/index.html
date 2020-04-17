@@ -170,9 +170,15 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
 
         // Need to represent the input of the cards.
         // O, B, OB, etc.
+        // Returns an array of percengages that match the array of conditions
         function run_test(pip_set, conditions, iteration_count, flip_count) {
-            // TODO: Precompile the conditions to speed up each iteration
-            tester = precompile_condition(conditions[0])
+
+            test_conditions = [];
+            result_list = [];
+            for (var condition of conditions) {
+                test_conditions.push(precompile_condition(condition));
+                result_list.push(0);
+            }
     
             // Build Deck
             deck = [];
@@ -180,13 +186,11 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
                 // check if the property/key is defined in the object itself, not in parent
                 if (pip_set.hasOwnProperty(key)) {           
                     count = pip_set[key];
-                    for (i = 0; i < count; i++) {
+                    for (var i = 0; i < count; i++) {
                         deck.push(key);
                     }
                 }
             }
-    
-            condition_passed_count=0;
     
             // Need to then iterate the draws over the deck. For each draw we need to collate statistics.
             for (iteration = 0; iteration < iteration_count; iteration++) {
@@ -204,13 +208,19 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
                     }
                 }
                 result = result.split('').sort().join('');
-                if(tester(result)) {
-                    condition_passed_count++;
+                for (var i = 0; i < test_conditions.length; i++) {
+                    if(test_conditions[i](result)) {
+                        result_list[i] = result_list[i] + 1;
+                    }
                 }
             }
 
-            percentage = (condition_passed_count * 100) / iteration_count;
-            return percentage;
+            for (var i = 0; i < test_conditions.length; i++) {
+                if(test_conditions[i](result)) {
+                    result_list[i] = (result_list[i] * 100) / iteration_count;
+                }
+            }
+            return result_list;
         }
 
         function test_from_form() {
@@ -222,7 +232,8 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
             // colours(*)=4
             pip_set = pattern_to_pip_set(pip_pattern);
             //console.log("Running: run_test(" + pip_set_to_pattern(pip_set) + ", " + query + ", " + iteration_count + ", " + flip_count + ")");
-            result = run_test( pip_set, [ query ], iteration_count, flip_count );
+            result = run_test( pip_set, [ query ], iteration_count, flip_count )[0];
+
             $("#percentage_result").html(Math.round(result) + "%");
             return false;
         }
@@ -281,7 +292,7 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
     <ul>
         <li>Grapple flipping two pips:  colours(*)=4</li>
         <li>Chromia flipping at least WW: count(W)&gt;1</li>
-        <li>Ultra Magnus flipping OOBB: NotCurrentlyPossible</li>
+        <li>Ultra Magnus flipping OOBB: NotCurrentlyPossible; feels like it will be count(O)&gt;2 AND count(B)&gt;2</li>
         <li>Fortress Maximus flipping OK: colours(OK)=2</li>
         <li>Private Red Alert flipping WOB: colours(WOB)=3</li>
         <li>Slipstream flipping &gt;2 colours: colours(*)&gt;2</li>
