@@ -124,7 +124,6 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
                 statements = [];
                 for (let result of results) {
                     if(result != " AND ") {
-                        console.log("Precompiling: " + result);
                         statements.push(precompile_statement(result, flip_result));
                     }
                 }
@@ -245,12 +244,11 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
             for (let i = 0; i < test_conditions.length; i++) {
                 result_list[i] = (result_list[i] * 100) / iteration_count;
             }
-            console.log("Results: " + result_list);
+//            console.log("Results: " + result_list);
             return result_list;
         }
 
         function test_from_form() {
-            console.log("Testing");
             flip_count=parseInt($("#flip_count").val() );
             iteration_count=parseInt( $("#iteration_count").val() );
             query=$("#query").val();
