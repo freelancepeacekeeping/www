@@ -271,11 +271,20 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
     <p>There are currently two functions available in PIPQL: </p>
     <ol>
         <li>count. This counts the number of times a pip shows. Its parameter is unique, so count(O) is the same as count(OO); that is the second O is meaningless. Using count(*) is a shorthand to count all pips that show.  </li>
-        <li>colour/color. This counts the number of times a colour shows. Again the parameter is unique, so colour(OO) matches colour(O). colour(*) counts all the colours, colour(OB) would count how often an O or B shows. colour(OB) will never be greater than 2; as an example. To test Grapple's effect, use colour(*)=4. </li>
+        <li>colours/colors. This counts the number of times a colour shows. Again the parameter is unique, so colours(OO) matches colours(O). colours(*) counts all the colours, colours(OB) would count how often an O or B shows. colours(OB) will never be greater than 2; as an example. </li>
     </ol>
 
     <h3>Deck Format</h3>
     <p>Decks are described (until a nicer UI is made) as pieces of text consisting of the pips on a card type, followed by the number of those cards. O=Orange, B=Blue, K=Black, W=White, G=Green. </p>
+
+    <h3>Examples</h3>
+    <ul>
+        <li>Grapple flipping two pips:  colours(*)=4</li>
+        <li>Chromia flipping at least WW: count(W)&gt;1</li>
+        <li>Ultra Magnus flipping OOBB: NotCurrentlyPossible</li>
+        <li>Fortress Maximus flipping OK: colours(OK)=2</li>
+        <li>Private Red Alert flipping WOB: colours(WOB)=3</li>
+        <li>Slipstream flipping &gt;2 colours: colours(*)&gt;2</li>
 
     <h3>Provisos</h3>
     <p>Enter weird input, you'll get weird behaviour. Enter a huge number of iterations, your browser will lock up. 100000 is probably as high as you want/need to go. </p>
