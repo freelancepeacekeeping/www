@@ -4,6 +4,22 @@
         <meta charset="utf-8"/>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+    <!--
+        TODO: UI. Have a pip color chooser that lets you choose from the 5 colors. Have a data field for the number 
+                  with an up/down. Allow you to add new rows for new pips, and there are three columns. 
+                  Pip color chooser also needs a 'no pip' option.
+        TODO: UI. Be able to save a result so you can compare later. 
+        TODO: UI. Want to do charting. This coulde include showing the charting of all values calculated, with the 
+                  ones where the operator was true in a different colour. Also could be a chart for the saved tests.
+                  This will involve various rejigging in the engine of the code.
+        TODO: Some kind of best fit notion. Have it run over the flips looking for the best return value.
+              This involves indicating something is variable. 
+              One approach is to indicate the deck as WG*BK*, and it will adjust those numbers, keeping a max of 40.
+              It could know the counts for how many of each pip type there are. Or maybe just the ones that have less 
+              than 14 cards. 
+    -->
+
+
     <script>
 
         // Knuth Fisher-Yates algorithm
@@ -72,52 +88,12 @@
             return colour_count;
         }
 
-/*
-
-count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards would lead to a '2'
-               Or do I want to know the number of OB cards; i.e. 3 O and 2 B would be '0'
-
-               Maybe the former is has(OB). Or is it that it needs to be OB vs O+B. 
-               What is 'count all the pips hit'?
-               count(distinct(*)) would be the SQL. Painful here, so let's simplify to count_distinct(*).
-
-               So we have count(.) and count_distinct(.). 
-               Then we need to identify pip values.
-               count_distinct(OB) would mean the number of cards with an orange and a blue. 
-               Would a white/orange/blue be true?
-
-               Perhaps:
-
-               count_have(OB) would mean count the number of cards that have an O and a B on them
-               count_is(OB) would mean count the number of OB cards
-               count_unique_colours(*) would mean count the different pip colours
-
-
-               sum(O) would add up the number of O pips
-               sum(OB) would add up the number of ... wtf would it mean?
-
-               Support boolean logic?
-
-               count_have(O|B|K)
-               count_is(OB|OK|OO|O) ?
-
-               I AM CODING A DATABASE QUERY ENGINE AND QUERY OPTIMIZER. AARGGH.
-
-
-
-               .... reset.
-
-               colours(*) tells you how many pip colours showed.
-               count_cards_with(WOB) counts how many WOB cards there are
-               count(WOB) counts how many WOB pips show. ie: WOOBB would be 1.
-               count(W|O|B) counts how many W,O,B pips shows. ie: WOOBB would be 5.
-*/
-               
-
-
-// TODO: Need to implement AND and OR. And probably NOT. First just AND.
-//       This means having a layer on top of the current code. 
-//    Example:   f(x)=p AND g(y)=q.  So we have a 'joiner', which can be AND or OR.
+        // TODO: Need to implement OR and presumably NOT.
+        //       Note that the AND implementation here is quite hacky.
+        /*
+         * Build a function that represents the entered query. Note that this function handles 
+         * splitting a query down into a group of statements and then uses precompile_statement
+         */
         function precompile_condition(condition, flip_result) {
             results = condition.split(/( AND )/);
             if(results.length > 1) {
@@ -141,7 +117,8 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
             }
         }
         /*
-         * count(X) OP Y; where Y is an Integer; OP is < = >; and X is either * or a pip combination
+    * count(X) OP Y; where Y is an Integer; OP is < = > >= <=; and X is either * or a pip combination
+         * colours(X) OP Y; where letters are the same as above.
          */
         function precompile_statement(condition, flip_result) {
             // Parse the condition
@@ -194,9 +171,9 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
             }
         }
 
-        // Need to represent the input of the cards.
-        // O, B, OB, etc.
-        // Returns an array of percengages that match the array of conditions
+        /*
+         * Returns an array of percentages that match the array of conditions
+         */
         function run_test(pip_set, conditions, iteration_count, flip_count) {
 
             test_conditions = [];
@@ -265,24 +242,6 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
     </head>
     <body>
 <h2>Pip Tester</h2>
-    <script>
-/*
-        run_test( { "WG" : 12, "OK" : 14, "BK" : 14 }, [ "colours(*)=4" ], 100000, 3 );   // 22.2% = 4
-        run_test( { "WG" : 12, "OK" : 28 }, [ "colors(*)=4" ], 100000, 3 );   // 50.5% = 4
-        run_test( { "W" : 12, "OK" : 14, "BK" : 14 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "W" : 20, "OK" : 10, "BK" : 10 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "Wg" : 20, "OK" : 14, "BK" : 6 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "WG" : 12, "OK" : 28 }, [ "count(*)=4" ], 100000, 2 );   // 50.5% = 4
-        run_test( { "WG" : 12, "W" : 3, "OK" : 25 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "WG" : 12, "W" : 6, "OK" : 22 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "WG" : 12, "W" : 9, "OK" : 19 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "WG" : 21, "OK" : 19 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "WG" : 24, "OK" : 16 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "WG" : 25, "OK" : 15 }, [ "count(*)=4" ], 100000, 2 );
-        run_test( { "WG" : 26, "OK" : 14 }, [ "count(*)=4" ], 100000, 2 );
-        */
-
-    </script>
 
     <form>
         <label>Deck Pips (eg: WG12OK28)</label><input id="pip_pattern"/><br/>
@@ -293,14 +252,6 @@ count(OB)  :   Do I want to know the number of O and B? i.e.: 3 O and 2 B cards 
     </form>
     <br/><br/>
     <span id="percentage_result"></span>
-
-    <!--
-
-        TODO: UI. Have a pip color chooser that lets you choose from the 5 colors. Have a data field for the number 
-                  with an up/down. Allow you to add new rows for new pips, and there are three columns. 
-                  Pip color chooser also needs a 'no pip' option.
-        TODO: UI. Be able to save a result so you can compare later. 
-    -->
 
     <h3>PIPQL Help</h3>
     <p>There are currently two functions available in PIPQL: </p>
