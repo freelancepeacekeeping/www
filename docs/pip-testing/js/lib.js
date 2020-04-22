@@ -8,7 +8,7 @@ function deck_shuffle(arr) {
 
 function pattern_to_pip_set(pip_pattern) {
     // convert [0-9]*[A-Z]* to array of [A-Z]* : [0-9]*
-    results = pip_pattern.split(/(\d+)/);
+    results = pip_pattern.replace(/\s/g,'').split(/(\d+)/);
     let pip_set = {};
     for (let i = 0; i < results.length - 1; i += 2) {
       pip_set[results[i]] = results[i+1];
@@ -71,11 +71,11 @@ function count_pips(flip_result, pip_match) {
  * splitting a query down into a group of statements and then uses precompile_statement
  */
 function precompile_condition(condition, flip_result) {
-    results = condition.split(/( AND )/);
+    results = condition.replace(/\s/g,'').split(/(AND)/);
     if(results.length > 1) {
         statements = [];
         for (let result of results) {
-            if(result != " AND ") {
+            if(result != "AND") {
                 statements.push(precompile_statement(result, flip_result));
             }
         }
