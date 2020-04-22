@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/lib.js"></script>
+
+    <script>
+        function test_from_form() {
+            flip_count=parseInt($("#flip_count").val() );
+            iteration_count=10000;
+            queries=['colors(*)=4','count(O)','count(B)','count(K)'];
+            let text = "<tr><th>Pip Pattern</th>";
+            for (query of queries) {
+                text += "<th>" + query + "</th>";
+            }
+            text += "</tr>";
+
+            $("#pip_results").append(text);
+
+            for (let pip_i=3; pip_i<37; pip_i+=3) {
+                pip_pattern = "WG" + pip_i + "OK" + (40-pip_i);
+                pip_set = pattern_to_pip_set(pip_pattern);
+                results = run_test( pip_set, queries, iteration_count, flip_count );
+
+                text = "<tr><td>" + pip_pattern + "</td>";
+                for (let i = 0; i < results.length; i++) {
+                    text += "<td>" + format_result(results[i], queries[i]) + "</td>";
+                }
+                text += "</tr>";
+
+                $("#pip_results").append(text);
+            }
+
+            return false;
+        }
+    </script>
+    </head>
+    <body>
+<h2>Grapple Data</h2>
+
+    <form>
+        <label>Deck Pips</label>: WG and OK<br/>
+        <label>Flips (eg: flip X cards)</label><input id="flip_count"/><br/>
+        <label>Iterations</label>: 10000<br/>
+        <label>PIPQL Query</label>: colors(*)=4,count(O),count(B),count(K)</br>
+        <button type="button" onClick="test_from_form()">Calculate</button>
+    </form>
+    <table id="pip_results" border="1"></table>
+
+
+    </body>
+    </html>
