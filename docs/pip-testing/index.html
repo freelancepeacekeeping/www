@@ -36,7 +36,7 @@
 
             text = "";
             for (let i = 0; i < results.length; i++) {
-                text += format_result(results[i], queries[i]) + "<br/>";
+                text += queries[i] + " &rarr; " + format_result(results[i], queries[i]) + "<br/>";
             }
 
             $("#percentage_result").html(text);
