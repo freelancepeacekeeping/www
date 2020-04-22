@@ -36,14 +36,30 @@
             // colours(*)=4
             pip_set = pattern_to_pip_set(pip_pattern);
             //console.log("Running: run_test(" + pip_set_to_pattern(pip_set) + ", " + query + ", " + iteration_count + ", " + flip_count + ")");
-            results = run_test( pip_set, queries, iteration_count, flip_count );
+            all_results = run_test( pip_set, queries, iteration_count, flip_count );
 
+            /*
             text = "";
             for (let i = 0; i < results.length; i++) {
                 text += queries[i] + " &rarr; " + format_result(results[i], queries[i]) + "<br/>";
             }
+            */
 
-            $("#percentage_result").html(text);
+            let text = "<tr><th>Pip Pattern</th>";
+            for (query of queries) {
+                text += "<th>" + query + "</th>";
+            }
+            text += "</tr>";
+            $("#pip_results").html(text);
+            for(let results of all_results) {
+                text = "<tr><td>" + pip_set_to_pattern(results['pipset']) + "</td>";
+                for (let i = 0; i < results['result'].length; i++) {
+                    text += "<td>" + format_result(results['result'][i], queries[i]) + "</td>";
+                }
+                text += "</tr>";
+
+                $("#pip_results").append(text);
+            }
             return false;
         }
     </script>
@@ -59,7 +75,7 @@
         <button type="button" onClick="test_from_form()">Calculate</button>
     </form>
     <br/><br/>
-    <span id="percentage_result"></span>
+    <table id="pip_results" border="1"></table>
 
     <h3>PIPQL Help</h3>
     <p>There are currently two functions available in PIPQL: </p>
@@ -76,15 +92,24 @@
     <h3>Deck Format</h3>
     <p>Decks are described (until a nicer UI is made) as pieces of text consisting of the pips on a card type, followed by the number of those cards. O=Orange, B=Blue, K=Black, W=White, G=Green. Whitespace is allowed to improve readability. </p>
 
+    <p>Decks can include ranges, leading to a tabular response. These are written with a start, end, and step, so that "G12:0:3" will test the deck with 12, 9, 6, 3, and 0 one Green battle iconed cards in the deck. It's up to you to ensure you are balancing this with another range that goes the other way to replace the removed cards with one Green battle icon. </p>
+
     <h3>PIPQL Examples</h3>
     <ul>
-        <li>Grapple flipping two pips:  colours(*)=4</li>
-        <li>Chromia flipping at least WW: count(W)&gt;1</li>
-        <li>Ultra Magnus flipping OOBB: count(O)&gt;=2 AND count(B)&gt;=2</li>
-        <li>Fortress Maximus flipping OK: colours(OK)=2</li>
-        <li>Private Red Alert flipping WOB: colours(WOB)=3</li>
-        <li>Slipstream flipping &gt;2 colours: colours(*)&gt;2</li>
-        <li>Average number of orange/black in a flip: count(O),count(K)</li>
+        <li>Grapple flipping two pips &rarr;  colours(*)=4</li>
+        <li>Chromia flipping at least WW &rarr; count(W)&gt;1</li>
+        <li>Ultra Magnus flipping OOBB &rarr; count(O)&gt;=2 AND count(B)&gt;=2</li>
+        <li>Fortress Maximus flipping OK &rarr; colours(OK)=2</li>
+        <li>Private Red Alert flipping WOB &rarr; colours(WOB)=3</li>
+        <li>Slipstream flipping &gt;2 colours &rarr; colours(*)&gt;2</li>
+        <li>Average number of orange/black in a flip &rarr; count(O),count(K)</li>
+    </ul>
+
+    <h3>Deck Examples</h3>
+    <ul>
+        <li>O20B20 &rarr; A deck with 20 cards with one Orange battle icon, and 20 cards with one Blue battle icon</li>
+        <li>O20OB20 &rarr; A deck with 20 cards with one Orange battle icon, and 20 cards with one Blue battle icon AND one Orange icon</li>
+        <li>WG3:36:3 OK37:4:3 &rarr; This tests a range of decks, starting with one with 3 WhiteGreen cards and 37 OrangeBlack cards, moving in increments of 3 to a deck with 36 WhiteGreen cards and 4 OrangeBlack cards. </li>
     </ul>
 
     <h3>Provisos</h3>

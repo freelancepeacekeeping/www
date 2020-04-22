@@ -18,14 +18,14 @@
 
             $("#pip_results").append(text);
 
-            for (let pip_i=3; pip_i<37; pip_i+=3) {
-                pip_pattern = "WG" + pip_i + "OK" + (40-pip_i);
-                pip_set = pattern_to_pip_set(pip_pattern);
-                results = run_test( pip_set, queries, iteration_count, flip_count );
+            pip_pattern = "WG3:36:3 OK37:4:3"
+            pip_set = pattern_to_pip_set(pip_pattern);
+            all_results = run_test( pip_set, queries, iteration_count, flip_count );
 
-                text = "<tr><td>" + pip_pattern + "</td>";
-                for (let i = 0; i < results.length; i++) {
-                    text += "<td>" + format_result(results[i], queries[i]) + "</td>";
+            for(let results of all_results) {
+                text = "<tr><td>" + pip_set_to_pattern(results['pipset']) + "</td>";
+                for (let i = 0; i < results['result'].length; i++) {
+                    text += "<td>" + format_result(results['result'][i], queries[i]) + "</td>";
                 }
                 text += "</tr>";
 

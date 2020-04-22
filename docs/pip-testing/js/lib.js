@@ -1,3 +1,4 @@
+
 // Knuth Fisher-Yates algorithm
 function deck_shuffle(arr) {
     for(let i = arr.length - 1; i > 0; i--) {
@@ -6,21 +7,91 @@ function deck_shuffle(arr) {
     }
 }
 
+// OB12O12B16 etc.
+// Ranges are OB3:36:3  (start/end/step)
 function pattern_to_pip_set(pip_pattern) {
-    // convert [0-9]*[A-Z]* to array of [A-Z]* : [0-9]*
-    results = pip_pattern.replace(/\s/g,'').split(/(\d+)/);
+    // convert [A-Z]*[0-9]* to array of [A-Z]* : [0-9]*
+    results = pip_pattern.replace(/\s/g,'').split(/([\d:]+)/);
     let pip_set = {};
     for (let i = 0; i < results.length - 1; i += 2) {
-      pip_set[results[i]] = results[i+1];
+        if (results[i+1].includes(':')) {
+            let value_array = [];
+            parameters = results[i+1].split(/:/);
+            if(parameters.length == 2) {
+                parameters.push('1');
+            }
+            // TODO: parameters.length should be 3 at this point
+            let start = parseInt(parameters[0]);
+            let close = parseInt(parameters[1]);
+            let step  = parseInt(parameters[2]);
+            if(start < close) {
+                for (let j = start; j <= close; j += step) {
+                    value_array.push(j);
+                }
+            } else {
+                for (let j = start; j >= close; j -= step) {
+                    value_array.push(j);
+                }
+            }
+
+            pip_set[results[i]] = value_array;
+        } else {
+            pip_set[results[i]] = results[i+1];
+        }
     }
-    return pip_set;
+
+    // At this point we have "PipLetter" : "Num" or "PipLetter" : ["array", "of", "Num"]
+    // We want to flip to [ { "PipLetter": "Num", ... }, { "PipLetter": "NextNum" }, ...]
+    // Find max length of array in the pip_sets
+    let max_length = 0;
+    for (let key in pip_set) {
+        if (pip_set.hasOwnProperty(key)) {
+            count = pip_set[key];
+            if(Array.isArray(count)) {
+                if(count.length > max_length) {
+                    max_length = count.length;
+                }
+            }
+        }
+    }
+    if(max_length == 0) {
+        return pip_set;
+    }
+
+    let pip_sets = [];
+    for (let i = 0; i < max_length; i++) {
+        pip_sets.push({});
+    }
+    // Flip the array
+    for (let key in pip_set) {
+        if (pip_set.hasOwnProperty(key)) {
+            let remaining = max_length;
+            let last_element = undefined;
+            count = pip_set[key];
+            if(Array.isArray(count)) {
+                for (let i=0; i<count.length; i++) {
+                    pip_sets[i][key] = count[i];
+                    last_element = count[i];
+                    remaining--;
+                }
+            } else {
+                last_element = count;
+            }
+            // Fill the rest of the array with the final element
+            for (let i=max_length - remaining; i<max_length; i++) {
+                pip_sets[i][key] = last_element;
+            }
+        }
+    }
+
+    return pip_sets;
 }
 
 function pip_set_to_pattern(pip_set) {
     text = "";
     for (let key in pip_set) {
         // check if the property/key is defined in the object itself, not in parent
-        if (pip_set.hasOwnProperty(key)) {           
+        if (pip_set.hasOwnProperty(key)) {
             count = pip_set[key];
             text = text + key + count;
         }
@@ -30,7 +101,6 @@ function pip_set_to_pattern(pip_set) {
 
 // Count how many colours show
 function count_colours(flip_result, pip_match) {
-//                console.log("Result: " + flip_result);
     colour_count = 0;
     if(flip_result.length > 1) {
         if(pip_match == '*' || pip_match.includes(flip_result.charAt(0))) {
@@ -51,7 +121,6 @@ function count_colours(flip_result, pip_match) {
 
 // Count how many times a colour shows
 function count_pips(flip_result, pip_match) {
-//                console.log("Result: " + flip_result);
     colour_count = 0;
     if(flip_result.length > 1) {
         last_char = flip_result.charAt(0);
@@ -67,7 +136,7 @@ function count_pips(flip_result, pip_match) {
 // TODO: Need to implement OR and presumably NOT.
 //       Note that the AND implementation here is quite hacky.
 /*
- * Build a function that represents the entered query. Note that this function handles 
+ * Build a function that represents the entered query. Note that this function handles
  * splitting a query down into a group of statements and then uses precompile_statement
  */
 function precompile_condition(condition, flip_result) {
@@ -160,71 +229,92 @@ function precompile_statement(condition, flip_result) {
 }
 
 /*
- * Returns an array of percentages that match the array of conditions
+ * Returns an 2-dimensional-array of answers that match the array of conditions for each element of pip_set
+ * pip_sets may be scalar or an array, however an array of (loosely coined flip-result) objects are always returned.
+ * A flip-result is, for now, a basic object with:
+ *     'pipset' : String
+ *     'result' : array of conditions.length values
  */
-function run_test(pip_set, conditions, iteration_count, flip_count) {
+function run_test(pip_sets, conditions, iteration_count, flip_count) {
+
+    if(!Array.isArray(pip_sets)) {
+        pip_sets = [pip_sets];
+    }
 
     let test_conditions = [];
-    let result_list = [];
+    //
+    // Optimization: Pre-evaluate the conditions and create runnable functions
     for (let condition of conditions) {
         test_conditions.push(precompile_condition(condition));
-        result_list.push(0);
     }
+
+    // Optimization: Pre-evaluate whether or not the condition has an operator
     let condition_is_operator = [];
     for (let condition of conditions) {
         condition_is_operator.push(has_operator(condition));
     }
-    
-    // Build Deck
-    let deck = [];
-    for (let key in pip_set) {
-        // check if the property/key is defined in the object itself, not in parent
-        if (pip_set.hasOwnProperty(key)) {           
-            count = pip_set[key];
-            for (let i = 0; i < count; i++) {
-                deck.push(key);
-            }
-        }
-    }
-    
-    // Need to then iterate the draws over the deck. For each draw we need to collate statistics.
-    for (let iteration = 0; iteration < iteration_count; iteration++) {
-        deck_shuffle(deck);
-        let result = "";
-        let white_pipped = false;
-        let flip_count_tmp = flip_count;
-        for (let flip_index = 0; flip_index < flip_count_tmp; flip_index++) {
-            result += deck[flip_index];
-            if(!white_pipped) {
-                if(deck[flip_index].includes("W")) {
-                    flip_count_tmp += 2;
-                    white_pipped = true;
+
+    let all_the_results = [];
+    for (let pip_set of pip_sets) {
+
+        // Build Deck
+        let deck = [];
+        for (let key in pip_set) {
+            // check if the property/key is defined in the object itself, not in parent
+            if (pip_set.hasOwnProperty(key)) {
+                let count = pip_set[key];
+                for (let i = 0; i < count; i++) {
+                    deck.push(key);
                 }
             }
         }
-        result = result.split('').sort().join('');
+
+        let result_list = [];
+        for (let i = 0; i < conditions.length; i++) {
+            result_list.push(0);
+        }
+
+        // Then iterate the draws over the deck. For each draw we need to collate statistics.
+        for (let iteration = 0; iteration < iteration_count; iteration++) {
+            deck_shuffle(deck);
+            let result = "";
+            let white_pipped = false;
+            let flip_count_tmp = flip_count;
+            for (let flip_index = 0; flip_index < flip_count_tmp; flip_index++) {
+                result += deck[flip_index];
+                if(!white_pipped) {
+                    if(deck[flip_index].includes("W")) {
+                        flip_count_tmp += 2;
+                        white_pipped = true;
+                    }
+                }
+            }
+            result = result.split('').sort().join('');
+            for (let i = 0; i < test_conditions.length; i++) {
+                if(!condition_is_operator[i]) {
+                    result_list[i] += test_conditions[i](result);
+                } else {
+                    if(test_conditions[i](result)) {
+                        result_list[i] = result_list[i] + 1;
+                    }
+                }
+            }
+        }
+
         for (let i = 0; i < test_conditions.length; i++) {
-            if(!condition_is_operator[i]) {
-                result_list[i] += test_conditions[i](result);
+            if(condition_is_operator[i]) {
+                // calculate percentage
+                result_list[i] = (result_list[i] * 100) / iteration_count;
             } else {
-                if(test_conditions[i](result)) {
-                    result_list[i] = result_list[i] + 1;
-                }
+                // calculate mean
+                result_list[i] = result_list[i] / iteration_count;
             }
         }
+
+        all_the_results.push( { 'pipset' : pip_set, 'result' : result_list } );
     }
 
-    for (let i = 0; i < test_conditions.length; i++) {
-        if(condition_is_operator[i]) {
-            // calculate percentage
-            result_list[i] = (result_list[i] * 100) / iteration_count;
-        } else {
-            // calculate mean
-            result_list[i] = result_list[i] / iteration_count;
-        }
-    }
-//            console.log("Results: " + result_list);
-    return result_list;
+    return all_the_results;
 }
 
 function format_result(result, condition) {
