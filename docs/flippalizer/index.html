@@ -84,15 +84,14 @@
 
 <p class="commentary">"I don't always plan my attacks, but when I do, I always use Grapple's Frappling Pippalizer.... erm, Pappling Flappalizer.... ugh, This Page!! (Remind me again how much these endorsements pay?)"</p>
 
-<div class="article">
-<hr/>
-<h1>Grapple's Pippling Flippalizer</h1>
+<div class="article" style="background-image: url('img/GrappleTruck.jpg'), url('img/GrappleBot.jpg'); background-repeat: no-repeat; background-position: left -10px, right -10px;">
+<h1 style="text-align: center;">Grapple's Pippling Flippalizer</h1>
 
-<div>
+<div style="width: 98%">
 
     <form>
-          <fieldset>
-              <legend>Deck</legend>
+          <fieldset style="background-color: white">
+              <legend style="background-color: white; border-radius: 6px;">Deck</legend>
               <label for="battleicons1">Battle Icons:</label>
               <select id="battleicons1">
                   <option value="X"></option>
@@ -237,12 +236,12 @@
 }
 </style>
 
-    <fieldset id="chosen_deck">
+    <fieldset id="chosen_deck" style="background-color: white">
         <legend>Chosen Deck</legend>
     </fieldset>
 
     <form>
-          <fieldset style="background-image: url('img/GrappleTruck.jpg'); background-repeat: no-repeat; background-position: right; ">
+          <fieldset id="chosen_deck" style="background-color: white">
               <legend>Query</legend>
               <label for="iterations">Iterations:</label>
               <input id="iterations" value="10000" size="6"/>
@@ -257,7 +256,7 @@
 </div>
 
 <br/> <br/> <br/> 
-        <fieldset div style="background-image: url('img/GrappleBot.jpg'); background-repeat: no-repeat; background-position: right;">
+    <fieldset>
         <legend>Results</legend>
         <table id="pip_results" border="1"></table>
     </fieldset>
