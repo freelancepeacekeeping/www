@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="/favicon.png">
-        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" href="/favicon.png"></link>
+        <link rel="stylesheet" type="text/css" href="../style/style.css"></link>
         <title>Grapple's Pippling Flippalizer</title>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="js/lib.js"></script>
@@ -46,7 +46,7 @@
             let queries = $("#pipql").val().split(',');
 
             let pip_pattern = "";
-            for (child of $("#chosen_deck").children('div')) {
+            for (child of $("#chosen_deck").children('li')) {
                 pip_pattern += $(child).find("[type='hidden']").val();
             }
 
@@ -56,7 +56,7 @@
 
             pip_set = pattern_to_pip_set(pip_pattern);
 
-            //console.log("Running: run_test(" + pip_set_to_pattern(pip_set) + ", " + query + ", " + iteration_count + ", " + flip_count + ")");
+            console.log("Running: run_test(" + pip_pattern + ", " + queries + ", " + iteration_count + ", " + flip_count + ")");
             all_results = run_test( pip_set, queries, iteration_count, flip_count );
 
             let text = "<tr><th>Pip Pattern</th>";
@@ -90,42 +90,50 @@
 
 <div style="width: 98%">
 
-    <form>
-          <fieldset style="background-color: white">
+            <ul class="nobullet tightlist">
+                    <li>
+                    <fieldset style="background-color: white">
               <legend style="background-color: white; border-radius: 6px;">Deck</legend>
-              <label for="battleicons1">Battle Icons:</label>
-              <select id="battleicons1">
-                  <option value="X"></option>
-                  <option value="K">Black</option>
-                  <option value="B">Blue</option>
-                  <option value="G">Green</option>
-                  <option value="O">Orange</option>
-                  <option value="W">White</option>
-              </select>
-              <select id="battleicons2">
-                  <option value="X"></option>
-                  <option value="K">Black</option>
-                  <option value="B">Blue</option>
-                  <option value="G">Green</option>
-                  <option value="O">Orange</option>
-                  <option value="W">White</option>
-              </select>
-              <select id="battleicons3">
-                  <option value="X"></option>
-                  <option value="K">Black</option>
-                  <option value="B">Blue</option>
-                  <option value="G">Green</option>
-                  <option value="O">Orange</option>
-                  <option value="W">White</option>
-              </select>
-              <br/>
-              <fieldset style="float:left;">
+              <ul class="nobullet">
+                  <li>
+              <fieldset>
+                  <legend>Battle Icons:</legend>
+                  <select id="battleicons1">
+                      <option value="X"></option>
+                      <option value="K">Black</option>
+                      <option value="B">Blue</option>
+                      <option value="G">Green</option>
+                      <option value="O">Orange</option>
+                      <option value="W">White</option>
+                  </select>
+                  <select id="battleicons2">
+                      <option value="X"></option>
+                      <option value="K">Black</option>
+                      <option value="B">Blue</option>
+                      <option value="G">Green</option>
+                      <option value="O">Orange</option>
+                      <option value="W">White</option>
+                  </select>
+                  <select id="battleicons3">
+                      <option value="X"></option>
+                      <option value="K">Black</option>
+                      <option value="B">Blue</option>
+                      <option value="G">Green</option>
+                      <option value="O">Orange</option>
+                      <option value="W">White</option>
+                  </select>
+              </fieldset>
+                  </li>
+                  <li>
+              <fieldset>
                   <legend>Static</legend>
                   <label for="card_count">Count:</label>
                   <input id="card_count"/>
                   <input type="button" value="Add" onClick="add_pipset()"/>
               </fieldset>
-              <fieldset style="float:left;">
+                  </li>
+                  <li>
+              <fieldset>
                   <legend>Varying</legend>
                   <label for="varying_start">Start:</label>
                   <input id="varying_start" size="2"/>
@@ -136,13 +144,38 @@
                   <br/>
                   <input type="button" value="Add Range" onClick="add_ranged_pipset()"/>
               </fieldset>
-              <fieldset style="float:right;">
+                  </li>
+                  <li>
+              <fieldset>
                   <legend>Pip Pattern</legend>
                   <label>Text:</label>
                   <input id="pip_pattern"/><br/>
               </fieldset>
+                  </li>
+              </ul>
           </fieldset>
-    </form>
+          </li>
+
+          <li>
+              <fieldset style="background-color: white">
+        <legend>Chosen Deck</legend>
+        <ul class="nobullet tightlist" id="chosen_deck">
+        </ul>
+    </fieldset>
+          </li>
+          <li>
+          <fieldset style="background-color: white">
+              <legend>Query</legend>
+              <label for="iterations">Iterations:</label>
+              <input id="iterations" value="10000" size="6"/>
+              <label for="flip">Flip:</label>
+              <input id="flip" value="2" size="2"/>
+              <br/>
+              <label for="pipql" style="display: block;">PIPQL Query:</label>
+              <textarea id="pipql" rows="6" cols="80" style="display: block;"></textarea>
+              <button type="button" onClick="test_from_form()">Run Query</button>
+          </fieldset>
+          </li>
 
     <script>
         function remove_pipset(element) {
@@ -200,7 +233,7 @@
             icon_data = get_icons();
 
             // Build HTML
-            let text = '<div class="pipset"><input type="hidden" value="' + icon_data[0] + count_code +'"/><img class="close" src="img/x-square.svg" onclick="remove_pipset(this)">' + icon_data[1] + ' &times; ' + count_text + '</div>';
+            let text = '<li class="pipset"><input type="hidden" value="' + icon_data[0] + count_code +'"/><img class="close" src="img/x-square.svg" onclick="remove_pipset(this)">' + icon_data[1] + ' &times; ' + count_text + '</li>';
             // Append HTML
             $("#chosen_deck").append(text);
         }
@@ -226,7 +259,7 @@
 
 <style>
 .pipset {
-   float: left;
+   /*float: left; */
    padding: 2px;
    margin: 2px;
    font-size: 3em;
@@ -235,32 +268,45 @@
     float: right;
     cursor: pointer;
 }
+.tightlist {
+    display: inline-block;
+}
+.nobullet li {
+    list-style-type: none;
+}
+
+#pip_results {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#pip_results td, #pip_results th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#pip_results tr:nth-child(even){background-color: #f2f2f2;}
+
+#pip_results tr:hover {background-color: #ddd;}
+
+#pip_results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ffef00;
+  color: blue;
+}
+
 </style>
 
-    <fieldset id="chosen_deck" style="background-color: white">
-        <legend>Chosen Deck</legend>
-    </fieldset>
-
-    <form>
-          <fieldset id="chosen_deck" style="background-color: white">
-              <legend>Query</legend>
-              <label for="iterations">Iterations:</label>
-              <input id="iterations" value="10000" size="6"/>
-              <label for="flip">Flip:</label>
-              <input id="flip" value="2" size="2"/>
-              <br/>
-              <label for="pipql">PIPQL Query:</label>
-              <textarea id="pipql" rows="6" cols="40"></textarea>
-              <button type="button" onClick="test_from_form()">Run Query</button>
-          </fieldset>
-    </form>
-</div>
-
+<li>
 <br/> <br/> <br/> 
     <fieldset>
         <legend>Results</legend>
-        <table id="pip_results" border="1"></table>
+        <table id="pip_results"></table>
     </fieldset>
+</li>
+</ul>
 
     <br/><br/>
 
