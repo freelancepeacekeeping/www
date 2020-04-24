@@ -2,8 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/favicon.png">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <title>Grapple's Pippling Flippalizer</title>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="js/lib.js"></script>
+    <style>
+        .pipset {
+            border: 1px solid;
+        }
+    </style>
+</head>
 
     <!--
         TODO: UI. Have a pip color chooser that lets you choose from the 5 colors. Have a data field for the number 
@@ -24,26 +34,29 @@
               Or should it be more specific, i.e.:    range(W,3,12) range(O,37,28). A fourth parameter could be the step.
               Ranges would lead to tables being output, which would include the pattern as a first column and the number 
               of cards as a second. 
+        TODO: Make white=+2 a default-on option. 
     -->
 
 
     <script>
         function test_from_form() {
-            flip_count=parseInt($("#flip_count").val() );
-            iteration_count=parseInt( $("#iteration_count").val() );
-            queries=$("#query").val().split(',');
-            pip_pattern=$("#pip_pattern").val();
-            // colours(*)=4
+            let flip_count = parseInt($("#flip").val() );
+            let iteration_count = parseInt( $("#iterations").val() );
+            let queries = $("#pipql").val().split(',');
+
+            let pip_pattern = "";
+            for (child of $("#chosen_deck").children('div')) {
+                pip_pattern += $(child).find("[type='hidden']").val();
+            }
+
+            if(pip_pattern == "") {
+                pip_pattern = $("#pip_pattern").val();
+            }
+
             pip_set = pattern_to_pip_set(pip_pattern);
+
             //console.log("Running: run_test(" + pip_set_to_pattern(pip_set) + ", " + query + ", " + iteration_count + ", " + flip_count + ")");
             all_results = run_test( pip_set, queries, iteration_count, flip_count );
-
-            /*
-            text = "";
-            for (let i = 0; i < results.length; i++) {
-                text += queries[i] + " &rarr; " + format_result(results[i], queries[i]) + "<br/>";
-            }
-            */
 
             let text = "<tr><th>Pip Pattern</th>";
             for (query of queries) {
@@ -65,18 +78,194 @@
     </script>
     </head>
     <body>
-<h2>Pip Tester</h2>
+<h1 id='sitetitle'><a href="../index.html">Freelance Peace Keeping</a></h1>
+<div class="content" style="width: 90%;">
+
+<p class="commentary">"I don't always plan my attacks, but when I do, I always use Grapple's Frappling Pippalizer.... erm, Pappling Flippalizer!"</p>
+
+<div class="article">
+<hr/>
+<h1>Grapple's Pippling Flippalizer</h1>
+
+<div style="background-image: url('img/GrappleTruck.jpg'); background-repeat: no-repeat; background-position: right 200px; ">
 
     <form>
-        <label>Deck Pips (eg: WG12 OK28)</label><input id="pip_pattern"/><br/>
-        <label>Flips (eg: flip X cards)</label><input id="flip_count"/><br/>
-        <label>Iterations (how many times to test)</label><input id="iteration_count"/><br/>
-        <label>PIPQL Query (eg: colours(*)=4)</label><input id="query"/><br/>
-        <button type="button" onClick="test_from_form()">Calculate</button>
+          <fieldset>
+              <legend>Deck</legend>
+              <label for="battleicons1">Battle Icons:</label>
+              <select id="battleicons1">
+                  <option value="X"></option>
+                  <option value="K">Black</option>
+                  <option value="B">Blue</option>
+                  <option value="G">Green</option>
+                  <option value="O">Orange</option>
+                  <option value="W">White</option>
+              </select>
+              <select id="battleicons2">
+                  <option value="X"></option>
+                  <option value="K">Black</option>
+                  <option value="B">Blue</option>
+                  <option value="G">Green</option>
+                  <option value="O">Orange</option>
+                  <option value="W">White</option>
+              </select>
+              <select id="battleicons3">
+                  <option value="X"></option>
+                  <option value="K">Black</option>
+                  <option value="B">Blue</option>
+                  <option value="G">Green</option>
+                  <option value="O">Orange</option>
+                  <option value="W">White</option>
+              </select>
+              <br/>
+              <fieldset style="float:left;">
+                  <legend>Static</legend>
+                  <label for="card_count">Count:</label>
+                  <input id="card_count"/>
+                  <input type="button" value="Add" onClick="add_pipset()"/>
+              </fieldset>
+              <fieldset style="float:left;">
+                  <legend>Varying</legend>
+                  <label for="varying_start">Start:</label>
+                  <input id="varying_start" size="2"/>
+                  <label for="varying_end">End:</label>
+                  <input id="varying_end" size="2"/>
+                  <label for="varying_step">Step:</label>
+                  <input id="varying_step" value="1" size="2"/>
+                  <br/>
+                  <input type="button" value="Add Range" onClick="add_ranged_pipset()"/>
+              </fieldset>
+              <fieldset style="float:right;">
+                  <legend>Pip Pattern</legend>
+                  <label>Text:</label>
+                  <input id="pip_pattern"/><br/>
+              </fieldset>
+          </fieldset>
     </form>
-    <br/><br/>
-    <table id="pip_results" border="1"></table>
 
+    <script>
+        function remove_pipset(element) {
+            $(element).parent().remove();
+        }
+        function icon_letter_to_img_html(letter) {
+            switch(letter) {
+                case "O" :
+                    return '<img src="img/piporange.png"/>';
+                case "B" :
+                    return '<img src="img/pipblue.png"/>';
+                case "K" :
+                    return '<img src="img/pipblack.png"/>';
+                case "W" :
+                    return '<img src="img/pipwhite.png"/>';
+                case "G" :
+                    return '<img src="img/pipgreen.png"/>';
+                default:
+                    return '';
+            }
+        }
+        function get_icons() {
+            // get the three pip colors
+            let battleicons_1=$("#battleicons1").val();
+            let battleicons_2=$("#battleicons2").val();
+            let battleicons_3=$("#battleicons3").val();
+
+            // if all three are X, then use the blank pip. Otherwise ignore X
+            let img_text = "";
+            let pip_text = "";
+            if(battleicons_1 == "X" && battleicons_2 == "X" && battleicons_3 == "X") {
+                pip_text = "X";
+                img_text = '<img src="img/pipblank.png"/>';
+            } else {
+                if(battleicons_1 != "X") {
+                    pip_text += battleicons_1;
+                    img_text += icon_letter_to_img_html(battleicons_1);
+                }
+                if(battleicons_2 != "X") {
+                    pip_text += battleicons_2;
+                    img_text += icon_letter_to_img_html(battleicons_2);
+                }
+                if(battleicons_3 != "X") {
+                    pip_text += battleicons_3;
+                    img_text += icon_letter_to_img_html(battleicons_3);
+                }
+            }
+            return [pip_text, img_text];
+        }
+        function add_pipset() {
+            let card_count=$("#card_count").val();
+            append_pipset_html(card_count, card_count);
+        }
+        function append_pipset_html(count_code, count_text) {
+            icon_data = get_icons();
+
+            // Build HTML
+            let text = '<div class="pipset"><input type="hidden" value="' + icon_data[0] + count_code +'"/><img class="close" src="img/x-square.svg" onclick="remove_pipset(this)">' + icon_data[1] + ' &times; ' + count_text + '</div>';
+            // Append HTML
+            $("#chosen_deck").append(text);
+        }
+        function add_ranged_pipset() {
+            let varying_start=$("#varying_start").val();
+            let varying_end=$("#varying_end").val();
+            let varying_step=$("#varying_step").val();
+
+            let count_code = varying_start + ':' + varying_end;
+            if(varying_step != "" && varying_step != "1") {
+                count_code += ':' + varying_step;
+            }
+            
+            let count_text = varying_start + " &rarr;";
+            if(varying_step != "" && varying_step != "1") {
+                count_text += '<sup style="font-size: 0.5em;">' + varying_step + '</sup>';
+            }
+            count_text += ' ' + varying_end;
+
+            append_pipset_html(count_code, count_text);
+        }
+    </script>
+
+<style>
+.pipset {
+   float: left;
+   padding: 2px;
+   margin: 2px;
+   font-size: 3em;
+}
+.pipset .close {
+    float: right;
+    cursor: pointer;
+}
+</style>
+
+    <fieldset id="chosen_deck">
+        <legend>Chosen Deck</legend>
+    </fieldset>
+
+    <form>
+          <fieldset>
+              <legend>Query</legend>
+              <label for="iterations">Iterations:</label>
+              <input id="iterations" value="10000" size="6"/>
+              <label for="flip">Flip:</label>
+              <input id="flip" value="2" size="2"/>
+              <br/>
+              <label for="pipql">PIPQL Query:</label>
+              <textarea id="pipql" rows="6" cols="40"></textarea>
+              <button type="button" onClick="test_from_form()">Run Query</button>
+          </fieldset>
+    </form>
+</div>
+
+<br/> <br/> <br/> 
+        <fieldset div style="background-image: url('img/GrappleBot.jpg'); background-repeat: no-repeat; background-position: right;">
+        <legend>Results</legend>
+        <table id="pip_results" border="1"></table>
+    </fieldset>
+
+    <br/><br/>
+
+    <hr/>
+
+    <div class="sidebar-right">
     <h3>PIPQL Help</h3>
     <p>There are currently two functions available in PIPQL: </p>
     <ol>
@@ -93,6 +282,8 @@
     <p>Decks are described (until a nicer UI is made) as pieces of text consisting of the pips on a card type, followed by the number of those cards. O=Orange, B=Blue, K=Black, W=White, G=Green. Whitespace is allowed to improve readability. </p>
 
     <p>Decks can include ranges, leading to a tabular response. These are written with a start, end, and step, so that "G12:0:3" will test the deck with 12, 9, 6, 3, and 0 one Green battle iconed cards in the deck. It's up to you to ensure you are balancing this with another range that goes the other way to replace the removed cards with one Green battle icon. </p>
+
+    <p>Note that you can use whatever single character notation you wish for battle icon colors, barring W. You'll only get the two extra flip effect if you use a W to represent White. Should you need to represent a blank pip card, feel free, prior to a dedicated UI, to invent your own notation. </p>
 
     <h3>PIPQL Examples</h3>
     <ul>
@@ -114,6 +305,9 @@
 
     <h3>Provisos</h3>
     <p>Enter weird input, you'll get weird behaviour. Enter a huge number of iterations, your browser will lock up. 100000 is probably as high as you want/need to go. </p>
+    </div>
+
+    </div>
 
     </body>
     </html>
