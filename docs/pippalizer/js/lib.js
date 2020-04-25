@@ -1,3 +1,5 @@
+// License: MPL-2.0
+// https://github.com/freelancepeacekeeping/www/tree/master/docs/pippalizer
 
 // Knuth Fisher-Yates algorithm
 function deck_shuffle(arr) {
