@@ -20,4 +20,6 @@ Pip patterns use + to combine. So OG5+BK2 etc.
 
 Keywords are always capitalized. Bold, Tough, Pierce, Plan.
 
+Wave N is always capitalized.  "In Wave 4" etc.
 
+Sideboard is always capitalized.
