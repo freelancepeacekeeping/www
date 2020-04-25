@@ -1,6 +1,6 @@
 
-When referring to a property of a character, it is 9-Stars not 9-stars 9 Stars or 9 stars. 
-When referring to the star cost in general, it is 9 stars, not 9-Stars. 
+When referring to a property of a character (in essence a noun), it is 9-Stars not 9-stars 9 Stars or 9 stars. 
+When referring to the star cost in general (in essence an adjective), it is 9 stars, not 9-Stars. 
 
 "At 12 stars, Bob is..." vs "Bob is a 12-Star card" vs "Bob, costing 12 stars," vs "Bob [12-Star] is".
 
