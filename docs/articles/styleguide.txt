@@ -4,6 +4,8 @@ When referring to the star cost in general (in essence an adjective), it is 9 st
 
 "At 12 stars, Bob is..." vs "Bob is a 12-Star card" vs "Bob, costing 12 stars," vs "Bob [12-Star] is".
 
+When parenthesizing a star cost, [] is used, not () or {}. 
+
 Bot-mode not bot-mode, Bot Mode, Bot mode, bot mode. Always capitalized; never a space; 'm' is never capitalized. 
 
 Health not HP; except when talking about OCTGN's Deck Editor. Health is always capitalized when referring to the Heart icon. 
