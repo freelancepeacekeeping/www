@@ -26,6 +26,29 @@
 s {
     font-size: 0.5em;
 }
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #ffef00;
+  color: blue;
+}
 </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,40 +78,38 @@ s {
 
 <p>By running a pip pattern of 21WG15BK with various battle icon replacements for the removed 4 cards, we can use the Pippalizer to see how our changes of Grapple's effect change: </p>
 
-TODO: Pippalizer Screenshot
-<pre>
-Pip Pattern	colours(*)=4
-WG4 73%  (our current approach)
-WK4	71%
-W4	71%
-G2W2	69%
-W3OK1	68%
-B2W2	67%
-W3OO1	65%
-G2B2	65%
-B4	64%
-W1OKG3	64%
-OK2W2	63%
-W2OK2	62%
-O2W2	58%
-OK4	54%
-OB4	54%
-O4	47%
-X4	47%
-</pre>
+<table>
+    <tr><th>Pip Pattern</th><th>colours(*)=4</th></tr>
+    <tr><td>WG4</td><td>73% (current)</td>
+    <tr><td>WK4</td><td>71%</td>
+    <tr><td>W4</td><td>71%</td>
+    <tr><td>G2W2</td><td>69%</td>
+    <tr><td>W3OK1</td><td>68%</td>
+    <tr><td>B2W2</td><td>67%</td>
+    <tr><td>W3OO1</td><td>65%</td>
+    <tr><td>G2B2</td><td>65%</td>
+    <tr><td>B4</td><td>64%</td>
+    <tr><td>W1OKG3</td><td>64%</td>
+    <tr><td>OK2W2</td><td>63%</td>
+    <tr><td>W2OK2</td><td>62%</td>
+    <tr><td>O2W2</td><td>58%</td>
+    <tr><td>OK4</td><td>54%</td>
+    <tr><td>OB4</td><td>54%</td>
+    <tr><td>O4</td><td>47%</td>
+    <tr><td>X4</td><td>47%</td>
+</table>
 
 <p>We can see that replacing WG cards with W cards (or WK, or feasibly WB if they existed) has the least impact, losing us only 2 percentage points of Grapple-success. At the other end of the spectrum we see that bringing in O cards is costly, in fact, as costly as adding no-pip cards. Incidentally, this is why the excellent Lucky Vest card mentioned earlier doesn't make the deck, it lacks a pip. We can also see that replacing WG cards with G cards is almost as good as replacing with W cards. Let's do a few more pippalizing runs to narrow things down:</p>
 
-TODO: Pippalizer Screenshot
-<pre>
-Pip Pattern	colours(*)=4
-WG4 73%  (our current approach)
-W4	71%  (or WK)
-W2G2	68%
-G4	65%
-BG4	64%
-WOB4	56%
-</pre>
+<table>
+    <tr><th>Pip Pattern</th><th>colours(*)=4</th></tr>
+    <tr><td>WG4</td><td>73% (current)</td>
+    <tr><td>W4</td><td>71%</td>
+    <tr><td>W2G2</td><td>68%</td>
+    <tr><td>G4</td><td>65%</td>
+    <tr><td>BG4</td><td>64%</td>
+    <tr><td>WOB4</td><td>56%</td>
+</table>
 
 <p>Given these numbers, let's look to the white and green-pipped cards. We could look to WK, but the only Waves 1-4 WK card is Swerve, and we are only rarely going to want to flip Grapple to alt mode before he's attacked.</p>
 
