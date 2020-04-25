@@ -271,6 +271,13 @@ function run_test(pip_sets, conditions, iteration_count, flip_count) {
             }
         }
 
+        if(deck.length < 2) {
+            // TODO: This needs to be replaced with error throwing
+            //       It also should happen less often as the UI gets input validation
+            alert("The " + pip_set_to_pattern(pip_set) + " deck has less than 2 cards. Skipping that test run. ");
+            continue;
+        }
+
         let result_list = [];
         for (let i = 0; i < conditions.length; i++) {
             result_list.push(0);
