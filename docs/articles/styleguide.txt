@@ -1,0 +1,18 @@
+
+9-stars not 9-Stars 9 Stars or 9 stars.
+
+Bot-mode not bot-mode, Bot Mode, Bot mode, bot mode. Always capitalized; never a space; 'm' is never capitalized. 
+
+Health not HP; except when talking about OCTGN's Deck Editor. Health is always capitalized when referring to the Heart icon. 
+
+Sword/Defence icons are represented as Attack and Defence. Always capitalized. 
+Attack damage on the other hand is not capitalized; i.e. 'attack damage'. 
+
+Try to use 'battle icon' instead of pip.
+If using pip, it is 'blue-pip', blue-orange-pip etc.
+
+Pip patterns use + to combine. So OG5+BK2 etc.
+
+Keywords are always capitalized. Bold, Tough, Pierce, Plan.
+
+
