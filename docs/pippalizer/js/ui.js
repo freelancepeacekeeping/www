@@ -17,7 +17,7 @@ function test_from_form() {
 
     pip_set = pattern_to_pip_set(pip_pattern);
 
-    console.log("Running: run_test(" + pip_pattern + ", " + queries + ", " + iteration_count + ", " + flip_count + ")");
+    //console.log("Running: run_test(" + pip_pattern + ", " + queries + ", " + iteration_count + ", " + flip_count + ")");
     all_results = run_test( pip_set, queries, iteration_count, flip_count );
 
     let text = "<tr><th>Pip Pattern</th>";
