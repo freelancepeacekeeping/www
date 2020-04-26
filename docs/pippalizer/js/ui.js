@@ -1,3 +1,6 @@
+// License: MPL-2.0
+// https://github.com/freelancepeacekeeping/www/tree/master/docs/pippalizer
+
 function test_from_form() {
     let flip_count = parseInt($("#flip").val() );
     let iteration_count = parseInt( $("#iterations").val() );
