@@ -101,6 +101,16 @@ function pip_set_to_pattern(pip_set) {
     return text;
 }
 
+function cards_in_pip_set(pip_set) {
+    let total = 0;
+    for (let key in pip_set) {
+        if (pip_set.hasOwnProperty(key)) {
+            total += parseInt(pip_set[key]);
+        }
+    }
+    return total;
+}
+
 // Count how many colours show
 function count_colours(flip_result, pip_match) {
     colour_count = 0;

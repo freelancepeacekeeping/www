@@ -20,14 +20,14 @@ function test_from_form() {
     //console.log("Running: run_test(" + pip_pattern + ", " + queries + ", " + iteration_count + ", " + flip_count + ")");
     all_results = run_test( pip_set, queries, iteration_count, flip_count );
 
-    let text = "<tr><th>Pip Pattern</th>";
+    let text = "<tr><th>Pip Pattern</th><th>Deck Size</th>";
     for (let query of queries) {
         text += "<th>" + query + "</th>";
     }
     text += "</tr>";
     $("#pip_results").html(text);
     for(let results of all_results) {
-        text = "<tr><td>" + pip_set_to_pattern(results['pipset']) + "</td>";
+        text = "<tr><td>" + pip_set_to_pattern(results['pipset']) + "</td><td>" + cards_in_pip_set(results['pipset']) + "</td>";
         for (let i = 0; i < results['result'].length; i++) {
             text += "<td>" + format_result(results['result'][i], queries[i]) + "</td>";
         }
