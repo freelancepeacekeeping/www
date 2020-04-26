@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" href="/favicon.png"></link>
+        <link rel="stylesheet" type="text/css" href="../style/style.css"></link>
+        <link rel="stylesheet" type="text/css" href="style/style.css"></link>
+        <title>Grapple's Flippin' Pippalizer</title>
+    </head>
+    <body>
+        <h1 id='sitetitle'><a href="../index.html">Grapple's Flippin' Pippalizer</a></h1>
+        <div class="content">
+            <div class="article">
+                <h3>PIPQL Manual</h3>
+                <p>There are currently two functions available in PIPQL: </p>
+                <ol>
+                    <li>count. This counts the number of times a pip shows. Its parameter is unique, so count(O) is the same as count(OO); that is the second O is meaningless. Using count(*) is a shorthand to count all pips that show.  </li> 
+                    <li>colours/colors. This counts the number of times a colour shows. Again the parameter is unique, so colours(OO) matches colours(O). colours(*) counts all the colours, colours(OB) would count how often an O or B shows. colours(OB) will never be greater than 2; as an     example. </li> 
+                </ol>
+     
+                <p>Compound queries can be entered above in two ways. They can be joined together with ' AND ' to form the same query (see Ultra Magnus example below), or they can be run in parallel by separating with a comma. </p>
+                <p>If a query has an operator, it will let you know the %age of times that that operation is true. i.e. '=4' will tell you how often the answer was 4. </p> 
+                <p>If a query does not have an operator, it will return the average (mean) of the values calculated. </p>
+                <p>Whitespace is allowed in queries to improve readability. </p>
+            </div>
+        </div>
+    </body>
+</html>

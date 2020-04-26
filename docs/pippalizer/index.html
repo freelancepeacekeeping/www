@@ -5,15 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/favicon.png"></link>
         <link rel="stylesheet" type="text/css" href="../style/style.css"></link>
+        <link rel="stylesheet" type="text/css" href="style/style.css"></link>
         <title>Grapple's Flippin' Pippalizer</title>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="js/lib.js"></script>
-    <style>
-        .pipset {
-            border: 1px solid;
-        }
-    </style>
-</head>
+        <script src="js/ui.js"></script>
+        <script>
+            function toggleHelp(help_id) {
+                $( "#" + help_id ).toggle('show');
+            }
+        </script>
+    </head>
 
     <!--
         TODO: UI. Have a pip color chooser that lets you choose from the 5 colors. Have a data field for the number 
@@ -38,66 +40,35 @@
         TODO: Show a running total in the Chosen Deck section.
     -->
 
-
-    <script>
-        function test_from_form() {
-            let flip_count = parseInt($("#flip").val() );
-            let iteration_count = parseInt( $("#iterations").val() );
-            let queries = $("#pipql").val().split(',');
-
-            let pip_pattern = "";
-            for (child of $("#chosen_deck").children('li')) {
-                pip_pattern += $(child).find("[type='hidden']").val();
-            }
-
-            if(pip_pattern == "") {
-                pip_pattern = $("#pip_pattern").val();
-            }
-
-            pip_set = pattern_to_pip_set(pip_pattern);
-
-            console.log("Running: run_test(" + pip_pattern + ", " + queries + ", " + iteration_count + ", " + flip_count + ")");
-            all_results = run_test( pip_set, queries, iteration_count, flip_count );
-
-            let text = "<tr><th>Pip Pattern</th>";
-            for (query of queries) {
-                text += "<th>" + query + "</th>";
-            }
-            text += "</tr>";
-            $("#pip_results").html(text);
-            for(let results of all_results) {
-                text = "<tr><td>" + pip_set_to_pattern(results['pipset']) + "</td>";
-                for (let i = 0; i < results['result'].length; i++) {
-                    text += "<td>" + format_result(results['result'][i], queries[i]) + "</td>";
-                }
-                text += "</tr>";
-
-                $("#pip_results").append(text);
-            }
-            return false;
-        }
-    </script>
     </head>
     <body>
-<h1 id='sitetitle'><a href="../index.html">Freelance Peace Keeping</a></h1>
+        <!--<h1 id='sitetitle'><a href="../index.html">Freelance Peace Keeping</a></h1> -->
+<h1 id='sitetitle'><a href="../index.html">Grapple's Flippin' Pippalizer</a></h1>
 <div class="content" style="width: 90%;">
 
 <p class="commentary">"I don't always plan my attacks, but when I do, I always use Grapple's Frippling Pippalizer.... erm, Pappling Flappalizer.... gah, This Page!! (Remind me again how much these endorsements pay?)"</p>
 
 <div class="article" style="background-image: url('img/GrappleTruck.jpg'), url('img/GrappleBot.jpg'); background-repeat: no-repeat; background-position: left -10px, right -10px;">
-<h1 style="text-align: center;">Grapple's Flippin' Pippalizer</h1>
-<br/><br/>
 
-<div style="width: 98%">
+<br/>
+
+
+<div style="width: 98%; margin-left:auto; margin-right:auto;">
 
             <ul class="nobullet tightlist">
-                    <li>
+                <li>
                     <fieldset style="background-color: white">
-              <legend style="background-color: white; border-radius: 6px;">Deck</legend>
+                    <legend style="background-color: white; border-radius: 6px;">Deck</legend>
+                    <span class="help">
+                        <input type="image" onclick="toggleHelp('help-deck');" src="img/help-circle.svg" class="help-icon"/>
+                        <span class="help-text" id="help-deck">
+                            Here you add pip sets to your deck. You select the colours of pips and then enter the number of cards in the Static section, or use the Varying section to create a range for that pip set. When you hit Add, they'll appear in the Chosen Deck section. Be careful with Varying to plan your ranges so your total deck size is as you intend it to be (usually 40). 
+                        </span>
+                    </span>
               <ul class="nobullet">
                   <li>
               <fieldset>
-                  <legend>Battle Icons:</legend>
+                  <legend>Generate Battle Icons</legend>
                   <select id="battleicons1">
                       <option value="X"></option>
                       <option value="K">Black</option>
@@ -122,18 +93,12 @@
                       <option value="O">Orange</option>
                       <option value="W">White</option>
                   </select>
-<!--                  <input style="float: right; background-color: blue;  border-radius: 25px;" type="image" src="img/help-circle.svg"/> -->
-              </fieldset>
-                  </li>
-                  <li>
               <fieldset>
                   <legend>Static</legend>
                   <label for="card_count">Count:</label>
                   <input id="card_count"/>
                   <input type="button" value="Add" onClick="add_pipset()"/>
               </fieldset>
-                  </li>
-                  <li>
               <fieldset>
                   <legend>Varying</legend>
                   <label for="varying_start">Start:</label>
@@ -145,8 +110,13 @@
                   <br/>
                   <input type="button" value="Add Range" onClick="add_ranged_pipset()"/>
               </fieldset>
-                  </li>
-                  <li>
+              </fieldset>
+                    <span class="help">
+                        <input type="image" onclick="toggleHelp('help-pip-pattern');" src="img/help-circle.svg" class="help-icon"/>
+                        <span class="help-text" id="help-pip-pattern">
+                            The Pip Pattern is an Experts feature. Rather than building the deck, you can enter it in one go. For example, "W6 G4 OK15 BK15" would be a deck with 6 white, 4 green, 17 orange-black, and 17 blue-black pipped cards. An example range is "B3:15:2" to indicate varying the blue-pip count from 3, to 15, in steps of 2. X is recommended for no-pip cads. 
+                        </span>
+                    </span>
               <fieldset>
                   <legend>Pip Pattern</legend>
                   <label>Text:</label>
@@ -159,18 +129,43 @@
 
           <li>
               <fieldset style="background-color: white">
-        <legend>Chosen Deck</legend>
-        <ul class="nobullet tightlist" id="chosen_deck">
-        </ul>
-    </fieldset>
+                  <legend>Chosen Deck</legend>
+                  <span class="help">
+                      <input type="image" onclick="toggleHelp('help-chosen-deck');" src="img/help-circle.svg" class="help-icon"/>
+                      <span class="help-text" id="help-chosen-deck">
+                          As you add static or varying pip sets to your deck, they appear here. 
+                      </span>
+                  </span>
+                  <ul class="nobullet tightlist" id="chosen_deck">
+                  </ul>
+              </fieldset>
           </li>
           <li>
           <fieldset style="background-color: white">
               <legend>Query</legend>
+              <span class="help">
+                  <input type="image" onclick="toggleHelp('help-query');" src="img/help-circle.svg" class="help-icon"/>
+                  <span class="help-text" id="help-query">
+                      You can set the number of times to test (10000 or 100000 are recommended), how many cards to flip, and pick from various standard queries. You can also write your own query. <br/><br/>
+                      See <a target="pipql_manual" href="pipql-manual.html">the manual</a> for more details on PIPQL. 
+                  </span>
+              </span>
               <label for="iterations">Iterations:</label>
               <input id="iterations" value="10000" size="6"/>
               <label for="flip">Flip:</label>
               <input id="flip" value="2" size="2"/>
+              <br/>
+              <label for="canned">Canned Queries:</label>
+              <select id="canned" onchange="replace_pipql('canned')">
+                  <option value=""></option>
+                  <option value="colours(*)=4">Grapple flipping 4 colours</option>
+                  <option value="count(W)&gt;1">Chromia flipping at least WW</option>
+                  <option value="count(O)&gt;=2 AND count(B)&gt;=2">Ultra Magnus flipping OOBB</option>
+                  <option value="colours(OK)=2,colours(BW)">Fortress Maximus flipping OK and BW</option>
+                  <option value="colours(WOB)=3">Private Red Alert flipping WOB</option>
+                  <option value="colours(*)&gt;2">Slipstream flipping &gt;2 colours</option>
+                  <option value="count(O),count(K)">Average number of orange/black in a flip</option>
+              </select>
               <br/>
               <label for="pipql" style="display: block;">PIPQL Query:</label>
               <textarea id="pipql" rows="6" cols="80" style="display: block;"></textarea>
@@ -178,181 +173,25 @@
           </fieldset>
           </li>
 
-    <script>
-        function remove_pipset(element) {
-            $(element).parent().remove();
-        }
-        function icon_letter_to_img_html(letter) {
-            switch(letter) {
-                case "O" :
-                    return '<img src="img/piporange.png"/>';
-                case "B" :
-                    return '<img src="img/pipblue.png"/>';
-                case "K" :
-                    return '<img src="img/pipblack.png"/>';
-                case "W" :
-                    return '<img src="img/pipwhite.png"/>';
-                case "G" :
-                    return '<img src="img/pipgreen.png"/>';
-                default:
-                    return '';
-            }
-        }
-        function get_icons() {
-            // get the three pip colors
-            let battleicons_1=$("#battleicons1").val();
-            let battleicons_2=$("#battleicons2").val();
-            let battleicons_3=$("#battleicons3").val();
 
-            // if all three are X, then use the blank pip. Otherwise ignore X
-            let img_text = "";
-            let pip_text = "";
-            if(battleicons_1 == "X" && battleicons_2 == "X" && battleicons_3 == "X") {
-                pip_text = "X";
-                img_text = '<img src="img/pipblank.png"/>';
-            } else {
-                if(battleicons_1 != "X") {
-                    pip_text += battleicons_1;
-                    img_text += icon_letter_to_img_html(battleicons_1);
-                }
-                if(battleicons_2 != "X") {
-                    pip_text += battleicons_2;
-                    img_text += icon_letter_to_img_html(battleicons_2);
-                }
-                if(battleicons_3 != "X") {
-                    pip_text += battleicons_3;
-                    img_text += icon_letter_to_img_html(battleicons_3);
-                }
-            }
-            return [pip_text, img_text];
-        }
-        function add_pipset() {
-            let card_count=$("#card_count").val();
-            append_pipset_html(card_count, card_count);
-        }
-        function append_pipset_html(count_code, count_text) {
-            icon_data = get_icons();
-
-            // Build HTML
-            let text = '<li class="pipset"><input type="hidden" value="' + icon_data[0] + count_code +'"/><img class="close" src="img/x-square.svg" onclick="remove_pipset(this)">' + icon_data[1] + ' &times; ' + count_text + '</li>';
-            // Append HTML
-            $("#chosen_deck").append(text);
-        }
-        function add_ranged_pipset() {
-            let varying_start=$("#varying_start").val();
-            let varying_end=$("#varying_end").val();
-            let varying_step=$("#varying_step").val();
-
-            let count_code = varying_start + ':' + varying_end;
-            if(varying_step != "" && varying_step != "1") {
-                count_code += ':' + varying_step;
-            }
-            
-            let count_text = varying_start + " &rarr;";
-            if(varying_step != "" && varying_step != "1") {
-                count_text += '<sup style="font-size: 0.5em;">' + varying_step + '</sup>';
-            }
-            count_text += ' ' + varying_end;
-
-            append_pipset_html(count_code, count_text);
-        }
-    </script>
-
-<style>
-.pipset {
-   /*float: left; */
-   padding: 2px;
-   margin: 2px;
-   font-size: 3em;
-}
-.pipset .close {
-    float: right;
-    cursor: pointer;
-}
-.tightlist {
-    display: inline-block;
-}
-.nobullet li {
-    list-style-type: none;
-}
-
-#pip_results {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#pip_results td, #pip_results th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#pip_results tr:nth-child(even){background-color: #f2f2f2;}
-
-#pip_results tr:hover {background-color: #ddd;}
-
-#pip_results th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #ffef00;
-  color: blue;
-}
-
-</style>
 
 <li>
 <br/> <br/> 
     <fieldset>
+        <span class="help">
+            <input type="image" onclick="toggleHelp('help-results');" src="img/help-circle.svg" class="help-icon"/>
+            <span class="help-text" id="help-results">
+                Your results appear here. You will get multiple rows if you used a varying range in one of your pipsets. 
+            </span>
+        </span>
         <legend>Results</legend>
         <table id="pip_results"></table>
     </fieldset>
 </li>
 </ul>
 
-    <br/><br/>
+    </div>
 
-    <hr/>
-
-    <div class="sidebar-right">
-    <h3>PIPQL Help</h3>
-    <p>There are currently two functions available in PIPQL: </p>
-    <ol>
-        <li>count. This counts the number of times a pip shows. Its parameter is unique, so count(O) is the same as count(OO); that is the second O is meaningless. Using count(*) is a shorthand to count all pips that show.  </li>
-        <li>colours/colors. This counts the number of times a colour shows. Again the parameter is unique, so colours(OO) matches colours(O). colours(*) counts all the colours, colours(OB) would count how often an O or B shows. colours(OB) will never be greater than 2; as an example. </li>
-    </ol>
-
-    <p>Compound queries can be entered above in two ways. They can be joined together with ' AND ' to form the same query (see Ultra Magnus example below), or they can be run in parallel by separating with a comma. </p>
-    <p>If a query has an operator, it will let you know the %age of times that that operation is true. i.e. '=4' will tell you how often the answer was 4. </p>
-    <p>If a query does not have an operator, it will return the average (mean) of the values calculated. </p>
-    <p>Whitespace is allowed in queries to improve readability. </p>
-
-    <h3>Deck Format</h3>
-    <p>Decks are described (until a nicer UI is made) as pieces of text consisting of the pips on a card type, followed by the number of those cards. O=Orange, B=Blue, K=Black, W=White, G=Green. Whitespace is allowed to improve readability. </p>
-
-    <p>Decks can include ranges, leading to a tabular response. These are written with a start, end, and step, so that "G12:0:3" will test the deck with 12, 9, 6, 3, and 0 one Green battle iconed cards in the deck. It's up to you to ensure you are balancing this with another range that goes the other way to replace the removed cards with one Green battle icon. </p>
-
-    <p>Note that you can use whatever single character notation you wish for battle icon colors, barring W. You'll only get the two extra flip effect if you use a W to represent White. Should you need to represent a blank pip card, feel free, prior to a dedicated UI, to invent your own notation. </p>
-
-    <h3>PIPQL Examples</h3>
-    <ul>
-        <li>Grapple flipping two pips &rarr;  colours(*)=4</li>
-        <li>Chromia flipping at least WW &rarr; count(W)&gt;1</li>
-        <li>Ultra Magnus flipping OOBB &rarr; count(O)&gt;=2 AND count(B)&gt;=2</li>
-        <li>Fortress Maximus flipping OK &rarr; colours(OK)=2</li>
-        <li>Private Red Alert flipping WOB &rarr; colours(WOB)=3</li>
-        <li>Slipstream flipping &gt;2 colours &rarr; colours(*)&gt;2</li>
-        <li>Average number of orange/black in a flip &rarr; count(O),count(K)</li>
-    </ul>
-
-    <h3>Deck Examples</h3>
-    <ul>
-        <li>O20B20 &rarr; A deck with 20 cards with one Orange battle icon, and 20 cards with one Blue battle icon</li>
-        <li>O20OB20 &rarr; A deck with 20 cards with one Orange battle icon, and 20 cards with one Blue battle icon AND one Orange icon</li>
-        <li>WG3:36:3 OK37:4:3 &rarr; This tests a range of decks, starting with one with 3 WhiteGreen cards and 37 OrangeBlack cards, moving in increments of 3 to a deck with 36 WhiteGreen cards and 4 OrangeBlack cards. </li>
-    </ul>
-
-    <h3>Provisos</h3>
-    <p>Enter weird input, you'll get weird behaviour. Enter a huge number of iterations, your browser will lock up. 100000 is probably as high as you want/need to go. </p>
     </div>
 
     </div>
