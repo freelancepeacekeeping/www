@@ -7,7 +7,7 @@ function test_from_form() {
     let queries = $("#pipql").val().split(',');
 
     let pip_pattern = "";
-    for (child of $("#chosen_deck").children('li')) {
+    for (let child of $("#chosen_deck").children('li')) {
         pip_pattern += $(child).find("[type='hidden']").val();
     }
 
@@ -21,7 +21,7 @@ function test_from_form() {
     all_results = run_test( pip_set, queries, iteration_count, flip_count );
 
     let text = "<tr><th>Pip Pattern</th>";
-    for (query of queries) {
+    for (let query of queries) {
         text += "<th>" + query + "</th>";
     }
     text += "</tr>";
@@ -57,6 +57,9 @@ function icon_letter_to_img_html(letter) {
             return '';
     }
 }
+
+let colour_map = { 'W' : 1, 'O' : 2, 'K' : 3, 'B' : 4, 'G' : 5 }
+
 function get_icons() {
     // get the three pip colors
     let battleicons_1=$("#battleicons1").val();
@@ -70,17 +73,22 @@ function get_icons() {
         pip_text = "X";
         img_text = '<img src="img/pipblank.png"/>';
     } else {
+        let pips = [];
         if(battleicons_1 != "X") {
-            pip_text += battleicons_1;
-            img_text += icon_letter_to_img_html(battleicons_1);
+            pips.push(battleicons_1);
         }
         if(battleicons_2 != "X") {
-            pip_text += battleicons_2;
-            img_text += icon_letter_to_img_html(battleicons_2);
+            pips.push(battleicons_2);
         }
         if(battleicons_3 != "X") {
-            pip_text += battleicons_3;
-            img_text += icon_letter_to_img_html(battleicons_3);
+            pips.push(battleicons_3);
+        }
+        // Custom sort these to the order WOKBG
+        pips = pips.sort( function(pip1, pip2) { return pip1 < pip2; } );
+
+        for ( let pip of pips ) {
+            pip_text += pip;
+            img_text += icon_letter_to_img_html(pip);
         }
     }
     return [pip_text, img_text];
