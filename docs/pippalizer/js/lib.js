@@ -290,7 +290,10 @@ function run_test(pip_sets, conditions, iteration_count, flip_count) {
             let white_pipped = false;
             let flip_count_tmp = flip_count;
             for (let flip_index = 0; flip_index < flip_count_tmp; flip_index++) {
-                result += deck[flip_index];
+                // protect from flip_count_tmp going off the end of the array
+                if(flip_index < deck.length) {
+                    result += deck[flip_index];
+                }
                 if(!white_pipped) {
                     if(deck[flip_index].includes("W")) {
                         flip_count_tmp += 2;
