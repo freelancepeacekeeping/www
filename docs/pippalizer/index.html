@@ -167,7 +167,8 @@
                   <option value=""></option>
                   <option value="count(O),count(K)">Average number of orange/black in a flip</option>
                   <option value="colours(WOKB)=4">Cerebros flipping WOKB</option>
-                  <option value="count(W)&gt;1">Chromia flipping at least WW</option>
+                  <option value="count(W)&gt;=2">Chromia flipping at least WW</option>
+                  <option value="count(O)&gt;=2">Electrified Spikes flipping OO</option>
                   <option value="colours(OK)=2,colours(BW)=2">Fortress Maximus flipping OK and BW</option>
                   <option value="colours(*)=4">Grapple flipping 4 colours</option>
                   <option value="count(O),colours(*)">Masters of Metallikato</option>
@@ -185,6 +186,34 @@
 
           <!--
         TODO: Canned queries:
+        Megatron, Fallen Hero; Energized Field O >= 1
+        Turbo Board, Galaxy Prime, Drag Strip, Blitzwing O >= 1 AND B >= 1
+        Private Red Alert, Opt Prime Gleaming, Silverbolt, Bluestreak O >= 1 AND B >= 1 AND W >= 1
+        Overwhelming Advantage at least WOKBG
+        Fuel Cache at least WOB  (no white)
+        Cindersaur OOOO
+        Sparkstalker OOO
+        Shock Absorbers, Cybertronian Bow O and B equal (not supported yet?)
+        Swarm 
+
+        Breakdown, Sgt Chromia B >= 2
+        Nautica, Whirl B >=1
+        Mirage B >= 1
+        Aimless B >= 3
+        
+        Skywarp Sneaky, Hound, Acute Reflexes, Erratic Cannon, Spinner Rims, Adaptive Plating, Slug-W2 W >= 1
+        Plasma Horns count(W),W>=4
+        Chromia Special ops, Bumblebee (Courageous Scout), Jazz, Bike Gang, Pteraxadon W >= 2
+        Mirage W>=3
+
+        Swoop-W2, Wolfwire, Tailwind G >= 1
+        Raider Chop shop G >= 1.  (Need an Exact Match as well; like:   exactly('G') )
+
+        Sgt Thundercracker Bot, Mindwipe, RR Disruptor Blade, Composite Armor K >= 1
+        Nightstick K >= 2
+        Concealing Contrails count(K)
+        Sgt Thundercracker Alt count(K)   (No white +2)
+
         Windblade flip-deck, is it more than 2-pipped?     (though this is a simple probablity one)
         Versatility, chance of 1 battle icon, and colours(*)
         Brawn, pierce 1 for each different color, +1 def for each different color
@@ -192,6 +221,17 @@
         Lucky Vest, at least 4 different color
         Smashdown, average number of colors flipped
           -->
+
+
+          <!--
+              TODO: Special situations:
+              Wearing Inverted.  Also W5 Belligerence/End Hostilities
+              Turn off white => 2
+              Rescue Patrol White
+              Slug White
+           -->
+
+
 
 
 <li>
