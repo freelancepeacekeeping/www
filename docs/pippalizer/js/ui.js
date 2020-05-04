@@ -125,7 +125,6 @@ function add_ranged_pipset() {
     append_pipset_html(count_code, count_text);
 }
 function replace_pipql(name) {
-    console.log("CALLED! " + name);
     let canned_query = $("#" + name + ' option:selected').val();
     if( canned_query != "") {
         $('#pipql').val(canned_query);
