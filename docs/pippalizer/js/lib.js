@@ -247,7 +247,7 @@ function precompile_statement(condition, flip_result) {
  *     'pipset' : String
  *     'result' : array of conditions.length values
  */
-function run_test(pip_sets, conditions, iteration_count, flip_count) {
+function run_test(pip_sets, conditions, iteration_count, flip_count, white_plus_two) {
 
     if(!Array.isArray(pip_sets)) {
         pip_sets = [pip_sets];
@@ -304,10 +304,12 @@ function run_test(pip_sets, conditions, iteration_count, flip_count) {
                 if(flip_index < deck.length) {
                     result += deck[flip_index];
                 }
-                if(!white_pipped) {
-                    if(deck[flip_index].includes("W")) {
-                        flip_count_tmp += 2;
-                        white_pipped = true;
+                if(white_plus_two) {
+                    if(!white_pipped) {
+                        if(deck[flip_index].includes("W")) {
+                            flip_count_tmp += 2;
+                            white_pipped = true;
+                        }
                     }
                 }
             }

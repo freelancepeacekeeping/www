@@ -5,6 +5,7 @@ function test_from_form() {
     let flip_count = parseInt($("#flip").val() );
     let iteration_count = parseInt( $("#iterations").val() );
     let queries = $("#pipql").val().split(',');
+    let white_plus_two = $("#white_plus_two").is(":checked");
 
     let pip_pattern = "";
     for (let child of $("#chosen_deck").children('li')) {
@@ -18,7 +19,7 @@ function test_from_form() {
     pip_set = pattern_to_pip_set(pip_pattern);
 
     //console.log("Running: run_test(" + pip_pattern + ", " + queries + ", " + iteration_count + ", " + flip_count + ")");
-    all_results = run_test( pip_set, queries, iteration_count, flip_count );
+    all_results = run_test( pip_set, queries, iteration_count, flip_count, white_plus_two );
 
     let text = "<tr><th>Pip Pattern</th><th>Deck Size</th>";
     for (let query of queries) {
