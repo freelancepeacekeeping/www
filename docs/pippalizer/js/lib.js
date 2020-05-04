@@ -95,7 +95,7 @@ function pip_set_to_pattern(pip_set) {
         // check if the property/key is defined in the object itself, not in parent
         if (pip_set.hasOwnProperty(key)) {
             count = pip_set[key];
-            text = text + key + count;
+            text = text + ' ' + key + count;
         }
     }
     return text;
