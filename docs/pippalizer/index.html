@@ -165,16 +165,16 @@
               <label for="canned">Canned Queries:</label>
               <select id="canned" onchange="replace_pipql('canned')">
                   <option value=""></option>
-                  <option value="colours(*)=4">Grapple flipping 4 colours</option>
-                  <option value="count(W)&gt;1">Chromia flipping at least WW</option>
-                  <option value="count(O)&gt;=2 AND count(B)&gt;=2">Ultra Magnus flipping OOBB</option>
-                  <option value="colours(OK)=2,colours(BW)=2">Fortress Maximus flipping OK and BW</option>
+                  <option value="count(O),count(K)">Average number of orange/black in a flip</option>
                   <option value="colours(WOKB)=4">Cerebros flipping WOKB</option>
+                  <option value="count(W)&gt;1">Chromia flipping at least WW</option>
+                  <option value="colours(OK)=2,colours(BW)=2">Fortress Maximus flipping OK and BW</option>
+                  <option value="colours(*)=4">Grapple flipping 4 colours</option>
+                  <option value="count(O),colours(*)">Masters of Metallikato</option>
                   <option value="count(O)&gt;=2 AND count(B)&gt;=2 AND count(W)&gt;=2">Metroplex flipping WWOOBB</option>
                   <option value="colours(WOB)=3">Private Red Alert flipping WOB</option>
                   <option value="colours(*)&gt;2">Slipstream flipping &gt;2 colours</option>
-                  <option value="count(O),colours(*)">Masters of Metallikato</option>
-                  <option value="count(O),count(K)">Average number of orange/black in a flip</option>
+                  <option value="count(O)&gt;=2 AND count(B)&gt;=2">Ultra Magnus flipping OOBB</option>
               </select>
               <br/>
               <label for="pipql" style="display: block;">PIPQL Query:</label>
