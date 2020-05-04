@@ -15,6 +15,7 @@
                 $( "#" + help_id ).toggle('show');
             }
         </script>
+        <script src="guid_to_pip.js"></script>
     </head>
 
     <!--
@@ -124,6 +125,9 @@
                   <legend>Pip Pattern</legend>
                   <label>Text:</label>
                   <input id="pip_pattern"/>
+                  <br/>
+                  <label>Load Pattern from .o8d File:</label>
+                  <input type="file" id="files" name="files" accept=".o8d"/>
               </fieldset>
                   </li>
               </ul>
@@ -212,5 +216,46 @@
     </div>
 
 <p class="footer">Comic Book images courtesy of tfwiki.net under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0</a>.  Icons MIT licensed from <a href="https://feathericons.com/">https://feathericons.com</a>.</p>
+
+
+
+
+
+
+<script>
+  function handleFileSelect(evt) {
+      var file = evt.target.files[0];   // FileList object
+      var reader = new FileReader();
+
+      reader.onload = (function(theFile) {
+        return function(e) {
+            txt = e.target.result;
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(txt, "text/xml");
+            deck = xmlDoc.getElementsByTagName("section")[1];
+            pip_set = {};
+            for ( card of deck.getElementsByTagName("card") ) {
+                guid = card.getAttribute('id');
+                qty = parseInt(card.getAttribute('qty'));
+                pips = "X";
+                if ( GUID_TO_ICONS[guid] ) {
+                    pips = GUID_TO_ICONS[guid];
+                }
+                if ( pip_set[pips] ) {
+                    pip_set[pips] += qty;
+                } else {
+                    pip_set[pips] = qty;
+                }
+            }
+
+            $("#pip_pattern").val( pip_set_to_pattern(pip_set) );
+        };
+      })(file);
+
+      reader.readAsText(file);
+  }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
     </body>
     </html>
