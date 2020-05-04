@@ -187,7 +187,7 @@ function has_operator(condition) {
  */
 function precompile_statement(condition, flip_result) {
     // Parse the condition
-    let found = condition.match(/([a-z_]+)\(([*OBKGW]+)\)([=<>]+)?(.*)?/);
+    let found = condition.match(/([A-Za-z_]+)\(([*OBKGW]+)\)([=<>]+)?(.*)?/);
     if(found) {
         let term = found[1]
         let pip_combination = found[2]
@@ -196,11 +196,11 @@ function precompile_statement(condition, flip_result) {
         // console.log("Parsed to term: "+term+", pc:"+pip_combination+", op:"+operator+", am:"+amount);
 
         let func_ptr = null;
-        if(term.match(/colou?rs/)) {
+        if(term.match(/colou?rs/i)) {
             func_ptr = function(fr) {
                 return count_colours(fr, pip_combination);
             }
-        } else if(term.match(/count/)) {
+        } else if(term.match(/count/i)) {
             func_ptr = function(fr) {
                 return count_pips(fr, pip_combination);
             }
