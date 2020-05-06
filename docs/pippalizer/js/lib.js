@@ -114,7 +114,7 @@ function cards_in_pip_set(pip_set) {
 // Count how many colours show
 function count_colours(flip_result, pip_match) {
     colour_count = 0;
-    if(flip_result.length > 1) {
+    if(flip_result.length > 0) {
         if(pip_match == '*' || pip_match.includes(flip_result.charAt(0))) {
             colour_count++;
         }
