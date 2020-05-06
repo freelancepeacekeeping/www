@@ -166,7 +166,10 @@
               <label for="canned">Canned Queries:</label>
               <select id="canned" onchange="replace_pipql('canned')">
                   <option value=""></option>
+                  <option value="count(W)&gt;=1">[W] Acute Reflexes, Skywarp, Hound, etc.</option>
                   <option value="count(W)&gt;=2">[WW] Bike Gang, Bumblebee, Chromia, Jazz, Pteraxadon</option>
+                  <option value="count(W)&gt;=3">[WWW] Mirage - Lone Wolf</option>
+                  <option value="count(W),count(W)&gt;4">[WWWW] Plasma Horns</option>
                   <option value="count(O)&gt;=2 AND count(B)&gt;=2 AND count(W)&gt;=2">[WWOOBB] Metroplex</option>
                   <option value="colours(WOKB)=4">[WOKB] Cerebros</option>
                   <option value="colours(WOKBG)=5">[WOKBG] Overwhelming Advantage</option>
@@ -187,7 +190,8 @@
                   <option value="count(G)&gt;=1">[G] Raider Chop Shop, Combiner Swoop, Wolfwire, Tailwind</option>
                   <option value="count(W),count(O),count(B),count(K),count(G)">Average number of each colour flipped</option>
                   <option value="colours(*)=4">Grapple flipping 4 colours</option>
-                  <option value="colours(*)">Colours flipped - Smashdown</option>
+                  <option value="colours(*)">Colours flipped - Smashdown, Versatility, Brawn</option>
+                  <option value="colours(*)&gt;4">At least 4 colours flipped - Lucky Vest</option>
                   <option value="count(O),colours(*)">Masters of Metallikato</option>
                   <option value="colours(*)&gt;2">Slipstream flipping &gt;2 colours</option>
                   <option value="">--- For the below: Uncheck +2 on White above ---</option>
@@ -196,6 +200,7 @@
                   <option value="count(B)=1">Sergeant Mirage</option>
                   <option value="count(K)=1,count(K)=2,count(K)=3">Sgt Thundercracker (alt)</option>
                   <option value="colours(*)=0,colours(*)=1,colours(*)=2,colours(*)=3">Colours flipped - Ratbat</option>
+                  <option value="colours(*)&gt;=2">Colours &gt;= 2 - Windblade</option>
               </select>
               <br/>
               <label for="pipql" style="display: block;">PIPQL Query:</label>
@@ -205,32 +210,15 @@
           </li>
 
           <!--
-        TODO: Canned queries:
-        Shock Absorbers, Cybertronian Bow O and B equal (not supported yet?)
-        
-        Skywarp Sneaky, Hound, Acute Reflexes, Erratic Cannon, Spinner Rims, Adaptive Plating, Slug-W2 W >= 1
-        Plasma Horns count(W),W>=4
-        DONE: Chromia Special ops, Bumblebee (Courageous Scout), Jazz, Bike Gang, Pteraxadon W >= 2
-        Mirage W>=3
+              TODO: Canned queries:
+              Shock Absorbers, Cybertronian Bow O and B equal (not supported yet?)
 
-        Windblade flip-deck, is it more than 2-pipped?     (though this is a simple probablity one)
-        Versatility, chance of 1 battle icon, and colours(*)
-        Brawn, pierce 1 for each different color, +1 def for each different color
-        Ratbat, repair 1 for each different color
-        Lucky Vest, at least 4 different color
-          -->
-
-
-          <!--
               TODO: Special situations:
               Wearing Inverted.  Also W5 Belligerence/End Hostilities
               Turn off white => 2: DONE; but would be nice to do it in query so a canned query could add the option
               Rescue Patrol White
               Slug White
            -->
-
-
-
 
 <li>
 <br/> <br/> 
