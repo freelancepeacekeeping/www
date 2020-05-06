@@ -38,7 +38,13 @@ function pattern_to_pip_set(pip_pattern) {
 
             pip_set[results[i]] = value_array;
         } else {
-            pip_set[results[i]] = results[i+1];
+            if(pip_set[results[i]]) {
+                // This supports folk including the same card type multiple times
+                // Multiple ranges aren't supported however, because how would that work?
+                pip_set[results[i]] = (parseInt(pip_set[results[i]]) + parseInt(results[i+1])).toString();
+            } else {
+                pip_set[results[i]] = results[i+1];
+            }
         }
     }
 
