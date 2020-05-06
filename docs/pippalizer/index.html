@@ -172,13 +172,30 @@
                   <option value="colours(WOKBG)=5">[WOKBG] Overwhelming Advantage</option>
                   <option value="colours(WOB)=3">[WOB] Red Alert, Optimus Prime, Silverbolt, Bluestreak</option>
                   <option value="colours(WB)=2,colours(OK)=2">[WB] and [OK] Fortress Maximus</option>
+                  <option value="count(O)&gt;=1">[O] Megatron - Fallen Hero, Energized Field</option>
                   <option value="count(O)&gt;=2">[OO] Electrified Spikes</option>
+                  <option value="count(O)&gt;=3">[OOO] Sparkstalker</option>
+                  <option value="count(O)&gt;=4">[OOOO] Cindersaur</option>
                   <option value="count(O)&gt;=2 AND count(B)&gt;=2">[OOBB] Ultra Magnus</option>
                   <option value="colours(OB)=2">[OB] Blitzwing, Drag Strip, Optimus Prime, Turbo Board</option>
-                  <option value="count(O),count(K)">Average number of orange/black</option>
+                  <option value="count(K)&gt;=1">[K] Sgt Thundercracker, Mindwipe, RR Disruptor, Composite</option>
+                  <option value="count(K)&gt;=2">[KK] Nightstick</option>
+                  <option value="count(K)">[KK] Nightstick</option>
+                  <option value="count(B)&gt;=1">[B] Nautica, Whirl</option>
+                  <option value="count(B)&gt;=2">[BB] Breakdown, Sgt Chromia</option>
+                  <option value="count(B)&gt;=3">[BBB] Raider Aimless</option>
+                  <option value="count(G)&gt;=1">[G] Raider Chop Shop, Combiner Swoop, Wolfwire, Tailwind</option>
+                  <option value="count(W),count(O),count(B),count(K),count(G)">Average number of each colour flipped</option>
                   <option value="colours(*)=4">Grapple flipping 4 colours</option>
+                  <option value="colours(*)">Colours flipped - Smashdown</option>
                   <option value="count(O),colours(*)">Masters of Metallikato</option>
                   <option value="colours(*)&gt;2">Slipstream flipping &gt;2 colours</option>
+                  <option value="">--- For the below: Uncheck +2 on White above ---</option>
+                  <option value="colours(WOB)=3">[WOB] Fuel Cache</option>
+                  <option value="count(O),count(B)">Swarm!</option>
+                  <option value="count(B)=1">Sergeant Mirage</option>
+                  <option value="count(K)=1,count(K)=2,count(K)=3">Sgt Thundercracker (alt)</option>
+                  <option value="colours(*)=0,colours(*)=1,colours(*)=2,colours(*)=3">Colours flipped - Ratbat</option>
               </select>
               <br/>
               <label for="pipql" style="display: block;">PIPQL Query:</label>
@@ -189,40 +206,18 @@
 
           <!--
         TODO: Canned queries:
-        Megatron, Fallen Hero; Energized Field O >= 1
-        DONE: Turbo Board, Galaxy Prime, Drag Strip, Blitzwing O >= 1 AND B >= 1
-        DONE: Private Red Alert, Opt Prime Gleaming, Silverbolt, Bluestreak O >= 1 AND B >= 1 AND W >= 1
-        DONE: Overwhelming Advantage at least WOKBG
-        Fuel Cache at least WOB  (no white)
-        Cindersaur OOOO
-        Sparkstalker OOO
         Shock Absorbers, Cybertronian Bow O and B equal (not supported yet?)
-        Swarm 
-
-        Breakdown, Sgt Chromia B >= 2
-        Nautica, Whirl B >=1
-        Mirage B >= 1
-        Aimless B >= 3
         
         Skywarp Sneaky, Hound, Acute Reflexes, Erratic Cannon, Spinner Rims, Adaptive Plating, Slug-W2 W >= 1
         Plasma Horns count(W),W>=4
         DONE: Chromia Special ops, Bumblebee (Courageous Scout), Jazz, Bike Gang, Pteraxadon W >= 2
         Mirage W>=3
 
-        Swoop-W2, Wolfwire, Tailwind G >= 1
-        Raider Chop shop G >= 1.  (Need an Exact Match as well; like:   exactly('G') )
-
-        Sgt Thundercracker Bot, Mindwipe, RR Disruptor Blade, Composite Armor K >= 1
-        Nightstick K >= 2
-        Concealing Contrails count(K)
-        Sgt Thundercracker Alt count(K)   (No white +2)
-
         Windblade flip-deck, is it more than 2-pipped?     (though this is a simple probablity one)
         Versatility, chance of 1 battle icon, and colours(*)
         Brawn, pierce 1 for each different color, +1 def for each different color
         Ratbat, repair 1 for each different color
         Lucky Vest, at least 4 different color
-        Smashdown, average number of colors flipped
           -->
 
 
