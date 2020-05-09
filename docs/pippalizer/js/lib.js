@@ -26,6 +26,18 @@ function pattern_to_pip_set(pip_pattern) {
             let start = parseInt(parameters[0]);
             let close = parseInt(parameters[1]);
             let step  = parseInt(parameters[2]);
+
+            if(pip_set[results[i]]) {
+                if(Array.isArray(pip_set[results[i]])) {
+                    // TODO: Replace with an error
+                    alert("Unable to combine two ranges for the same battle icon colours. Ignoring additional ranges. ");
+                    continue;
+                } else {
+                    start += parseInt(pip_set[results[i]]);
+                    close += parseInt(pip_set[results[i]]);
+                }
+            }
+
             if(start < close) {
                 for (let j = start; j <= close; j += step) {
                     value_array.push(j);
@@ -41,7 +53,15 @@ function pattern_to_pip_set(pip_pattern) {
             if(pip_set[results[i]]) {
                 // This supports folk including the same card type multiple times
                 // Multiple ranges aren't supported however, because how would that work?
-                pip_set[results[i]] = (parseInt(pip_set[results[i]]) + parseInt(results[i+1])).toString();
+                if(Array.isArray(pip_set[results[i]])) {
+                    // Increase the each element of the array
+                    for (let j = 0; j < pip_set[results[i]].length; j++) {
+                        pip_set[results[i]][j] = (parseInt(pip_set[results[i]][j]) + parseInt(results[i+1])).toString();
+                    }
+                } else {
+                    // No concern, we're adding two scalars
+                    pip_set[results[i]] = (parseInt(pip_set[results[i]]) + parseInt(results[i+1])).toString();
+                }
             } else {
                 pip_set[results[i]] = results[i+1];
             }
