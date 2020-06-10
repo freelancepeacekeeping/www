@@ -390,7 +390,7 @@
                 {
                     "name": "Private Trailbreaker - Infantry, Fortification and Defense",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/private-trailbreaker-infantry-fortification-and-defense-WCS-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/private-trailbreaker-infantry-fortification-defense-WCS-bot.jpg"
                 },
                 {
                     "name": "Raider Flamefeather - Black Ops, Soldier",
@@ -410,7 +410,7 @@
                 {
                     "name": "Specialist Ratchet - Engineering, Rescue and Repair",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/specialist-ratchet-engineering-rescue-and-repair-WCS-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/specialist-ratchet-engineering-rescue-repair-WCS-bot.jpg"
                 }
             ],
             "Super Rare": [
@@ -1023,7 +1023,7 @@
                 {
                     "name": "Autobot Cosmos - Recon and Communication",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/wv1/character/autobot-cosmos-recon-and-communication-WV1-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wv1/character/autobot-cosmos-recon-communication-WV1-bot.jpg"
                 },
                 {
                     "name": "Chromia - Special Ops",
@@ -1507,7 +1507,7 @@
                 {
                     "name": "Tooth and Claw",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/roc/battle/tooth-and-claw-ROC.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/roc/battle/tooth-claw-ROC.jpg"
                 },
                 {
                     "name": "Unleash Potential",
@@ -1594,7 +1594,7 @@
                 {
                     "name": "Rest and Relaxation",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/roc/battle/rest-and-relaxation-ROC.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/roc/battle/rest-relaxation-ROC.jpg"
                 },
                 {
                     "name": "Security Console",
@@ -1715,7 +1715,7 @@
                 {
                     "name": "Autobot Novastar - Search and Rescue",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/roc/character/autobot-novastar-search-and-rescue-ROC-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/roc/character/autobot-novastar-search-rescue-ROC-bot.jpg"
                 },
                 {
                     "name": "Blackwing Aerial Attacker",
@@ -2114,7 +2114,7 @@
                 {
                     "name": "Private Seawatch - Rescue Patrol, Search and Rescue",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/private-seawatch-rescue-patrol-search-and-rescue-WS2-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/private-seawatch-rescue-patrol-search-rescue-WS2-bot.jpg"
                 },
                 {
                     "name": "Private Sidetrack - Battle Patrol, Demolitions",
@@ -2655,7 +2655,7 @@
                 {
                     "name": "Hit and Run",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hit-and-run-TMA.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hit-run-TMA.jpg"
                 },
                 {
                     "name": "Hold The Line",
@@ -2930,7 +2930,7 @@
                 {
                     "name": "Duty and Honor",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/duty-and-honor-TMA.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/duty-honor-TMA.jpg"
                 },
                 {
                     "name": "Metallikato Stance",
@@ -3065,7 +3065,7 @@
                 {
                     "name": "Autobot Gears - Transport and Reconnaissance",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-gears-transport-and-reconnaissance-TMA-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-gears-transport-reconnaissance-TMA-bot.jpg"
                 },
                 {
                     "name": "Autobot Outback - Gunner",
@@ -3210,7 +3210,7 @@
                 {
                     "name": "Topspin - Air and Space Assault",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/topspin-air-and-space-assault-TMA-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/topspin-air-space-assault-TMA-bot.jpg"
                 },
                 {
                     "name": "Twin Twist - Demolitions",
