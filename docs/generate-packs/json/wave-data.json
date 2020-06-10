@@ -430,9 +430,9 @@
                     "image_url": "https://images.fortressmaximus.io/cards/wcs/character/major-ultra-magnus-infantry-city-commander-WCS-bot.jpg"
                 },
                 {
-                    "name": "Heavy Force Defensebreaker Cannon",
+                    "name": "Sergeant Cog - Artillery, Mechanic",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/battle/heavy-force-defensebreaker-cannon-WCS.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/sergeant-cog-artillery-mechanic-WCS-bot.jpg"
                 }
             ],
             "Common": [
@@ -450,11 +450,6 @@
                     "name": "Private Red Alert - Medical, Medic",
                     "size": "Large",
                     "image_url": "https://images.fortressmaximus.io/cards/wcs/character/private-red-alert-medical-medic-WCS-bot.jpg"
-                },
-                {
-                    "name": "Raider Detour - Infantry, Demolitions",
-                    "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/raider-detour-infantry-demolitions-WCS-bot.jpg"
                 },
                 {
                     "name": "Raider Ion Storm - Infantry, Rainmaker",
@@ -496,34 +491,34 @@
         "Small Character": {
             "Uncommon": [
                 {
-                    "name": "Duo-Charge Electrostatic Photon Cannon",
+                    "name": "Private Firedrive - Ground Command, Artillery",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/battle/duo-charge-electrostatic-photon-cannon-WCS.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/private-firedrive-ground-command-artillery-WCS-bot.jpg"
                 },
                 {
-                    "name": "RS Firesteel Saber",
+                    "name": "Private Lionizer - Ground Command, Artillery",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/battle/rs-firesteel-saber-WCS.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/private-lionizer-ground-command-artillery-WCS-bot.jpg"
                 },
                 {
-                    "name": "Binary Edgewing Scythe",
+                    "name": "Private Pteraxadon - Air Command, Artillery",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/battle/binary-edgewing-scythe-WCS.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/private-pteraxadon-air-command-artillery-WCS-bot.jpg"
                 },
                 {
-                    "name": "Manifold Ion Particle Blaster",
+                    "name": "Raider Aimless - Air Force, Weapons",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/battle/manifold-ion-particle-blaster-WCS.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/raider-aimless-air-force-weapons-WCS-bot.jpg"
                 },
                 {
-                    "name": "Dual-Impact Shatterblast Compression Cannon",
+                    "name": "Raider Blowpipe - Air Force, Weapons",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/battle/dual-impact-shatterblast-compression-cannon-WCS.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/raider-blowpipe-air-force-weapons-WCS-bot.jpg"
                 },
                 {
-                    "name": "Black Beam Blaster",
+                    "name": "Raider Nightstick - Ground Force, Weapons",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/wcs/battle/black-beam-blaster-WCS.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/raider-nightstick-ground-force-weapons-WCS-bot.jpg"
                 }
             ],
             "Common": [
@@ -556,6 +551,11 @@
                     "name": "Private Tote - Special Ops, Infiltration",
                     "size": "Small",
                     "image_url": "https://images.fortressmaximus.io/cards/wcs/character/private-tote-special-ops-infiltration-WCS-bot.jpg"
+                },
+                {
+                    "name": "Raider Detour - Infantry, Demolitions",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/wcs/character/raider-detour-infantry-demolitions-WCS-bot.jpg"
                 },
                 {
                     "name": "Raider Laserbeak - Espionage, Interrogation",
@@ -685,9 +685,9 @@
                     "image_url": "https://images.fortressmaximus.io/cards/wcs/character/sergeant-overdrive-special-ops-strategist-WCS-bot.jpg"
                 },
                 {
-                    "name": "Airquake Hammerclaw",
+                    "name": "Private Smashdown - Ground Command, Artillery",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/pro/battle/airquake-hammerclaw-PRO.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/private-smashdown-ground-command-artillery-PRO-bot.jpg"
                 }
             ]
         }
@@ -1183,7 +1183,7 @@
                 {
                     "name": "Slammer - Combat Drone",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/wv1/character/slammer-combat-drone-WV1-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/wv1/character/slammer-combat-drone-WV1-alt.jpg"
                 }
             ]
         },
@@ -2236,7 +2236,7 @@
                     "image_url": "https://images.fortressmaximus.io/cards/ws2/character/sergeant-mirage-special-ops-spy-WS2-bot.jpg"
                 },
                 {
-                    "name": "Sergeant Springer - Special Ops Aerial Defense",
+                    "name": "Sergeant Springer - Special Ops, Aerial Defense",
                     "size": "Large",
                     "image_url": "https://images.fortressmaximus.io/cards/ws2/character/sergeant-springer-special-ops-aerial-defense-WS2-bot.jpg"
                 },
@@ -2368,34 +2368,34 @@
             ],
             "Uncommon": [
                 {
-                    "name": "Shadowsteel Iceblade",
+                    "name": "Private Dazzlestrike - Ground Command, Artillery",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/ws2/battle/shadowsteel-iceblade-WS2.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/private-dazzlestrike-ground-command-artillery-WS2-bot.jpg"
                 },
                 {
-                    "name": "Anti-Gravity Turbo Pack",
+                    "name": "Private Turbo Board - Air Command, Evac",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/ws2/battle/anti-gravity-turbo-pack-WS2.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/private-turbo-board-air-command-evac-WS2-bot.jpg"
                 },
                 {
-                    "name": "Anti-Ballistic Turret Helmet",
+                    "name": "Private Vanguard - Ground Command, Advance Guard",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/ws2/battle/anti-ballistic-turret-helmet-WS2.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/private-vanguard-ground-command-advance-guard-WS2-bot.jpg"
                 },
                 {
-                    "name": "Oxidation Cannon",
+                    "name": "Raider Caliburst - Air Force, Weapons",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/oxidation-cannon--WS2-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/raider-caliburst-air-force-weapons-WS2-bot.jpg"
                 },
                 {
-                    "name": "Steelbite Incisor Mask",
+                    "name": "Raider Needler - Ground Force Demolitions",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/ws2/battle/steelbite-incisor-mask-WS2.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/raider-needler-ground-force-demolitions-WS2-bot.jpg"
                 },
                 {
-                    "name": "Multi-Maneuver Glider Wings",
+                    "name": "Raider Sights - Air Force, Artillery",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/ws2/battle/multi-maneuver-glider-wings-WS2.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/ws2/character/raider-sights-air-force-artillery-WS2-bot.jpg"
                 }
             ],
             "Common": [
@@ -3280,9 +3280,9 @@
                     "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/data-protection-TMA.jpg"
                 },
                 {
-                    "name": "Duty & Honor",
+                    "name": "Duty and Honor",
                     "size": "Small",
-                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/duty-honor-TMA.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/duty-and-honor-TMA.jpg"
                 },
                 {
                     "name": "Metallikato Stance",
@@ -3415,9 +3415,9 @@
         "Large Character": {
             "Common": [
                 {
-                    "name": "Autobot Gears - Transport & Reconnaissance",
+                    "name": "Autobot Gears - Transport and Reconnaissance",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-gears-transport-reconnaissance-TMA-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-gears-transport-and-reconnaissance-TMA-bot.jpg"
                 },
                 {
                     "name": "Autobot Outback - Gunner",
@@ -3560,9 +3560,9 @@
                     "image_url": "https://images.fortressmaximus.io/cards/tma/character/optimus-prime-legendary-warrior-TMA-bot.jpg"
                 },
                 {
-                    "name": "Topspin - Air & Space Assault",
+                    "name": "Topspin - Air and Space Assault",
                     "size": "Large",
-                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/topspin-air-space-assault-TMA-bot.jpg"
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/topspin-air-and-space-assault-TMA-bot.jpg"
                 },
                 {
                     "name": "Twin Twist - Demolitions",
