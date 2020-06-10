@@ -41,8 +41,12 @@ var ratios={
   'Wave 2': [1, 53, 72, 80],        // Equivalent-ish of 1:(79/3):(79/10):79
   'Wave 3': [1, 30, 46, 51],        // Equivalent-ish of 1:(50/3):(50/10):50
   'Wave 4': [1, 30, 46, 51],        // Equivalent-ish of 1:(50/3):(50/10):50
-  'Wave 5': [1, 1, 1, 1]            // Equivalent-ish of ?
+  'Wave 5': [1, 15, 27, 30]         // Equivalent-ish of 1:(30/x):(30/10):30  // Except Sky Shadow is 1:24.5??
 };
+                                    // Wave 5
+                                    // 1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0
+                                    // C,C,C,C,C,C,C,C,C,C,C,C,C,C,U,U,U,U,U,U,U,U,U,U,U,U,R,R,R,S
+                                    // L,L,L,L,L,L,L,L,L,L,L,L,L,L,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,L
 var small_ratios={
   'Wave 1': null,
   'Wave 2': null,
@@ -50,10 +54,11 @@ var small_ratios={
   'Wave 4': [1, 16, 20],            // Equivalent of 1:3:10
 };
 var stratagem_ratios={
-  'Wave 5': [1, 1, 1]               // Equivalent of ?
+  'Wave 5': [1, 9, 13]              // Rare: 1:12.5
 };
+
 var head_ratios={
-  'Wave 5': [1, 1, 1]               //  No Commons
+  'Wave 5': [0, 0, 8]               // Rare: 1:8.333.  Uncommon the rest.
 };
 var battle_card_makeup={
   'Wave 1': [4, 2, 1],
@@ -176,6 +181,7 @@ Then need to have UI code to handle displaying a pack.
 */
 
                 pack = wave_strategies[wave](wave, data);
+                console.log(pack);
                 card = pack[0];
                 chosen_item="<img src='" + card['image_url'] + "'/>";
                 $( chosen_item ).appendTo( "#bot_cards1_0" );
@@ -186,7 +192,7 @@ Then need to have UI code to handle displaying a pack.
           }
 
           function generate_new_booster() {
-            generate_booster('Wave 4')
+            generate_booster('Wave 5')
           }
         </script>
 
