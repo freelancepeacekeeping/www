@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Generate Pack</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1 id="pageTitle">Generated Pack</h1>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="tcg-lib.js"></script>
+
+        <script>
+          function random_card(data) {
+              let tmp = data;
+              while(tmp != null && Array.isArray(tmp) == false) {
+                  keys = Object.keys(tmp)
+                  tmp = tmp[keys[Math.floor(Math.random() * keys.length)]];
+              }
+              return tmp[Math.floor(Math.random() * tmp.length)];
+          }
+
+//  Wave 1:    Super Rare is 1:79
+//  Wave 1:    
+//  Wave 2:    Combiner is 1:2  (not really useful)
+//  Wave 2:    
+//  Wave 3:    Super Rare is 1:50, Uncommon-Small is 1:5.
+//  Wave 3:    Rare is? 1:10?  Uncommon is?  1:3?
+//  Wave 4:    Super Rare is 1:50, Uncommon-Small is 1:3.    (1:3 means 1 X card for every 3 Y cards; I think)
+//  Wave 4:    Rare is?   Uncommon is?   Rare-Small is?  (assuming 1:10 for Rare-Small)
+
+// Matches order of array values below
+var rarities = ['Common', 'Uncommon', 'Rare', 'Super Rare']
+
+var ratios={
+  'Wave 1': [1, 53, 72, 80],        // Equivalent-ish of 1:(79/3):(79/10):79
+  'Wave 2': [1, 53, 72, 80],        // Equivalent-ish of 1:(79/3):(79/10):79
+  'Wave 3': [1, 30, 46, 51],        // Equivalent-ish of 1:(50/3):(50/10):50
+  'Wave 4': [1, 30, 46, 51],        // Equivalent-ish of 1:(50/3):(50/10):50
+  'Wave 5': [1, 1, 1, 1]            // Equivalent-ish of ?
+};
+var small_ratios={
+  'Wave 1': null,
+  'Wave 2': null,
+  'Wave 3': [1, 6],                 // Equivalent of 1:3
+  'Wave 4': [1, 16, 20],            // Equivalent of 1:3:10
+};
+var stratagem_ratios={
+  'Wave 5': [1, 1, 1]               // Equivalent of ?
+};
+var head_ratios={
+  'Wave 5': [1, 1, 1]               //  No Commons
+};
+var battle_card_makeup={
+  'Wave 1': [4, 2, 1],
+  'Wave 2': [4, 2, 1],
+  'Wave 3': [3, 2, 1],
+  'Wave 4': [3, 2, 1],
+  'Wave 5': [3, 2, 1]
+};
+
+// Used to figure out which bot(s) to pull for the pack
+function get_rarity_from_ratio(ratio_array) {
+  highest = Math.max.apply(null, ratio_array);
+  rarity_random = Math.ceil(Math.random() * highest);   // replace highest with max of ratios
+  var chosen = '';
+  $.each( ratio_array, function( idx, ratio ) {
+    if(rarity_random >= ratio) {
+      chosen = rarities[idx]
+    }
+  });
+  return chosen;
+}
+
+          function LargeChooser(wave, data) {
+              return random_card(data[wave]['Large Character'][get_rarity_from_ratio(ratios[wave])]);
+          }
+          function SmallChooser(wave, data) {
+              return random_card(data[wave]['Small Character'][get_rarity_from_ratio(small_ratios[wave])]);
+          }
+          function Wave5PairChooser(wave, data) {
+              let rarity = get_rarity_from_ratio(ratios[wave]);
+              if(rarity == 'Common' || rarity == 'Super Rare') {
+                  return [ random_card(data[wave]['Large Character'][rarity]), 
+                           random_card(data[wave]['Stratagem'][get_rarity_from_ratio(stratagem_ratios[wave])]) ];
+              } else {
+                  return [ random_card(data[wave]['Large Body Character'][rarity]), 
+                           random_card(data[wave]['Small Head Character'][get_rarity_from_ratio(head_ratios[wave])]) ];
+              }
+          }
+          function RareBattleChooser(wave, data) {
+              return random_card(data[wave]['Battle Card']['Rare']);
+          }
+          function UncommonBattleChooser(wave, data) {
+              return random_card(data[wave]['Battle Card']['Uncommon']);
+          }
+          function CommonBattleChooser(wave, data) {
+              return random_card(data[wave]['Battle Card']['Common']);
+          }
+          function BattleCardsChooser(wave, data) {
+              let pack_structure = battle_card_makeup[wave];
+              let cards = [];
+              for (let i = 0; i < pack_structure[0]; i++) {
+                  cards.push(CommonBattleChooser(wave, data));
+              }
+              for (let i = 0; i < pack_structure[1]; i++) {
+                  cards.push(UncommonBattleChooser(wave, data));
+              }
+              for (let i = 0; i < pack_structure[2]; i++) {
+                  cards.push(RareBattleChooser(wave, data));
+              }
+              return cards;
+          }
+
+          function buildPack(wave, data, choosers) {
+              let chooserArray = Array.prototype.slice.apply(arguments).slice(2); 
+              let pack = [];
+              $.each( chooserArray, function( idx, chooser ) {
+                  card = chooser(wave, data);
+                  if(Array.isArray(card)) {
+                      pack = pack.concat(card);
+                  } else {
+                      pack.push(card);
+                  }
+              } );
+              return pack;
+          }
+
+          function Wave12Strategy(wave, data) {
+              return buildPack(wave, data, LargeChooser, BattleCardsChooser);
+          }
+          function Wave34Strategy(wave, data) {
+              return buildPack(wave, data, LargeChooser, SmallChooser, BattleCardsChooser);
+          }
+          function Wave5Strategy(wave, data) {
+              return buildPack(wave, data, Wave5PairChooser, BattleCardsChooser);
+          }
+
+          var wave_strategies = {
+            "Wave 1" : Wave12Strategy,
+            "Wave 2" : Wave12Strategy,
+            "Wave 3" : Wave34Strategy,
+            "Wave 4" : Wave34Strategy,
+            "Wave 5" : Wave5Strategy
+          };
+
+          function generate_booster(wave) {
+            $.getJSON( "https://www.freelancepeacekeeping.com/generate-packs/json/wave-data.json", function( data ) {
+/*
+
+General plan:
+
+Need to know which Wave to do. Lift the Wave radio code from other page.
+Assume Wave chosen.
+
+Need to get a PackStrategy for that Wave
+
+A PackStrategy accumulates various Choosers. A Chooser is given a Wave and knows how to return a card, or cards, from that Wave. 
+Choosers may only work with certain waves, or they may be generic. 
+
+Examples:
+
+wave12 = new PackStrategy(Large, RareBattle, UncommonBattle, UncommonBattle, CommonBattle, CommonBattle, CommonBattle, CommonBattle)
+wave34 = new PackStrategy(Large, Small, RareBattle, UncommonBattle, UncommonBattle, CommonBattle, CommonBattle, CommonBattle)
+wave5 = new PackStrategy(CharacterPair, RareBattle, UncommonBattle, UncommonBattle, CommonBattle, CommonBattle, CommonBattle)
+
+pack = stratagy.chooseCards(wave)    #  Is pack an object?
+
+
+Then need to have UI code to handle displaying a pack. 
+
+*/
+
+                pack = wave_strategies[wave](wave, data);
+                card = pack[0];
+                chosen_item="<img src='" + card['image_url'] + "'/>";
+                $( chosen_item ).appendTo( "#bot_cards1_0" );
+            });
+
+            waveChoice="<span class='waveChoice'>: "+ wave + "</span>";
+            $( waveChoice ).appendTo( "#pageTitle" );
+          }
+
+          function generate_new_booster() {
+            generate_booster('Wave 4')
+          }
+        </script>
+
+        <style>
+          .small_card:hover { z-index: 100 !important; }
+          .bot_card { display: inline; }
+          .bot_card img { width: 375px; height: 525px; }
+          .small_card { position: absolute; left: 500px; top: 15px; }
+          .small_card img { width: 250px; height: 350px; }
+          ul { list-style: none; }
+          .card_pull { position: relative; }
+          .card_pull li { display: inline-block; }
+          .col2 { padding-left: 250px; }
+          .col3 { padding-left: 250px; }
+          td { padding-bottom: 100px; }
+        </style>
+
+      <!-- Ugly and clunky; need to move to a UI framework -->
+      <ul class="card_pull">
+        <li id="bot_cards1_0"></li>
+      </ul>
+
+      <script>
+          generate_new_booster();
+      </script>
+
+    </body>
+</html>
