@@ -1,0 +1,3643 @@
+{
+    "Wave 3": {
+        "Battle Card": {
+            "Uncommon": [
+                {
+                    "name": "Anticipation Engine",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/anticipation-engine-TMA.jpg"
+                },
+                {
+                    "name": "Battlefield Scan",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/battlefield-scan-TMA.jpg"
+                },
+                {
+                    "name": "Bolster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/bolster-TMA.jpg"
+                },
+                {
+                    "name": "Compact Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/compact-shield-TMA.jpg"
+                },
+                {
+                    "name": "Covert Armor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/covert-armor-TMA.jpg"
+                },
+                {
+                    "name": "Device Virus",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/device-virus-TMA.jpg"
+                },
+                {
+                    "name": "EMP Wave",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/emp-wave-TMA.jpg"
+                },
+                {
+                    "name": "Extra Padding",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/extra-padding-TMA.jpg"
+                },
+                {
+                    "name": "Fuel Cache",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/fuel-cache-TMA.jpg"
+                },
+                {
+                    "name": "Full Loadout",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/full-loadout-TMA.jpg"
+                },
+                {
+                    "name": "Hiding Spot",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hiding-spot-TMA.jpg"
+                },
+                {
+                    "name": "HV Electron Breacher",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hv-electron-breacher-TMA.jpg"
+                },
+                {
+                    "name": "Metal Detector",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/metal-detector-TMA.jpg"
+                },
+                {
+                    "name": "Point-Defense System",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/point-defense-system-TMA.jpg"
+                },
+                {
+                    "name": "Reflex Circuits",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/reflex-circuits-TMA.jpg"
+                },
+                {
+                    "name": "Rock Toss",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/rock-toss-TMA.jpg"
+                },
+                {
+                    "name": "Spinner Rims",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/spinner-rims-TMA.jpg"
+                },
+                {
+                    "name": "Squish Them Like Bugs",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/squish-them-like-bugs-TMA.jpg"
+                },
+                {
+                    "name": "Steady Shot",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/steady-shot-TMA.jpg"
+                },
+                {
+                    "name": "Sturdy Armor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/sturdy-armor-TMA.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Backup Bag",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/backup-bag-TMA.jpg"
+                },
+                {
+                    "name": "Battering Ram",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/battering-ram-TMA.jpg"
+                },
+                {
+                    "name": "Callous Leadership",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/callous-leadership-TMA.jpg"
+                },
+                {
+                    "name": "Dampening Field",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/dampening-field-TMA.jpg"
+                },
+                {
+                    "name": "Emergency Defense Field",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/emergency-defense-field-TMA.jpg"
+                },
+                {
+                    "name": "Energy Pack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/energy-pack-TMA.jpg"
+                },
+                {
+                    "name": "Erratic Energy Grenade",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/erratic-energy-grenade-TMA.jpg"
+                },
+                {
+                    "name": "Firecon Flame",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/firecon-flame-TMA.jpg"
+                },
+                {
+                    "name": "Heat of Battle",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/heat-of-battle-TMA.jpg"
+                },
+                {
+                    "name": "Heroic Team-Up",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/heroic-team-up-TMA.jpg"
+                },
+                {
+                    "name": "Infiltrate",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/infiltrate-TMA.jpg"
+                },
+                {
+                    "name": "Laser Cutlass",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/laser-cutlass-TMA.jpg"
+                },
+                {
+                    "name": "LV Gamma-Disruptor Launcher",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/lv-gamma-disruptor-launcher-TMA.jpg"
+                },
+                {
+                    "name": "Ultra Magnus Armor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/ultra-magnus-armor-TMA.jpg"
+                },
+                {
+                    "name": "Micro Capacitor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/micro-capacitor-TMA.jpg"
+                },
+                {
+                    "name": "Pop a Wheelie",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/pop-a-wheelie-TMA.jpg"
+                },
+                {
+                    "name": "Quartermaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/quartermaster-TMA.jpg"
+                },
+                {
+                    "name": "RR Disruption Blade",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/rr-disruption-blade-TMA.jpg"
+                },
+                {
+                    "name": "Scavenge the Battlefield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/scavenge-the-battlefield-TMA.jpg"
+                },
+                {
+                    "name": "Special Ops Mission",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/special-ops-mission-TMA.jpg"
+                },
+                {
+                    "name": "Take Cover",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/take-cover-TMA.jpg"
+                },
+                {
+                    "name": "Two-Pronged Attack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/two-pronged-attack-TMA.jpg"
+                },
+                {
+                    "name": "Unconventional Flying Object",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/unconventional-flying-object-TMA.jpg"
+                },
+                {
+                    "name": "W-5 Gyro Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/w-5-gyro-blaster-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Basic Combat Protocol",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/basic-combat-protocol-TMA.jpg"
+                },
+                {
+                    "name": "Battlefield Report",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/battlefield-report-TMA.jpg"
+                },
+                {
+                    "name": "Brainstorm",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/brainstorm-TMA.jpg"
+                },
+                {
+                    "name": "Calculated Strike",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/calculated-strike-TMA.jpg"
+                },
+                {
+                    "name": "Combat Dagger",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/combat-dagger-TMA.jpg"
+                },
+                {
+                    "name": "Defensive Formation",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/defensive-formation-TMA.jpg"
+                },
+                {
+                    "name": "Dismantle",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/dismantle-TMA.jpg"
+                },
+                {
+                    "name": "Dismantling Claw",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/dismantling-claw-TMA.jpg"
+                },
+                {
+                    "name": "EM24 IR Laser Launcher",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/em24-ir-laser-launcher-TMA.jpg"
+                },
+                {
+                    "name": "Force Field",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/force-field-TMA.jpg"
+                },
+                {
+                    "name": "Frag Toss",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/frag-toss-TMA.jpg"
+                },
+                {
+                    "name": "Medic!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/medic!-TMA.jpg"
+                },
+                {
+                    "name": "Pep Talk",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/pep-talk-TMA.jpg"
+                },
+                {
+                    "name": "Personal Targeting Drone",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/personal-targeting-drone-TMA.jpg"
+                },
+                {
+                    "name": "Reactive Armor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/reactive-armor-TMA.jpg"
+                },
+                {
+                    "name": "Repurpose",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/repurpose-TMA.jpg"
+                },
+                {
+                    "name": "Smoke Cloak",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/smoke-cloak-TMA.jpg"
+                },
+                {
+                    "name": "Smokethrower",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/smokethrower-TMA.jpg"
+                },
+                {
+                    "name": "Diagnosis",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/diagnosis-TMA.jpg"
+                },
+                {
+                    "name": "Urban Camo",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/urban-camo-TMA.jpg"
+                }
+            ]
+        },
+        "Large Character": {
+            "Rare": [
+                {
+                    "name": "Alpha Trion - Cybertronian, Sage",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/alpha-trion-cybertronian-sage-TMA-bot.jpg"
+                },
+                {
+                    "name": "Captain Elita-1 - Special Ops, Ranger",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/captain-elita-1-special-ops-ranger-TMA-bot.jpg"
+                },
+                {
+                    "name": "Captain Ironhide - Infantry, Bodyguard",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/captain-ironhide-infantry-bodyguard-TMA-bot.jpg"
+                },
+                {
+                    "name": "Captain Starscream - Infantry, Air Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/captain-starscream-infantry-air-commander-TMA-bot.jpg"
+                },
+                {
+                    "name": "General Optimus Prime - Infantry, Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/general-optimus-prime-infantry-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Cindersaur - Black Ops, Demolitions",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-cindersaur-black-ops-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Needlenose - Air Force, Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-needlenose-air-force-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Skywarp - Black Ops, Seeker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-skywarp-black-ops-seeker-TMA-bot.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Captain Wheeljack - Engineer, Scientist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/captain-wheeljack-engineer-scientist-TMA-bot.jpg"
+                },
+                {
+                    "name": "Major Soundwave - Espionage, Spy",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/major-soundwave-espionage-spy-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Sideswipe - Infantry, Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-sideswipe-infantry-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Trailbreaker - Infantry, Fortification and Defense",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-trailbreaker-infantry-fortification-and-defense-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Flamefeather - Black Ops, Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-flamefeather-black-ops-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Triggerhappy - Air Force, Gunner",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-triggerhappy-air-force-gunner-TMA-bot.jpg"
+                },
+                {
+                    "name": "Specialist Flamewar - Special Ops, Hunter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/specialist-flamewar-special-ops-hunter-TMA-bot.jpg"
+                },
+                {
+                    "name": "Specialist Ratchet - Engineering, Rescue and Repair",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/specialist-ratchet-engineering-rescue-and-repair-TMA-bot.jpg"
+                }
+            ],
+            "Super Rare": [
+                {
+                    "name": "General Megatron - Infantry, Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/general-megatron-infantry-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Major Shockwave - Applied Sciences, Scientist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/major-shockwave-applied-sciences-scientist-TMA-bot.jpg"
+                },
+                {
+                    "name": "Major Ultra Magnus - Infantry, City Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/major-ultra-magnus-infantry-city-commander-TMA-bot.jpg"
+                },
+                {
+                    "name": "Heavy Force Defensebreaker Cannon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/heavy-force-defensebreaker-cannon-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Major Prowl - Infantry, Strategist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/major-prowl-infantry-strategist-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Arcee - Special Ops, Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-arcee-special-ops-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Red Alert - Medical, Medic",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-red-alert-medical-medic-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Detour - Infantry, Demolitions",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-detour-infantry-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Ion Storm - Infantry, Rainmaker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-ion-storm-infantry-rainmaker-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Runabout - Infantry, Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-runabout-infantry-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Runamuck - Infantry, Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-runamuck-infantry-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Chromia - Special Ops, Counterintelligence",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-chromia-special-ops-counterintelligence-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Hound - Infantry, Recon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-hound-infantry-recon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Skrapnel - Infantry, Electronic Warfare",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-skrapnel-infantry-electronic-warfare-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Sparkstalker - Black Ops, Cryptology",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-sparkstalker-black-ops-cryptology-TMA-bot.jpg"
+                }
+            ]
+        },
+        "Small Character": {
+            "Uncommon": [
+                {
+                    "name": "Duo-Charge Electrostatic Photon Cannon",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/duo-charge-electrostatic-photon-cannon-TMA.jpg"
+                },
+                {
+                    "name": "RS Firesteel Saber",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/rs-firesteel-saber-TMA.jpg"
+                },
+                {
+                    "name": "Binary Edgewing Scythe",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/binary-edgewing-scythe-TMA.jpg"
+                },
+                {
+                    "name": "Manifold Ion Particle Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/manifold-ion-particle-blaster-TMA.jpg"
+                },
+                {
+                    "name": "Dual-Impact Shatterblast Compression Cannon",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/dual-impact-shatterblast-compression-cannon-TMA.jpg"
+                },
+                {
+                    "name": "Black Beam Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/black-beam-blaster-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Private Flak - Artillery, Tactics",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-flak-artillery-tactics-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Mudslinger - Special Ops, Infiltration",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-mudslinger-special-ops-infiltration-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Red Heat - Infantry, Emergency Response",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-red-heat-infantry-emergency-response-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Stakeout - Infantry, Communications",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-stakeout-infantry-communications-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Top Shot - Artillery, Patrol Leader",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-top-shot-artillery-patrol-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Tote - Special Ops, Infiltration",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-tote-special-ops-infiltration-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Laserbeak - Espionage, Interrogation",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-laserbeak-espionage-interrogation-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Road Hugger - Infantry, Tactics",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-road-hugger-infantry-tactics-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Storm Cloud - Infantry, Electronic Warfare",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-storm-cloud-infantry-electronic-warfare-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Visper - Infantry, Patrol Leader",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-visper-infantry-patrol-leader-TMA-bot.jpg"
+                }
+            ]
+        },
+        "Small": {
+            "Common": [
+                {
+                    "name": "Raider Ravage - Espionage, Saboteur",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-ravage-espionage-saboteur-TMA-bot.jpg"
+                }
+            ]
+        },
+        "Excluded": {
+            "Super Rare": [
+                {
+                    "name": "Blaster - Communications",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/blaster-communications-TMA-bot.jpg"
+                },
+                {
+                    "name": "Soundwave - Communications",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/soundwave-communications-TMA-bot.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Eject - Electronic Surveillance",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/eject-electronic-surveillance-TMA-bot.jpg"
+                },
+                {
+                    "name": "Ramhorn - Warrior",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/ramhorn-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Steeljaw - Tracker",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/steeljaw-tracker-TMA-bot.jpg"
+                },
+                {
+                    "name": "Buzzsaw - Spy",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/buzzsaw-spy-TMA-bot.jpg"
+                },
+                {
+                    "name": "Frenzy - Warrior",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/frenzy-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Ravage - Saboteur",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/ravage-saboteur-TMA-bot.jpg"
+                },
+                {
+                    "name": "Buzzsaw, Ravage, Frenzy Attack!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/buzzsaw-ravage-frenzy-attack!-TMA.jpg"
+                },
+                {
+                    "name": "Daring Counterattack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/daring-counterattack-TMA.jpg"
+                },
+                {
+                    "name": "Inner Groove",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/inner-groove-TMA.jpg"
+                },
+                {
+                    "name": "Intercept Communications",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/intercept-communications-TMA.jpg"
+                },
+                {
+                    "name": "Interpret the Airwaves",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/interpret-the-airwaves-TMA.jpg"
+                },
+                {
+                    "name": "Obstructive Rhythm",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/obstructive-rhythm-TMA.jpg"
+                },
+                {
+                    "name": "Recover Cassette",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/recover-cassette-TMA.jpg"
+                }
+            ],
+            "": [
+                {
+                    "name": "Private Camshaft - Special Ops, Scout",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-camshaft-special-ops-scout-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Downshift - Special Ops, Security Agent",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-downshift-special-ops-security-agent-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Overdrive - Special Ops, Strategist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-overdrive-special-ops-strategist-TMA-bot.jpg"
+                },
+                {
+                    "name": "Airquake Hammerclaw",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/battle/airquake-hammerclaw-PRO.jpg"
+                }
+            ]
+        }
+    },
+    "Wave 1": {
+        "Battle Card": {
+            "Uncommon": [
+                {
+                    "name": "Aerial Recon",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/aerial-recon-TMA.jpg"
+                },
+                {
+                    "name": "Armed Hovercraft",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/armed-hovercraft-TMA.jpg"
+                },
+                {
+                    "name": "Backup Plan",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/backup-plan-TMA.jpg"
+                },
+                {
+                    "name": "Blast Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/blast-shield-TMA.jpg"
+                },
+                {
+                    "name": "Body Armor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/body-armor-TMA.jpg"
+                },
+                {
+                    "name": "Bug Bomb",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/bug-bomb-TMA.jpg"
+                },
+                {
+                    "name": "Collateral Damage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/collateral-damage-TMA.jpg"
+                },
+                {
+                    "name": "Computer Sabotage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/computer-sabotage-TMA.jpg"
+                },
+                {
+                    "name": "Crushing Treads",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/crushing-treads-TMA.jpg"
+                },
+                {
+                    "name": "Debilitating Crystal",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/debilitating-crystal-TMA.jpg"
+                },
+                {
+                    "name": "Disarm",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/disarm-TMA.jpg"
+                },
+                {
+                    "name": "Disruption",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/disruption-TMA.jpg"
+                },
+                {
+                    "name": "Disruptive Entrance",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/disruptive-entrance-TMA.jpg"
+                },
+                {
+                    "name": "Emergency Maintenance",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/emergency-maintenance-TMA.jpg"
+                },
+                {
+                    "name": "Equipment Enthusiast",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/equipment-enthusiast-TMA.jpg"
+                },
+                {
+                    "name": "Grenade Launcher",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/grenade-launcher-TMA.jpg"
+                },
+                {
+                    "name": "Jaws of Steel",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/jaws-of-steel-TMA.jpg"
+                },
+                {
+                    "name": "Multi-Mission Gear",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/multi-mission-gear-TMA.jpg"
+                },
+                {
+                    "name": "Multi-Tool",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/multi-tool-TMA.jpg"
+                },
+                {
+                    "name": "Plasma Burst",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/plasma-burst-TMA.jpg"
+                },
+                {
+                    "name": "Power Sword",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/power-sword-TMA.jpg"
+                },
+                {
+                    "name": "Ramming Speed",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/ramming-speed-TMA.jpg"
+                },
+                {
+                    "name": "Rapid Ascent",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/rapid-ascent-TMA.jpg"
+                },
+                {
+                    "name": "Strafing Run",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/strafing-run-TMA.jpg"
+                },
+                {
+                    "name": "Swap Missions",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/swap-missions-TMA.jpg"
+                },
+                {
+                    "name": "Treasure Hunt",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/treasure-hunt-TMA.jpg"
+                },
+                {
+                    "name": "Turbo Boosters",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/turbo-boosters-TMA.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Agility of Bumblebee",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/agility-of-bumblebee-TMA.jpg"
+                },
+                {
+                    "name": "Bombing Run",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/bombing-run-TMA.jpg"
+                },
+                {
+                    "name": "Cargo Trailer",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/cargo-trailer-TMA.jpg"
+                },
+                {
+                    "name": "Combat Training",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/combat-training-TMA.jpg"
+                },
+                {
+                    "name": "Cybertonium Bow",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/cybertonium-bow-TMA.jpg"
+                },
+                {
+                    "name": "Data Bank",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/data-bank-TMA.jpg"
+                },
+                {
+                    "name": "Dino-Chomp!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/dino-chomp!-TMA.jpg"
+                },
+                {
+                    "name": "Energon Axe",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/energon-axe-TMA.jpg"
+                },
+                {
+                    "name": "Fusion Cannon of Megatron",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/fusion-cannon-of-megatron-TMA.jpg"
+                },
+                {
+                    "name": "Heroism",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/heroism-TMA.jpg"
+                },
+                {
+                    "name": "Hunker Down",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hunker-down-TMA.jpg"
+                },
+                {
+                    "name": "I Still Function!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/i-still-function!-TMA.jpg"
+                },
+                {
+                    "name": "Ion Blaster of Optimus Prime",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/ion-blaster-of-optimus-prime-TMA.jpg"
+                },
+                {
+                    "name": "Matrix of Leadership",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/matrix-of-leadership-TMA.jpg"
+                },
+                {
+                    "name": "Null-Ray of Starscream",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/null-ray-of-starscream-TMA.jpg"
+                },
+                {
+                    "name": "One Shall Stand, One Shall Fall",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/one-shall-stand-one-shall-fall-TMA.jpg"
+                },
+                {
+                    "name": "Peace through Tyranny",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/peace-through-tyranny-TMA.jpg"
+                },
+                {
+                    "name": "Photon Bomb",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/photon-bomb-TMA.jpg"
+                },
+                {
+                    "name": "Roll Out!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/roll-out!-TMA.jpg"
+                },
+                {
+                    "name": "Salvage for Parts",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/salvage-for-parts-TMA.jpg"
+                },
+                {
+                    "name": "Security Checkpoint",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/security-checkpoint-TMA.jpg"
+                },
+                {
+                    "name": "Shock Absorbers",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/shock-absorbers-TMA.jpg"
+                },
+                {
+                    "name": "Start Your Engines",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/start-your-engines-TMA.jpg"
+                },
+                {
+                    "name": "Static Laser of Ironhide",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/static-laser-of-ironhide-TMA.jpg"
+                },
+                {
+                    "name": "Swap Parts",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/swap-parts-TMA.jpg"
+                },
+                {
+                    "name": "Swarm!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/swarm!-TMA.jpg"
+                },
+                {
+                    "name": "System Reboot",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/system-reboot-TMA.jpg"
+                },
+                {
+                    "name": "Team-Up Tactics",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/team-up-tactics-TMA.jpg"
+                },
+                {
+                    "name": "The Bigger They Are",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/the-bigger-they-are-TMA.jpg"
+                },
+                {
+                    "name": "Thermal Weaponry",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/thermal-weaponry-TMA.jpg"
+                },
+                {
+                    "name": "All-Out Attack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/all-out-attack-TMA.jpg"
+                },
+                {
+                    "name": "Tandem Targeting System",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/tandem-targeting-system-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Armored Plating",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/armored-plating-TMA.jpg"
+                },
+                {
+                    "name": "Battle Ready",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/battle-ready-TMA.jpg"
+                },
+                {
+                    "name": "Brainstorm",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/brainstorm-TMA.jpg"
+                },
+                {
+                    "name": "Crushing Size",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/crushing-size-TMA.jpg"
+                },
+                {
+                    "name": "Data Pad",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/data-pad-TMA.jpg"
+                },
+                {
+                    "name": "Drill Arms",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/drill-arms-TMA.jpg"
+                },
+                {
+                    "name": "Flamethrower",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/flamethrower-TMA.jpg"
+                },
+                {
+                    "name": "Force Field",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/force-field-TMA.jpg"
+                },
+                {
+                    "name": "Handheld Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/handheld-blaster-TMA.jpg"
+                },
+                {
+                    "name": "Improvised Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/improvised-shield-TMA.jpg"
+                },
+                {
+                    "name": "Incoming Transmission",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/incoming-transmission-TMA.jpg"
+                },
+                {
+                    "name": "Inspiring Leadership",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/inspiring-leadership-TMA.jpg"
+                },
+                {
+                    "name": "Leap Into Battle",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/leap-into-battle-TMA.jpg"
+                },
+                {
+                    "name": "Medic!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/medic!-TMA.jpg"
+                },
+                {
+                    "name": "New Designs",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/new-designs-TMA.jpg"
+                },
+                {
+                    "name": "Piercing Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/piercing-blaster-TMA.jpg"
+                },
+                {
+                    "name": "Primary Laser",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/primary-laser-TMA.jpg"
+                },
+                {
+                    "name": "Rapid Conversion",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/rapid-conversion-TMA.jpg"
+                },
+                {
+                    "name": "Ready For Action",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/ready-for-action-TMA.jpg"
+                },
+                {
+                    "name": "Reinforced Plating",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/reinforced-plating-TMA.jpg"
+                },
+                {
+                    "name": "Repair Bay",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/repair-bay-TMA.jpg"
+                },
+                {
+                    "name": "Scrapper Gauntlets",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/scrapper-gauntlets-TMA.jpg"
+                },
+                {
+                    "name": "Supercharge",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/supercharge-TMA.jpg"
+                },
+                {
+                    "name": "Zap",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/zap-TMA.jpg"
+                }
+            ]
+        },
+        "Excluded": {
+            "Rare": [
+                {
+                    "name": "Height Advantage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/height-advantage-TMA.jpg"
+                },
+                {
+                    "name": "Protected by Metroplex",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/protected-by-metroplex-TMA.jpg"
+                },
+                {
+                    "name": "Rally the City",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/rally-the-city-TMA.jpg"
+                },
+                {
+                    "name": "Bumblebee - Brave Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bumblebee-brave-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Ironhide - Veteran Autobot",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/ironhide-veteran-autobot-TMA-bot.jpg"
+                },
+                {
+                    "name": "Optimus Prime - Autobot Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/optimus-prime-autobot-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Red Alert - Security Chief",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/red-alert-security-chief-TMA-bot.jpg"
+                }
+            ],
+            "Super Rare": [
+                {
+                    "name": "CliffJumper - Renegade Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/cliffjumper-renegade-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Slipstream - Strategic Seeker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/slipstream-strategic-seeker-TMA-bot.jpg"
+                },
+                {
+                    "name": "Metroplex - Autobot City",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/metroplex-autobot-city-TMA-bot.jpg"
+                },
+                {
+                    "name": "Scamper - City Patrol",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/scamper-city-patrol-TMA-bot.jpg"
+                },
+                {
+                    "name": "Six-Gun - Heavy Weapon Expert",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/six-gun-heavy-weapon-expert-TMA-bot.jpg"
+                },
+                {
+                    "name": "Slammer - Combat Drone",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/slammer-combat-drone-TMA-bot.jpg"
+                }
+            ]
+        },
+        "Large Character": {
+            "Rare": [
+                {
+                    "name": "Arcee - Skilled Fighter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/arcee-skilled-fighter-TMA-bot.jpg"
+                },
+                {
+                    "name": "Autobot Cosmos - Recon and Communication",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-cosmos-recon-and-communication-TMA-bot.jpg"
+                },
+                {
+                    "name": "Chromia - Special Ops",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/chromia-special-ops-TMA-bot.jpg"
+                },
+                {
+                    "name": "Darkmount - Cruel Overlord",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/darkmount-cruel-overlord-TMA-bot.jpg"
+                },
+                {
+                    "name": "Decepticon Shockwave - Cybertron Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/decepticon-shockwave-cybertron-commander-TMA-bot.jpg"
+                },
+                {
+                    "name": "Grimlock - Dinobot Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/grimlock-dinobot-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Insecticon Skrapnel - Insecticon Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/insecticon-skrapnel-insecticon-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Megatron - Living Weapon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/megatron-living-weapon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Optimus Prime - Battlefield Legend",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/optimus-prime-battlefield-legend-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sunstorm - Fusion Flyer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sunstorm-fusion-flyer-TMA-bot.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Autobot Hound - Long Range Scout",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-hound-long-range-scout-TMA-bot.jpg"
+                },
+                {
+                    "name": "Barrage - Merciless Insecticon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/barrage-merciless-insecticon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Bombshell - Insecticon Mind-Controller",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bombshell-insecticon-mind-controller-TMA-bot.jpg"
+                },
+                {
+                    "name": "Bumblebee - Courageous Scout",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bumblebee-courageous-scout-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dinobot Slug - Hot-Header Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dinobot-slug-hot-header-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dinobot Swoop - Fearsome Flyer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dinobot-swoop-fearsome-flyer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Flamewar - Veteran Decepticon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/flamewar-veteran-decepticon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Megatron - Decepticon Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/megatron-decepticon-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Optimus Prime - Freedom Fighter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/optimus-prime-freedom-fighter-TMA-bot.jpg"
+                },
+                {
+                    "name": "Ramjet - Sky Smasher",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/ramjet-sky-smasher-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Kup - Veteran Sergeant",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-kup-veteran-sergeant-TMA-bot.jpg"
+                },
+                {
+                    "name": "Starscream - Scheming Second-In-Command",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/starscream-scheming-second-in-command-TMA-bot.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Autobot Jazz - Special Ops",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-jazz-special-ops-TMA-bot.jpg"
+                },
+                {
+                    "name": "Autobot Mirage - Lone Wolf",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-mirage-lone-wolf-TMA-bot.jpg"
+                },
+                {
+                    "name": "Chop Shop - Sneaky Insecticon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/chop-shop-sneaky-insecticon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Deadlock - Bounty Hunter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/deadlock-bounty-hunter-TMA-bot.jpg"
+                },
+                {
+                    "name": "Demolisher - Devoted Decepticon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/demolisher-devoted-decepticon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dinobot Sludge - Mighty Stomper",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dinobot-sludge-mighty-stomper-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dinobot Snarl - Desert Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dinobot-snarl-desert-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Inferno - Fearless Firefighter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/inferno-fearless-firefighter-TMA-bot.jpg"
+                },
+                {
+                    "name": "Jetfire - Air Guardian",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/jetfire-air-guardian-TMA-bot.jpg"
+                },
+                {
+                    "name": "Kickback - Cunning Insecticon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/kickback-cunning-insecticon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Prowl - Military Strategist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/prowl-military-strategist-TMA-bot.jpg"
+                },
+                {
+                    "name": "Ransack - Insecticon Commando",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/ransack-insecticon-commando-TMA-bot.jpg"
+                },
+                {
+                    "name": "Skywarp - Sneaky Prankster",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/skywarp-sneaky-prankster-TMA-bot.jpg"
+                },
+                {
+                    "name": "Starscream - Air Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/starscream-air-commander-TMA-bot.jpg"
+                },
+                {
+                    "name": "Thundercracker - Mach Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/thundercracker-mach-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Wheeljack - Weapons Inventor",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/wheeljack-weapons-inventor-TMA-bot.jpg"
+                }
+            ],
+            "Super Rare": [
+                {
+                    "name": "Bumblebee - Legendary Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bumblebee-legendary-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Nemesis Prime - Dark Clone",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/nemesis-prime-dark-clone-TMA-bot.jpg"
+                }
+            ]
+        }
+    },
+    "Wave 2": {
+        "Battle Card": {
+            "Uncommon": [
+                {
+                    "name": "Aerialbot Enigma",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/aerialbot-enigma-TMA.jpg"
+                },
+                {
+                    "name": "Attack Drone",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/attack-drone-TMA.jpg"
+                },
+                {
+                    "name": "Backup Beam",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/backup-beam-TMA.jpg"
+                },
+                {
+                    "name": "Bolt of Lightning",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/bolt-of-lightning-TMA.jpg"
+                },
+                {
+                    "name": "Bravery",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/bravery-TMA.jpg"
+                },
+                {
+                    "name": "Cornered!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/cornered!-TMA.jpg"
+                },
+                {
+                    "name": "Enemy Combat Analysis",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/enemy-combat-analysis-TMA.jpg"
+                },
+                {
+                    "name": "Evasive Maneuvers",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/evasive-maneuvers-TMA.jpg"
+                },
+                {
+                    "name": "Focus Fire",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/focus-fire-TMA.jpg"
+                },
+                {
+                    "name": "Leap of Faith",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/leap-of-faith-TMA.jpg"
+                },
+                {
+                    "name": "Noble's Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/nobles-blaster-TMA.jpg"
+                },
+                {
+                    "name": "Pep Talk",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/pep-talk-TMA.jpg"
+                },
+                {
+                    "name": "Power Punch",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/power-punch-TMA.jpg"
+                },
+                {
+                    "name": "Reckless Charge",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/reckless-charge-TMA.jpg"
+                },
+                {
+                    "name": "Scoundrel's Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/scoundrels-blaster-TMA.jpg"
+                },
+                {
+                    "name": "Scrounge",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/scrounge-TMA.jpg"
+                },
+                {
+                    "name": "Secret Dealings",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/secret-dealings-TMA.jpg"
+                },
+                {
+                    "name": "Smelt",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/smelt-TMA.jpg"
+                },
+                {
+                    "name": "Sonic Scramble",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/sonic-scramble-TMA.jpg"
+                },
+                {
+                    "name": "Sparring Gear",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/sparring-gear-TMA.jpg"
+                },
+                {
+                    "name": "Stealthiness",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/stealthiness-TMA.jpg"
+                },
+                {
+                    "name": "Stunticon Enigma",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/stunticon-enigma-TMA.jpg"
+                },
+                {
+                    "name": "Superior Cannon",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/superior-cannon-TMA.jpg"
+                },
+                {
+                    "name": "Superior Jetpack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/superior-jetpack-TMA.jpg"
+                },
+                {
+                    "name": "Superior Plating",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/superior-plating-TMA.jpg"
+                },
+                {
+                    "name": "Universal Network Access",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/universal-network-access-TMA.jpg"
+                },
+                {
+                    "name": "Vandalize",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/vandalize-TMA.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Aerialbot Formation",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/aerialbot-formation-TMA.jpg"
+                },
+                {
+                    "name": "Ancient Wisdom",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/ancient-wisdom-TMA.jpg"
+                },
+                {
+                    "name": "Bad Attitude",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/bad-attitude-TMA.jpg"
+                },
+                {
+                    "name": "Bumpers",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/bumpers-TMA.jpg"
+                },
+                {
+                    "name": "Combat Commands",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/combat-commands-TMA.jpg"
+                },
+                {
+                    "name": "Crash Landing",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/crash-landing-TMA.jpg"
+                },
+                {
+                    "name": "Decepticon Crown",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/decepticon-crown-TMA.jpg"
+                },
+                {
+                    "name": "Defensive Driving",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/defensive-driving-TMA.jpg"
+                },
+                {
+                    "name": "Dinobot Enigma",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/dinobot-enigma-TMA.jpg"
+                },
+                {
+                    "name": "Electrified Spikes",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/electrified-spikes-TMA.jpg"
+                },
+                {
+                    "name": "Energized Field",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/energized-field-TMA.jpg"
+                },
+                {
+                    "name": "Espionage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/espionage-TMA.jpg"
+                },
+                {
+                    "name": "Fog of War",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/fog-of-war-TMA.jpg"
+                },
+                {
+                    "name": "Heavy Handed",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/heavy-handed-TMA.jpg"
+                },
+                {
+                    "name": "Inferno Breath",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/inferno-breath-TMA.jpg"
+                },
+                {
+                    "name": "Intelligence Mission",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/intelligence-mission-TMA.jpg"
+                },
+                {
+                    "name": "Inverted!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/inverted!-TMA.jpg"
+                },
+                {
+                    "name": "Marksmanship",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/marksmanship-TMA.jpg"
+                },
+                {
+                    "name": "Master Plan",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/master-plan-TMA.jpg"
+                },
+                {
+                    "name": "Mining Pick",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/mining-pick-TMA.jpg"
+                },
+                {
+                    "name": "Mounted Missiles",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/mounted-missiles-TMA.jpg"
+                },
+                {
+                    "name": "Predacon Enigma",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/predacon-enigma-TMA.jpg"
+                },
+                {
+                    "name": "Press the Advantage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/press-the-advantage-TMA.jpg"
+                },
+                {
+                    "name": "Recon System",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/recon-system-TMA.jpg"
+                },
+                {
+                    "name": "Sentinel Enigma",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/sentinel-enigma-TMA.jpg"
+                },
+                {
+                    "name": "Steamroll",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/steamroll-TMA.jpg"
+                },
+                {
+                    "name": "Stunticon Swagger",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/stunticon-swagger-TMA.jpg"
+                },
+                {
+                    "name": "Tackle",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/tackle-TMA.jpg"
+                },
+                {
+                    "name": "Tooth and Claw",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/tooth-and-claw-TMA.jpg"
+                },
+                {
+                    "name": "Unleash Potential",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/unleash-potential-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Armored Plating",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/armored-plating-TMA.jpg"
+                },
+                {
+                    "name": "Bashing Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/bashing-shield-TMA.jpg"
+                },
+                {
+                    "name": "Confidence",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/confidence-TMA.jpg"
+                },
+                {
+                    "name": "Cooling Vents",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/cooling-vents-TMA.jpg"
+                },
+                {
+                    "name": "Energon Slingshot",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/energon-slingshot-TMA.jpg"
+                },
+                {
+                    "name": "Enforcement Batons",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/enforcement-batons-TMA.jpg"
+                },
+                {
+                    "name": "Erractic Lightning",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/erractic-lightning-TMA.jpg"
+                },
+                {
+                    "name": "Escape Route",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/escape-route-TMA.jpg"
+                },
+                {
+                    "name": "Field Communicator",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/field-communicator-TMA.jpg"
+                },
+                {
+                    "name": "Field Repair",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/field-repair-TMA.jpg"
+                },
+                {
+                    "name": "Fling",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/fling-TMA.jpg"
+                },
+                {
+                    "name": "Handheld Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/handheld-blaster-TMA.jpg"
+                },
+                {
+                    "name": "Improvised Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/improvised-shield-TMA.jpg"
+                },
+                {
+                    "name": "Primary Laser",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/primary-laser-TMA.jpg"
+                },
+                {
+                    "name": "Rapid Conversion",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/rapid-conversion-TMA.jpg"
+                },
+                {
+                    "name": "Rest and Relaxation",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/rest-and-relaxation-TMA.jpg"
+                },
+                {
+                    "name": "Security Console",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/security-console-TMA.jpg"
+                },
+                {
+                    "name": "Spare Parts",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/spare-parts-TMA.jpg"
+                },
+                {
+                    "name": "Surprise Attack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/surprise-attack-TMA.jpg"
+                },
+                {
+                    "name": "Swindled",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/swindled-TMA.jpg"
+                },
+                {
+                    "name": "Tech Research",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/tech-research-TMA.jpg"
+                },
+                {
+                    "name": "Testify",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/testify-TMA.jpg"
+                },
+                {
+                    "name": "Underhanded Tactics",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/underhanded-tactics-TMA.jpg"
+                },
+                {
+                    "name": "Vaporize",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/vaporize-TMA.jpg"
+                }
+            ]
+        },
+        "Large Character": {
+            "Rare": [
+                {
+                    "name": "Acid Storm - Toxic Terror",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/acid-storm-toxic-terror-TMA-bot.jpg"
+                },
+                {
+                    "name": "Bombshell - Decepticon Psy Ops",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bombshell-decepticon-psy-ops-TMA-bot.jpg"
+                },
+                {
+                    "name": "Decepticon Venin - Insecticon Tyrant",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/decepticon-venin-insecticon-tyrant-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dinobot Sludge - Dino Demolitions",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dinobot-sludge-dino-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dinobot Slug - Battering Ram",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dinobot-slug-battering-ram-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dinobot Snarl - Spiked Battler",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dinobot-snarl-spiked-battler-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dinobot Swoop - Bombardier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dinobot-swoop-bombardier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Divebomb - Aerial Assault",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/divebomb-aerial-assault-TMA-bot.jpg"
+                },
+                {
+                    "name": "Grimlock - Powerful Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/grimlock-powerful-commander-TMA-bot.jpg"
+                },
+                {
+                    "name": "Skywarp - Teleporting Seeker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/skywarp-teleporting-seeker-TMA-bot.jpg"
+                },
+                {
+                    "name": "Thrust - Supersonic Interceptor",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/thrust-supersonic-interceptor-TMA-bot.jpg"
+                },
+                {
+                    "name": "Warpath - Confident Sharpshooter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/warpath-confident-sharpshooter-TMA-bot.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Air Raid - Fearless Flyer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/air-raid-fearless-flyer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Alpha Bravo - Airborne Special Ops",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/alpha-bravo-airborne-special-ops-TMA-bot.jpg"
+                },
+                {
+                    "name": "Autobot Novastar - Search and Rescue",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-novastar-search-and-rescue-TMA-bot.jpg"
+                },
+                {
+                    "name": "Blackwing Aerial Attacker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/blackwing-aerial-attacker--TMA-bot.jpg"
+                },
+                {
+                    "name": "Breakdown - Paranoid Scout",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/breakdown-paranoid-scout-TMA-bot.jpg"
+                },
+                {
+                    "name": "Bumblebee - Trusted Lieutenant",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bumblebee-trusted-lieutenant-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dead End - Doomed Loner",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dead-end-doomed-loner-TMA-bot.jpg"
+                },
+                {
+                    "name": "Decepticon Drag Strip - Cutthroat Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/decepticon-drag-strip-cutthroat-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dreadwind - Air Defense",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dreadwind-air-defense-TMA-bot.jpg"
+                },
+                {
+                    "name": "Fireflight - Sky High Recon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/fireflight-sky-high-recon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Megatron - Arrogant Ruler",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/megatron-arrogant-ruler-TMA-bot.jpg"
+                },
+                {
+                    "name": "Motormaster - Stunticon Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/motormaster-stunticon-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Offroad - All-Terrain Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/offroad-all-terrain-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Ruckus - Combat Assault",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/ruckus-combat-assault-TMA-bot.jpg"
+                },
+                {
+                    "name": "Silverbolt - Aerialbot Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/silverbolt-aerialbot-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Skydive - Air Warfare Specialist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/skydive-air-warfare-specialist-TMA-bot.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Autobot Hotrod - Impulsive Fighter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-hotrod-impulsive-fighter-TMA-bot.jpg"
+                },
+                {
+                    "name": "Autobot Mirage - Counterintelligence",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-mirage-counterintelligence-TMA-bot.jpg"
+                },
+                {
+                    "name": "Bluestreak - Reluctant Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bluestreak-reluctant-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Blurr - Fastest Bot in the Galaxy",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/blurr-fastest-bot-in-the-galaxy-TMA-bot.jpg"
+                },
+                {
+                    "name": "Dirge - Doombringer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dirge-doombringer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Grapple - Autobot Architect",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/grapple-autobot-architect-TMA-bot.jpg"
+                },
+                {
+                    "name": "Ironhide - Steadfast Brawler",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/ironhide-steadfast-brawler-TMA-bot.jpg"
+                },
+                {
+                    "name": "Optimus Prime - Gleaming Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/optimus-prime-gleaming-commander-TMA-bot.jpg"
+                },
+                {
+                    "name": "Predacon Headstrong - Ground Assault",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/predacon-headstrong-ground-assault-TMA-bot.jpg"
+                },
+                {
+                    "name": "Predacon Rampage - Savage Hunter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/predacon-rampage-savage-hunter-TMA-bot.jpg"
+                },
+                {
+                    "name": "Prowl - Strategic Mastermind",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/prowl-strategic-mastermind-TMA-bot.jpg"
+                },
+                {
+                    "name": "Razorclaw - Predacon Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/razorclaw-predacon-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sunstreaker - Bold Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sunstreaker-bold-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Torox - Fueler",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/torox-fueler-TMA-bot.jpg"
+                }
+            ],
+            "Super Rare": [
+                {
+                    "name": "Autobot Springer - Aerial Defense",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-springer-aerial-defense-TMA-bot.jpg"
+                },
+                {
+                    "name": "Blitzwing - Relentless Foe",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/blitzwing-relentless-foe-TMA-bot.jpg"
+                },
+                {
+                    "name": "Starscream - Decepticon King",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/starscream-decepticon-king-TMA-bot.jpg"
+                },
+                {
+                    "name": "Windblade - Combiner Hunter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/windblade-combiner-hunter-TMA-bot.jpg"
+                }
+            ]
+        },
+        "Excluded": {
+            "Rare": [
+                {
+                    "name": "Volcanicus - Fiery Champion",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/volcanicus-fiery-champion-TMA-alt.jpg"
+                },
+                {
+                    "name": "Builder's Tools",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/builders-tools-TMA.jpg"
+                },
+                {
+                    "name": "Constructicon Enigma",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/constructicon-enigma-TMA.jpg"
+                },
+                {
+                    "name": "Heavy Landing",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/heavy-landing-TMA.jpg"
+                },
+                {
+                    "name": "Reclaim",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/reclaim-TMA.jpg"
+                },
+                {
+                    "name": "Bonecrusher - Demolitions",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bonecrusher-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Hook - Surgical Engineer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/hook-surgical-engineer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Longhaul - Transport",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/longhaul-transport-TMA-bot.jpg"
+                },
+                {
+                    "name": "Mixmaster - Materials Fabrication",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/mixmaster-materials-fabrication-TMA-bot.jpg"
+                },
+                {
+                    "name": "Scavenger - Mining and Salvage",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/scavenger-mining-and-salvage-TMA-bot.jpg"
+                },
+                {
+                    "name": "Scrapper - Constructicon Foreman",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/scrapper-constructicon-foreman-TMA-bot.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Predaking - Ferocious Hunter",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/predaking-ferocious-hunter-TMA-alt.jpg"
+                },
+                {
+                    "name": "Optimus Maximus - Ultimate Defender",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/optimus-maximus-ultimate-defender-TMA-alt.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Menasor - Menacing Colossus",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/menasor-menacing-colossus-TMA-alt.jpg"
+                }
+            ],
+            "": [
+                {
+                    "name": "Superion - Sky Protector",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/superion-sky-protector-TMA-alt.jpg"
+                },
+                {
+                    "name": "Dreadwing - Sky Destroyer",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/dreadwing-sky-destroyer-TMA-alt.jpg"
+                },
+                {
+                    "name": "Work Overtime",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/work-overtime-TMA.jpg"
+                },
+                {
+                    "name": "Devastator - Towering Warrior",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/devastator-towering-warrior-TMA-alt.jpg"
+                }
+            ],
+            "Promo": [
+                {
+                    "name": "Omega Supreme - Autobot Defense Base",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/omega-supreme-autobot-defense-base-TMA-bot.jpg"
+                }
+            ],
+            "RT": [
+                {
+                    "name": "Bumblebee - Least Likely, Most Dangerous",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bumblebee-least-likely-most-dangerous-TMA-bot.jpg"
+                },
+                {
+                    "name": "Megatron - Cybertronian Tyrant",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/megatron-cybertronian-tyrant-TMA-bot.jpg"
+                },
+                {
+                    "name": "Starscream - Decepticon Lieutenant",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/starscream-decepticon-lieutenant-TMA-bot.jpg"
+                },
+                {
+                    "name": "Windblade - Defender of Truth",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/windblade-defender-of-truth-TMA-bot.jpg"
+                }
+            ]
+        }
+    },
+    "Wave 4": {
+        "Large Character": {
+            "Common": [
+                {
+                    "name": "Captain Astrotrain - Space Force, Transport",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/captain-astrotrain-space-force-transport-TMA-bot.jpg"
+                },
+                {
+                    "name": "Captain Impactor - Special Ops, Wrecker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/captain-impactor-special-ops-wrecker-TMA-bot.jpg"
+                },
+                {
+                    "name": "Lockdown - Bounty Hunter",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/lockdown-bounty-hunter-TMA-bot.jpg"
+                },
+                {
+                    "name": "Mudflap - Hired Muscle",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/mudflap-hired-muscle-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Smokescreen - Special Ops, Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-smokescreen-special-ops-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Apeface - Espionage Commando",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-apeface-espionage-commando-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Chop Shop - Infantry Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-chop-shop-infantry-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Nova Storm - Infantry, Combustion Specialist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-nova-storm-infantry-combustion-specialist-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Barricade - Infantry, Enforcer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-barricade-infantry-enforcer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Mirage - Special Ops, Spy",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-mirage-special-ops-spy-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Springer - Special Ops Aerial Defense",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-springer-special-ops-aerial-defense-TMA-bot.jpg"
+                },
+                {
+                    "name": "Specialist Sandstorm - Special Ops, Advance Guard",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/specialist-sandstorm-special-ops-advance-guard-TMA-bot.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Captain Jetfire - Engineering, Air Guardian",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/captain-jetfire-engineering-air-guardian-TMA-bot.jpg"
+                },
+                {
+                    "name": "Detritus - Arms Dealer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/detritus-arms-dealer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Omega Supreme (Base) - Transport City Defender",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/omega-supreme-base-transport-city-defender-TMA-alt.jpg"
+                },
+                {
+                    "name": "Omega Supreme (Spaceship) - Transport City Defender",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/omega-supreme-spaceship-transport-city-defender-TMA-alt.jpg"
+                },
+                {
+                    "name": "Omega Supreme (Tank) - Transport City Defender",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/omega-supreme-tank-transport-city-defender-TMA-alt.jpg"
+                },
+                {
+                    "name": "Private Hot Rod - Infantry, Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-hot-rod-infantry-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Thundercracker - Infantry, Seeker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-thundercracker-infantry-seeker-TMA-bot.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Deadlock - Soldier Of Fortune",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/deadlock-soldier-of-fortune-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Greenlight - Special Ops, Recon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-greenlight-special-ops-recon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Kickback - Infantry Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-kickback-infantry-soldier-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Spinister - Infantry, Aerial Assault",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-spinister-infantry-aerial-assault-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Crosshairs - Artillery, Weapons Supervisor",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-crosshairs-artillery-weapons-supervisor-TMA-bot.jpg"
+                },
+                {
+                    "name": "Skytread (Plane) - Special Ops Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/skytread-plane-special-ops-soldier-TMA-alt.jpg"
+                },
+                {
+                    "name": "Skytread (Tank) - Special Ops Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/skytread-tank-special-ops-soldier-TMA-alt.jpg"
+                }
+            ],
+            "Super Rare": [
+                {
+                    "name": "General Optimus Prime - Galactic Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/general-optimus-prime-galactic-commander-TMA-bot.jpg"
+                },
+                {
+                    "name": "Lord Megatron - Conqueror of Cybertron",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/lord-megatron-conqueror-of-cybertron-TMA-bot.jpg"
+                },
+                {
+                    "name": "Octone - Capricious Agitator",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/octone-capricious-agitator-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Soundblaster - Weapons Arms Dealer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-soundblaster-weapons-arms-dealer-TMA-bot.jpg"
+                }
+            ]
+        },
+        "Small Character": {
+            "Rare": [
+                {
+                    "name": "MTX-M2 Anit-Gravity Cannon",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/mtx-m2-anit-gravity-cannon-TMA.jpg"
+                },
+                {
+                    "name": "MTX-S2A Guided Missile Launcher",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/mtx-s2a-guided-missile-launcher-TMA.jpg"
+                },
+                {
+                    "name": "TTC-HD Turret Armor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/ttc-hd-turret-armor-TMA.jpg"
+                },
+                {
+                    "name": "TTC-HP Oblivion Launcher",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/ttc-hp-oblivion-launcher-TMA.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Shadowsteel Iceblade",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/shadowsteel-iceblade-TMA.jpg"
+                },
+                {
+                    "name": "Anti-Gravity Turbo Pack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/anti-gravity-turbo-pack-TMA.jpg"
+                },
+                {
+                    "name": "Anti-Ballistic Turret Helmet",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/anti-ballistic-turret-helmet-TMA.jpg"
+                },
+                {
+                    "name": "Oxidation Cannon",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/oxidation-cannon--TMA-bot.jpg"
+                },
+                {
+                    "name": "Steelbite Incisor Mask",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/steelbite-incisor-mask-TMA.jpg"
+                },
+                {
+                    "name": "Multi-Maneuver Glider Wings",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/multi-maneuver-glider-wings-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Private Fixit - Rescue Patrol, Medic",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-fixit-rescue-patrol-medic-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Highjump - Off-Road Patrol, Infiltration",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-highjump-off-road-patrol-infiltration-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Powertrain - Off-Road Patrol, Patrol Leader",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-powertrain-off-road-patrol-patrol-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Seawatch - Rescue Patrol, Search and Rescue",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-seawatch-rescue-patrol-search-and-rescue-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Sidetrack - Battle Patrol, Demolitions",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-sidetrack-battle-patrol-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Private Sunrunner - Battle Patrol, Air Defense",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/private-sunrunner-battle-patrol-air-defense-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Blackjack - Sports Car Patrol, Patrol Leader",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-blackjack-sports-car-patrol-patrol-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Hyperdrive - Sports Car Patrol, Demolitions",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-hyperdrive-sports-car-patrol-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Nightflight - Air Strike Patrol Spy",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-nightflight-air-strike-patrol-spy-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Ratbat - Spy Patrol, Fuel Scout",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-ratbat-spy-patrol-fuel-scout-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Rumble - Spy Patrol, Demolitions",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-rumble-spy-patrol-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Raider Tailwind - Air Strike Patrol, Strategist",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-tailwind-air-strike-patrol-strategist-TMA-bot.jpg"
+                }
+            ]
+        },
+        "Battle Card": {
+            "Rare": [
+                {
+                    "name": "4-Wheel Drive",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/4-wheel-drive-TMA.jpg"
+                },
+                {
+                    "name": "Backfire",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/backfire-TMA.jpg"
+                },
+                {
+                    "name": "Multi-Missile Pod",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/multi-missile-pod-TMA.jpg"
+                },
+                {
+                    "name": "Composite Armor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/composite-armor-TMA.jpg"
+                },
+                {
+                    "name": "Conversion Engine",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/conversion-engine-TMA.jpg"
+                },
+                {
+                    "name": "Coup",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/coup-TMA.jpg"
+                },
+                {
+                    "name": "Crude Club",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/crude-club-TMA.jpg"
+                },
+                {
+                    "name": "Daring Escape",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/daring-escape-TMA.jpg"
+                },
+                {
+                    "name": "Defensive Configuration",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/defensive-configuration-TMA.jpg"
+                },
+                {
+                    "name": "Hijack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hijack-TMA.jpg"
+                },
+                {
+                    "name": "Involuntary Promotion",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/involuntary-promotion-TMA.jpg"
+                },
+                {
+                    "name": "Jam Signals",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/jam-signals-TMA.jpg"
+                },
+                {
+                    "name": "Lucky Vest",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/lucky-vest-TMA.jpg"
+                },
+                {
+                    "name": "Opportune Offensive",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/opportune-offensive-TMA.jpg"
+                },
+                {
+                    "name": "Opportune Repairs",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/opportune-repairs-TMA.jpg"
+                },
+                {
+                    "name": "Overheat",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/overheat-TMA.jpg"
+                },
+                {
+                    "name": "Overwhelming Advantage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/overwhelming-advantage-TMA.jpg"
+                },
+                {
+                    "name": "Pincer Movement",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/pincer-movement-TMA.jpg"
+                },
+                {
+                    "name": "Pocket Processor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/pocket-processor-TMA.jpg"
+                },
+                {
+                    "name": "Relentless Invasion",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/relentless-invasion-TMA.jpg"
+                },
+                {
+                    "name": "Shoulder Holster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/shoulder-holster-TMA.jpg"
+                },
+                {
+                    "name": "Step Forward",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/step-forward-TMA.jpg"
+                },
+                {
+                    "name": "Toolbox",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/toolbox-TMA.jpg"
+                },
+                {
+                    "name": "Valuable Contract",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/valuable-contract-TMA.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Acute Reflexes",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/acute-reflexes-TMA.jpg"
+                },
+                {
+                    "name": "Adaptive Plating",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/adaptive-plating-TMA.jpg"
+                },
+                {
+                    "name": "Battlefield Incursion",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/battlefield-incursion-TMA.jpg"
+                },
+                {
+                    "name": "Blast Suit",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/blast-suit-TMA.jpg"
+                },
+                {
+                    "name": "Contract Contingency",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/contract-contingency-TMA.jpg"
+                },
+                {
+                    "name": "Decipher",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/decipher-TMA.jpg"
+                },
+                {
+                    "name": "Dual Wield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/dual-wield-TMA.jpg"
+                },
+                {
+                    "name": "Energy Transfer",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/energy-transfer-TMA.jpg"
+                },
+                {
+                    "name": "Erratic Cannon",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/erratic-cannon-TMA.jpg"
+                },
+                {
+                    "name": "Even The Score",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/even-the-score-TMA.jpg"
+                },
+                {
+                    "name": "Heroic Resolve",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/heroic-resolve-TMA.jpg"
+                },
+                {
+                    "name": "Immersed In Shadow",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/immersed-in-shadow-TMA.jpg"
+                },
+                {
+                    "name": "Increased Durability",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/increased-durability-TMA.jpg"
+                },
+                {
+                    "name": "Indestructible Sword",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/indestructible-sword-TMA.jpg"
+                },
+                {
+                    "name": "New Orders",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/new-orders-TMA.jpg"
+                },
+                {
+                    "name": "Plunder",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/plunder-TMA.jpg"
+                },
+                {
+                    "name": "Point Position",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/point-position-TMA.jpg"
+                },
+                {
+                    "name": "Sabotaged Armaments",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/sabotaged-armaments-TMA.jpg"
+                },
+                {
+                    "name": "Sturdy Javelin",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/sturdy-javelin-TMA.jpg"
+                },
+                {
+                    "name": "Swerve",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/swerve-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Crowbar",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/crowbar-TMA.jpg"
+                },
+                {
+                    "name": "Designated Target",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/designated-target-TMA.jpg"
+                },
+                {
+                    "name": "Fight for Position",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/fight-for-position-TMA.jpg"
+                },
+                {
+                    "name": "Guarded Posture",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/guarded-posture-TMA.jpg"
+                },
+                {
+                    "name": "Hazardous Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hazardous-shield-TMA.jpg"
+                },
+                {
+                    "name": "Head-on Collision",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/head-on-collision-TMA.jpg"
+                },
+                {
+                    "name": "Hidden Fortification",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hidden-fortification-TMA.jpg"
+                },
+                {
+                    "name": "Kinetic Converter",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/kinetic-converter-TMA.jpg"
+                },
+                {
+                    "name": "Kinetic Intensifier Whip",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/kinetic-intensifier-whip-TMA.jpg"
+                },
+                {
+                    "name": "Medic's Protective Field",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/medics-protective-field-TMA.jpg"
+                },
+                {
+                    "name": "Minor Medic Kit",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/minor-medic-kit-TMA.jpg"
+                },
+                {
+                    "name": "Reprocess",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/reprocess-TMA.jpg"
+                },
+                {
+                    "name": "Showing Off",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/showing-off-TMA.jpg"
+                },
+                {
+                    "name": "Soldier's Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/soldiers-blaster-TMA.jpg"
+                },
+                {
+                    "name": "Special Delivery",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/special-delivery-TMA.jpg"
+                },
+                {
+                    "name": "Stable Cover",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/stable-cover-TMA.jpg"
+                },
+                {
+                    "name": "Terrifying Resilience",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/terrifying-resilience-TMA.jpg"
+                },
+                {
+                    "name": "Unflinching Courage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/unflinching-courage-TMA.jpg"
+                },
+                {
+                    "name": "War Of Attrition",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/war-of-attrition-TMA.jpg"
+                },
+                {
+                    "name": "Wedge Formation",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/wedge-formation-TMA.jpg"
+                }
+            ]
+        },
+        "Excluded": {
+            "": [
+                {
+                    "name": "Trypticon - Assault Base",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/trypticon-assault-base-TMA-bot.jpg"
+                },
+                {
+                    "name": "Brunt - Artillery Drone",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/brunt-artillery-drone-TMA-alt.jpg"
+                },
+                {
+                    "name": "Full-Tilt - Base Recon",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/full-tilt-base-recon-TMA-bot.jpg"
+                },
+                {
+                    "name": "Wipe-Out - Devoted Minion",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/wipe-out-devoted-minion-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Six-Gun",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-six-gun-TMA-alt.jpg"
+                },
+                {
+                    "name": "Raider Brunt - Weapon, Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-brunt-weapon-soldier-TMA-alt.jpg"
+                },
+                {
+                    "name": "Nightbird - Enigmatic Agent",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/nightbird-enigmatic-agent-PRO-bot.jpg"
+                },
+                {
+                    "name": "Raider Skytread - Special Ops Soldier",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/raider-skytread-special-ops-soldier-TMA-alt.jpg"
+                },
+                {
+                    "name": "Captain Omega Supreme - Transport City Defender",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/captain-omega-supreme-transport-city-defender-TMA-alt.jpg"
+                }
+            ]
+        }
+    },
+    "Wave 5": {
+        "Battle Card": {
+            "Rare": [
+                {
+                    "name": "Belligerence",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/belligerence-TMA.jpg"
+                },
+                {
+                    "name": "Counterespionage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/counterespionage-TMA.jpg"
+                },
+                {
+                    "name": "End Hostilities",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/end-hostilities-TMA.jpg"
+                },
+                {
+                    "name": "Energon Mace",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/energon-mace-TMA.jpg"
+                },
+                {
+                    "name": "Escape Capsule",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/escape-capsule-TMA.jpg"
+                },
+                {
+                    "name": "Ghost Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/ghost-shield-TMA.jpg"
+                },
+                {
+                    "name": "Headbutt",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/headbutt-TMA.jpg"
+                },
+                {
+                    "name": "Intrusion Countermeasures Software",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/intrusion-countermeasures-software-TMA.jpg"
+                },
+                {
+                    "name": "Lose the Initiative",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/lose-the-initiative-TMA.jpg"
+                },
+                {
+                    "name": "Master of Metallikato",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/master-of-metallikato-TMA.jpg"
+                },
+                {
+                    "name": "Master Sword",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/master-sword-TMA.jpg"
+                },
+                {
+                    "name": "Nitro Booster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/nitro-booster-TMA.jpg"
+                },
+                {
+                    "name": "Overrule",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/overrule-TMA.jpg"
+                },
+                {
+                    "name": "Paralyzo Box",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/paralyzo-box-TMA.jpg"
+                },
+                {
+                    "name": "Plasma Horns",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/plasma-horns-TMA.jpg"
+                },
+                {
+                    "name": "Reflect Damage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/reflect-damage-TMA.jpg"
+                },
+                {
+                    "name": "Regenerative Core",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/regenerative-core-TMA.jpg"
+                },
+                {
+                    "name": "Scout Armor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/scout-armor-TMA.jpg"
+                },
+                {
+                    "name": "Sonic Stun-Gun",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/sonic-stun-gun-TMA.jpg"
+                },
+                {
+                    "name": "Speed Trap",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/speed-trap-TMA.jpg"
+                },
+                {
+                    "name": "Spymaster's Ruse",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/spymasters-ruse-TMA.jpg"
+                },
+                {
+                    "name": "Staggering Might",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/staggering-might-TMA.jpg"
+                },
+                {
+                    "name": "Trithyllium Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/trithyllium-shield-TMA.jpg"
+                },
+                {
+                    "name": "Versatility",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/versatility-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Blade Flurry",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/blade-flurry-TMA.jpg"
+                },
+                {
+                    "name": "Brass Knuckles",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/brass-knuckles-TMA.jpg"
+                },
+                {
+                    "name": "Camien Crash",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/camien-crash-TMA.jpg"
+                },
+                {
+                    "name": "Decoy Flares",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/decoy-flares-TMA.jpg"
+                },
+                {
+                    "name": "Disassemble",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/disassemble-TMA.jpg"
+                },
+                {
+                    "name": "Emergency Barricade",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/emergency-barricade-TMA.jpg"
+                },
+                {
+                    "name": "Grav-Inhibitor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/grav-inhibitor-TMA.jpg"
+                },
+                {
+                    "name": "Handheld Blaster",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/handheld-blaster-TMA.jpg"
+                },
+                {
+                    "name": "Hit and Run",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hit-and-run-TMA.jpg"
+                },
+                {
+                    "name": "Hold The Line",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hold-the-line-TMA.jpg"
+                },
+                {
+                    "name": "Hull Down",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hull-down-TMA.jpg"
+                },
+                {
+                    "name": "Improvised Shield",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/improvised-shield-TMA.jpg"
+                },
+                {
+                    "name": "Industrial-Grade Phase Charge",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/industrial-grade-phase-charge-TMA.jpg"
+                },
+                {
+                    "name": "Laser Scalpel",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/laser-scalpel-TMA.jpg"
+                },
+                {
+                    "name": "Lock On Target",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/lock-on-target-TMA.jpg"
+                },
+                {
+                    "name": "Mission Briefing",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/mission-briefing-TMA.jpg"
+                },
+                {
+                    "name": "Precision Fire",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/precision-fire-TMA.jpg"
+                },
+                {
+                    "name": "Scouting Mission",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/scouting-mission-TMA.jpg"
+                },
+                {
+                    "name": "Sharpened Talons",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/sharpened-talons-TMA.jpg"
+                },
+                {
+                    "name": "Spiked Bracelet",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/spiked-bracelet-TMA.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Concealing Contrails",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/concealing-contrails-TMA.jpg"
+                },
+                {
+                    "name": "Conversion Expertise",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/conversion-expertise-TMA.jpg"
+                },
+                {
+                    "name": "Crystal of Power",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/crystal-of-power-TMA.jpg"
+                },
+                {
+                    "name": "Electro-Optical Visor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/electro-optical-visor-TMA.jpg"
+                },
+                {
+                    "name": "Emergency Repair Patch",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/emergency-repair-patch-TMA.jpg"
+                },
+                {
+                    "name": "Enhanced Power Cell",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/enhanced-power-cell-TMA.jpg"
+                },
+                {
+                    "name": "Fusion Borer",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/fusion-borer-TMA.jpg"
+                },
+                {
+                    "name": "Hand-To-Hand Combat",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/hand-to-hand-combat-TMA.jpg"
+                },
+                {
+                    "name": "High Five",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/high-five-TMA.jpg"
+                },
+                {
+                    "name": "Holomatter Projector",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/holomatter-projector-TMA.jpg"
+                },
+                {
+                    "name": "Junk Cannon",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/junk-cannon-TMA.jpg"
+                },
+                {
+                    "name": "Last Stand",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/last-stand-TMA.jpg"
+                },
+                {
+                    "name": "Lucky Dodge",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/lucky-dodge-TMA.jpg"
+                },
+                {
+                    "name": "Magnetic Dysfunction Ray",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/magnetic-dysfunction-ray-TMA.jpg"
+                },
+                {
+                    "name": "Spy Satellite Uplink",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/spy-satellite-uplink-TMA.jpg"
+                },
+                {
+                    "name": "Supporting Fire",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/supporting-fire-TMA.jpg"
+                },
+                {
+                    "name": "Temporal Quagmire",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/temporal-quagmire-TMA.jpg"
+                },
+                {
+                    "name": "Triangulator",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/triangulator-TMA.jpg"
+                },
+                {
+                    "name": "Tripwire",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/tripwire-TMA.jpg"
+                },
+                {
+                    "name": "Turn the Tide",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/battle/turn-the-tide-TMA.jpg"
+                }
+            ]
+        },
+        "Stratagem": {
+            "Uncommon": [
+                {
+                    "name": "Aerial Enhancements",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/aerial-enhancements-TMA.jpg"
+                },
+                {
+                    "name": "All-Out",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/all-out-TMA.jpg"
+                },
+                {
+                    "name": "Heroic Spotlight",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/heroic-spotlight-TMA.jpg"
+                },
+                {
+                    "name": "Infiltration",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/infiltration-TMA.jpg"
+                },
+                {
+                    "name": "Me Grimlock, You Grimlock!",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/me-grimlock-you-grimlock!-TMA.jpg"
+                },
+                {
+                    "name": "Pop-Up Attack",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/pop-up-attack-TMA.jpg"
+                },
+                {
+                    "name": "Saturation Bombing",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/saturation-bombing-TMA.jpg"
+                },
+                {
+                    "name": "Stealth Mission",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/stealth-mission-TMA.jpg"
+                },
+                {
+                    "name": "Villainous Spotlight",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/villainous-spotlight-TMA.jpg"
+                },
+                {
+                    "name": "Weapons Cache",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/weapons-cache-TMA.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Better Things To Do Than Die",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/better-things-to-do-than-die-TMA.jpg"
+                },
+                {
+                    "name": "Bike Gang",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/bike-gang-TMA.jpg"
+                },
+                {
+                    "name": "Camien Toughness",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/camien-toughness-TMA.jpg"
+                },
+                {
+                    "name": "Jurassic Punch",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/jurassic-punch-TMA.jpg"
+                },
+                {
+                    "name": "Master Converter",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/master-converter-TMA.jpg"
+                },
+                {
+                    "name": "More Guns",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/more-guns-TMA.jpg"
+                },
+                {
+                    "name": "Orbital Strike",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/orbital-strike-TMA.jpg"
+                },
+                {
+                    "name": "Swap Heads",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/swap-heads-TMA.jpg"
+                },
+                {
+                    "name": "The Usurper",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/the-usurper-TMA.jpg"
+                },
+                {
+                    "name": "Who's Next?",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/whos-next-TMA.jpg"
+                }
+            ],
+            "Common": [
+                {
+                    "name": "Data Protection",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/data-protection-TMA.jpg"
+                },
+                {
+                    "name": "Duty & Honor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/duty-honor-TMA.jpg"
+                },
+                {
+                    "name": "Metallikato Stance",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/metallikato-stance-TMA.jpg"
+                },
+                {
+                    "name": "Resilience",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/resilience-TMA.jpg"
+                },
+                {
+                    "name": "Revenge",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/revenge-TMA.jpg"
+                },
+                {
+                    "name": "Sabotage",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/sabotage-TMA.jpg"
+                },
+                {
+                    "name": "Science Officer",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/science-officer-TMA.jpg"
+                },
+                {
+                    "name": "Sky Shadow Sync",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/sky-shadow-sync-TMA.jpg"
+                },
+                {
+                    "name": "Strategic Airlift",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/strategic-airlift-TMA.jpg"
+                },
+                {
+                    "name": "Systems Enhancement",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/stratagem/systems-enhancement-TMA.jpg"
+                }
+            ]
+        },
+        "Small Head Character": {
+            "Uncommon": [
+                {
+                    "name": "Apex",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/apex--TMA-bot.jpg"
+                },
+                {
+                    "name": "Autobot Stylor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-stylor--TMA-bot.jpg"
+                },
+                {
+                    "name": "Chasm",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/chasm--TMA-bot.jpg"
+                },
+                {
+                    "name": "Doomshot",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/doomshot--TMA-bot.jpg"
+                },
+                {
+                    "name": "Flameout",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/flameout--TMA-bot.jpg"
+                },
+                {
+                    "name": "Kreb",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/kreb--TMA-bot.jpg"
+                },
+                {
+                    "name": "Monxo",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/monxo--TMA-bot.jpg"
+                },
+                {
+                    "name": "Parsec",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/parsec--TMA-bot.jpg"
+                },
+                {
+                    "name": "Vorath",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/vorath--TMA-bot.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Autobot Teslor",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-teslor--TMA-bot.jpg"
+                },
+                {
+                    "name": "Brisko",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/brisko--TMA-bot.jpg"
+                },
+                {
+                    "name": "Clobber",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/clobber--TMA-bot.jpg"
+                },
+                {
+                    "name": "Flintlock",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/flintlock--TMA-bot.jpg"
+                },
+                {
+                    "name": "Freezeout",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/freezeout--TMA-bot.jpg"
+                },
+                {
+                    "name": "Grax",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/grax--TMA-bot.jpg"
+                },
+                {
+                    "name": "Ominus",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/ominus--TMA-bot.jpg"
+                }
+            ]
+        },
+        "Large Character": {
+            "Common": [
+                {
+                    "name": "Autobot Gears - Transport & Reconnaissance",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-gears-transport-reconnaissance-TMA-bot.jpg"
+                },
+                {
+                    "name": "Autobot Outback - Gunner",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-outback-gunner-TMA-bot.jpg"
+                },
+                {
+                    "name": "Beachcomber - Geologist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/beachcomber-geologist-TMA-bot.jpg"
+                },
+                {
+                    "name": "Bludgeon - Electric Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/bludgeon-electric-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Brawn - Demolitions",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/brawn-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Crankcase - Data Collector",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/crankcase-data-collector-TMA-bot.jpg"
+                },
+                {
+                    "name": "Wingspan - Data Processor",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/wingspan-data-processor-TMA-bot.jpg"
+                }
+            ],
+            "Super Rare": [
+                {
+                    "name": "Autobot Whirl - Aerial Assault",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-whirl-aerial-assault-TMA-bot.jpg"
+                },
+                {
+                    "name": "Decepticon Pounce - Infiltrator",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/decepticon-pounce-infiltrator-TMA-bot.jpg"
+                },
+                {
+                    "name": "Nightracer - Gunner",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/nightracer-gunner-TMA-bot.jpg"
+                },
+                {
+                    "name": "Roadbuster - Ground Assault Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/roadbuster-ground-assault-commander-TMA-bot.jpg"
+                },
+                {
+                    "name": "Tracks - Autobot Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/tracks-autobot-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Windcharger - Autobot Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/windcharger-autobot-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Windsweeper - Air Defense",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/windsweeper-air-defense-TMA-bot.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Sky Shadow (Plane)",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sky-shadow-plane--TMA-alt.jpg"
+                },
+                {
+                    "name": "Sky Shadow (Tank)",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sky-shadow-tank--TMA-alt.jpg"
+                }
+            ]
+        },
+        "Large Body Character": {
+            "Rare": [
+                {
+                    "name": "Autobot Nautica - Camien Engineer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/autobot-nautica-camien-engineer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Brainstorm - Biomechanical Engineer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/brainstorm-biomechanical-engineer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Fangry - Sky Tracker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/fangry-sky-tracker-TMA-bot.jpg"
+                },
+                {
+                    "name": "Sergeant Kup - Wrecker Leader",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sergeant-kup-wrecker-leader-TMA-bot.jpg"
+                },
+                {
+                    "name": "Skullsmasher - Swamp Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/skullsmasher-swamp-warrior-TMA-bot.jpg"
+                }
+            ],
+            "Uncommon": [
+                {
+                    "name": "Chromedome - Computer Programmer",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/chromedome-computer-programmer-TMA-bot.jpg"
+                },
+                {
+                    "name": "Decepticon Quake - Ground Assault",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/decepticon-quake-ground-assault-TMA-bot.jpg"
+                },
+                {
+                    "name": "Horri-Bull - Ground Trooper",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/horri-bull-ground-trooper-TMA-bot.jpg"
+                },
+                {
+                    "name": "Megatron - Fallen Hero",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/megatron-fallen-hero-TMA-bot.jpg"
+                },
+                {
+                    "name": "Mindwipe - Hypnotist",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/mindwipe-hypnotist-TMA-bot.jpg"
+                },
+                {
+                    "name": "Optimus Prime - Legendary Warrior",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/optimus-prime-legendary-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Topspin - Air & Space Assault",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/topspin-air-space-assault-TMA-bot.jpg"
+                },
+                {
+                    "name": "Twin Twist - Demolitions",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/twin-twist-demolitions-TMA-bot.jpg"
+                },
+                {
+                    "name": "Wolfwire - Ground Tracker",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/wolfwire-ground-tracker-TMA-bot.jpg"
+                }
+            ]
+        },
+        "Excluded": {
+            "Super Rare": [
+                {
+                    "name": "Fortress Maximus - Great War Veteran",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/fortress-maximus-great-war-veteran-TMA-bot.jpg"
+                },
+                {
+                    "name": "Cerebros - City Commander",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/cerebros-city-commander-TMA-bot.jpg"
+                }
+            ],
+            "Rare": [
+                {
+                    "name": "Emissary",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/emissary--TMA-bot.jpg"
+                },
+                {
+                    "name": "Arcana",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/arcana--PRO-bot.jpg"
+                },
+                {
+                    "name": "Tidal Wave - Dark Fleet (Aircraft Carrier)",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/tidal-wave-dark-fleet-aircraft-carrier-PRO-alt.jpg"
+                },
+                {
+                    "name": "Tidal Wave - Dark Fleet (Transport)",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/tidal-wave-dark-fleet-transport-PRO-alt.jpg"
+                },
+                {
+                    "name": "Tidal Wave - Dark Fleet (Battleship)",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/tidal-wave-dark-fleet-battleship-PRO-alt.jpg"
+                },
+                {
+                    "name": "Convex",
+                    "size": "Small",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/convex--PRO-bot.jpg"
+                },
+                {
+                    "name": "Perceptor - Precise Sniper",
+                    "size": "Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/perceptor-precise-sniper-PRO-bot.jpg"
+                }
+            ],
+            "": [
+                {
+                    "name": "Sky Shadow - Elite Warrior",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/tma/character/sky-shadow-elite-warrior-TMA-bot.jpg"
+                },
+                {
+                    "name": "Tidal Wave - Dark Fleet",
+                    "size": "Extra Large",
+                    "image_url": "https://images.fortressmaximus.io/cards/pro/character/tidal-wave-dark-fleet-PRO-bot.jpg"
+                }
+            ]
+        }
+    }
+}
