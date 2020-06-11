@@ -59,6 +59,13 @@ hr.divider {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+.sidenote {
+  width: 80%;
+  background-color: #ddd;
+  margin-left: 10%;
+  padding: 0.5em 1em;
+  border-style: ridge;
+}
 
 @media (min-width: 800px) {
   .content {
