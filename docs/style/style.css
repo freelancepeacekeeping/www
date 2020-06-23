@@ -74,9 +74,9 @@ hr.divider {
   border-style: ridge;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .content {
-    width: 750px;
+    width: 900px;
     margin: auto;
   }
   body { 
