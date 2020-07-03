@@ -25,12 +25,11 @@
 <hr/>
 <h1>The Active Player</h1>
 <h2>Bits and Bolts - Exploring TF:TCG Synergy</h2>
-<h3>2020.07.02</h3>
+<h3>2020.07.03</h3>
 
 <p>Welcome to Bits and Bolts, a series intended to help Transformers the Trading Card Game newcomers discover some of the valuable interactions between different cards. </p>
 
 <p>A concept you will eventually come across in TF:TCG is that, when a bunch of somethings happen at the same time, the attacking player does their parts of the somethings, and then the defending player does their parts of the somethings. Or more formally, borrowing from a <a href="https://tftcg.info/wave-5/keywords/head-mode-body-mode.html#Rules_Roundup-2020-06-10__610-5">recent roundup</a>, "when both players trigger an ability at the same time, the active player's abilities will complete before the defending player's". As this has been a big topic in Wave 5, let's look at some examples of what this means. </p>
-
 
 <figure>
   <img src="../images/bits-and-bolts/decepticon-quake-ground-assault-TMA-alt.jpg" alt="Decepticon Quake Alt Mode Image"/>
@@ -38,7 +37,7 @@
   <figcaption>Decepticon Quake, Chaos Cascade</figcaption>
 </figure>
 
-<p>We'll dive right in with Wave 5's problem maker, <a href="https://fortressmaximus.io/card/decepticon-quake-ground-assault-TMA">Decepticon Quake</a>. Decepticon Quake has a brilliantly chaotic feature; when someone is KO'd he does 1 damage to everyone but him. That doesn't sound like a lot at first, doing 1 damage to everyone wouldn't be a game-changing battle card, but if someone else is KO'd by that damage, it can connect into a whole complex cascade of KO's. Wave 5's introduction of Head and Body Modes has contributed a lot to the complexity. </p>
+<p>Wave 5's problem maker, <a href="https://fortressmaximus.io/card/decepticon-quake-ground-assault-TMA">Decepticon Quake</a>, is the best example of this. Decepticon Quake has a brilliantly chaotic feature; when someone is KO'd he does 1 damage to everyone but him. That doesn't sound like a lot at first, doing 1 damage to everyone wouldn't be a game-changing battle card, but if someone else is KO'd by that damage, it can connect into a whole complex cascade of KO's. Wave 5's introduction of Head and Body Modes has contributed a lot to the complexity. </p>
 
 <p>Let's walk through some Quake's in body-mode plays. First let's look at what happens when a Body mode character is deployed: </p>
 
@@ -47,7 +46,7 @@
             <li>Decepticons: Decepticon Quake/Kreb, Fangry/Vorath, Windsweeper</li>
             <li>Autobots: Sergeant Kup/Autobot Stylor, Perceptor/Parsec, Dinobot Slug</li>
         </ul></li>
-    <li>Windsweeper attacks into Sergeant Kup, KO'ing him. Deploying Autobot Stylor is triggered. Quake's Bot mode is also triggered. </li>
+        <li>Windsweeper attacks into Sergeant Kup, KO'ing him. <i>"Deploy Autobot Stylor"</i> is triggered. Quake's Bot mode effect is also triggered. </li>
     <li>The Decepticon team is the active player, they resolve their triggered effects first. There's only one, so they do 1 damage to Windsweeper and 1 damage to Fangry/Vorath. </li>
     <li>The Autobot team is the other player. The Autobots have two effects to resolve. They choose to resolve the damage first, doing 1 damage to Perceptor and Slug, and then they choose to deploy Stylor. </li>
 </ol>
@@ -60,62 +59,46 @@
     <li>Then its the Autobot team's turn. They have one triggered effect to resolve, so they do 1 more damage to Perceptor and Slug. </li>
 </ol>
 
-<p>Let's turn the table on the Decepticons. Let's look at what happens when the Autobots are attacking: </p>
+<p>Let's turn the table on the Decepticons by looking at what happens when the Autobots are attacking: </p>
 
 <ol class="play">
     <li>Our Battlefield is:<ul>
             <li>Decepticons: Decepticon Quake/Kreb, Fangry/Vorath, Windsweeper</li>
             <li>Autobots: Sergeant Kup/Autobot Stylor, Perceptor/Parsec, Dinobot Slug</li>
         </ul></li>
-    <li>Perceptor attacks into Fangry, KO'ing him. Deploying Vorath is triggered. Quake's Bot mode is also triggered. </li>
+        <li>Perceptor attacks into Fangry, KO'ing him. <i>"Deploy Vorath"</i> is triggered. Quake's Bot mode effect is also triggered. </li>
     <li>The Autobot team is the active player, so they resolve their triggered effects first. One damage is done to each of their characters. </li>
     <li>The Decepticon team is the other player, they resolve their triggered effects. They have two effects to resolve and, like the Autobots in the last game, can choose to deploy the head first to kick off another round of damage, or to do the damage first. </li>
 </ol>
 
+<p>So the trick with Quake is making sure you follow active/inactive player order. Let's make it a bit more complicated. </p>
 
+<ol class="play">
+    <li>Our Battlefield, as always, is:<ul>
+            <li>Decepticons: Decepticon Quake/Kreb, Fangry/Vorath, Windsweeper</li>
+            <li>Autobots: Sergeant Kup/Autobot Stylor, Perceptor/Parsec, Dinobot Slug</li>
+        </ul></li>
+        <li>Let's go back to Decepticons attacking. Windsweeper attacks into Sergeant Kup, KO'ing him. <i>"Deploy Autobot Stylor"</i> is triggered. Quake's Bot mode effect is also triggered. </li>
+    <li>The Decepticon team is the active player, they resolve their triggered effects first. There's only one, so they do 1 damage to Windsweeper and 1 damage to Fangry/Vorath. </li>
+    <li>The Autobot team is the other player. The Autobots have two effects to resolve. They choose to resolve the damage first, doing 1 damage to Perceptor and Slug. Perceptor gets KO'd. As before, two triggers fire from the KO event. One is Parsec being deployed, the other is Quake's effect. As the Decepticons are the active player, we put the Stylor deployment on hold and go back to the active player. </li>
+    <li>The Decepticons do 1 damage to Windsweeper and 1 damage to Fangry/Vorath. </li>
+    <li>Now it's on to the Autobot team. There are two triggers to be resolved here; the damage to Slug, and the deployment of Parsec. The Autobot player chooses to damage Slug first. </li>
+    <li>Now we're back to the triggered effect we put on hold. It's time to deploy Stylor. </li>
+</ol>
 
+<p>It's just as well the Autobot player chose to damage Slug first, otherwise Parsec would have KO'd and we'd be jumping off to another Quake effect, all before Stylor finally appears. </p>
 
-<pre>
-Image ideas:
+<p>Note that putting a triggered effect on hold comes from this part of the Expanded Rules: <i>"If multiple abilities trigger at the same time, and during the resolution of those abilities one or more new triggered abilities trigger, the remaining original triggered abilities wait until the newer abilities are all handled"</i>. </p>
 
-Show the board layout as cards?
-Animate it, showing health?
+<p>As if this isn't getting complex enough, there are other cards that will trigger an ability from a character being KO'd, be that a Revenge effect, Elita-1's played cards, Insection Venin with a Bug Bomb, or an Erratic Energy Grenade. What we've covered above should generally help in all of these situations. Active player first, and if a new KO happens, put the triggered effects you've not resolved yet on hold until you've dealt with the new KO event. </p>
 
+<p>I hope this helps. Decepticon Quake represents the latest step in the steady-complexity growth of Transformers the Trading Card Game. It'll take us all a little while, but soon enough we'll all be comfortably causing chaos cascades and laughing maniacally. Some useful deeper reading would be: </p>
 
-Next:
+<ul>
+    <li>The Decepticon Quake <a href="https://tftcg.info/wave-5/keywords/head-mode-body-mode.html#Rules_Roundup-2020-06-10__610-5">Rules Roundup</a>. </li>
+    <li>The "Triggered Abilities" and "Handling Multiple Triggered Abilities" section of the <a href="https://transformerstcg-support.wizards.com/hc/en-us/articles/360035661992-Transformers-TCG-Expanded-Rules-2-0">Expanded Rules 2.0</a>. </li>
+</ul>
 
-Decepticons are attacking the Autobots.
-
-Cons:  1 damage.
-Bots:  1 damage. Hold on deploy Head. Someone was KO'd on the Autobot side! (put the Deploy Head aside)
-Cons:  1 damage.
-Bots:  1 damage.
-Bots:  Deploy Head.
-
-
-See:
-</pre>
-
-<p class="sidenote">
-    <i>In some more complex game situations, handling a triggered ability may itself cause other triggered abilities to trigger. The most recent ability to trigger is the one whose effect happens first. If multiple abilities trigger at the same time, and during the resolution of those abilities one or more new triggered abilities trigger, the remaining original triggered abilities wait until the newer abilities are all handled. Once an ability triggers, it will resolve even if the character with that ability flips or is KO’d, or even if the Upgrade with that ability leaves the battlefield.</i>
-</p>
-
-<pre>
-Examples to look at; however the complexity just from the first two is probably more than enough. 
-   Cascading from a damage.
-   Cascading from an attack.
-   Raider Rumble's Revenge.  (Hazardous Shield, Raider Ratbat, Trypticon as worthy mentions)
-   Erratic Energy Grenade.
-   ISF/Involuntary Promotion.
-   Elita-1.
-   Sky-Combiners. (Sky Shadow as worthy mention)
-   Venin + Bug Bomb.
-</pre>
-
-<p class="sidenote">
-Q: Can you clarify timing on when heads activate in regard to finishing a trigger that caused the Body to be KO'd? Examples: Does Quake damage his own Head when he dies? Octone killing a Body and then his bounty triggers does this kill the Head when it is played? [Rules Roundup 2020-06-10]
-A: A head’s deploy ability is a triggered ability. When both players trigger an ability at the same time the active player’s abilities will complete before the defending player. A player may order their own simultaneous triggers how they wish. The player controlling Quake may order Quake’s damage trigger and Quake’s head’s deploy trigger such that Quake’s damage ability resolves first, and Quake’s head second. If Octone’s controller is the active player, they must use Octone’s bounty trigger before the defending player resolves their head’s deploy trigger.
-</p>
 </div>
 </div>
 </body>
