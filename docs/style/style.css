@@ -53,6 +53,9 @@ figure img {
   max-width: 100%;
   max-height: 70vh;
 }
+.play figure {
+    margin-top: 1em;
+}
 hr.divider {
   width: 20%;
   border-style: dashed;
