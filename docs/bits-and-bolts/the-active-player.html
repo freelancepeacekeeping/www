@@ -28,15 +28,13 @@
 <h3>2020.07.09</h3>
 
 
-<h1>WARNING: Needs rewriting as it contains errors!!</h1>
-
 <p>Welcome to Bits and Bolts, a series intended to help Transformers the Trading Card Game newcomers discover some of the valuable interactions between different cards. </p>
 
 <p class="sidenote">This article is published in tandem with Ansel Cox and Brian Blair's <a href="https://www.computronslab.com/decklists/featured-decklists/quake">Quake article for Computron's Lab</a>. Please also read that article for some in depth thinking on what should go into a Quake deck. </p>
 
 <p>A concept you will eventually come across in TF:TCG is that, when a bunch of somethings happen at the same time, the attacking player does their parts of the somethings, and then the defending player does their parts of the somethings. Or more formally, borrowing from a <a href="https://tftcg.info/wave-5/keywords/head-mode-body-mode.html#Rules_Roundup-2020-06-10__610-5">recent roundup</a>, "when both players trigger an ability at the same time, the active player's abilities will complete before the defending player's". As this has been a big topic in Wave 5, let's take a deeper look at this. </p>
 
-<p class="sidenote">Before we do so, a warning. This can screw with your brain while you're getting used to it. If you feel you need to take a step back and re-read it, I can confirm that you're not alone. </p>
+<p class="sidenote">TODO: REMOVE THIS???? Before we do so, a warning. This can screw with your brain while you're getting used to it. If you feel you need to take a step back and re-read it, I can confirm that you're not alone. </p>
 
 <figure>
   <img src="../images/bits-and-bolts/decepticon-quake-ground-assault-TMA-alt.jpg" alt="Decepticon Quake Alt Mode Image"/>
@@ -53,25 +51,11 @@
         <img src="../images/bits-and-bolts/the-active-player/Play-1.png" alt="Screenshot of battlefield"/>
         <figcaption>Our starting battlefield</figcaption>
     </figure>
-    <li>Windsweeper attacks into Sergeant Kup, KO'ing him. <i>"Deploy Autobot Stylor"</i> is triggered. Quake's Bot mode effect is also triggered. </li>
-    <li>The Decepticon team is the active player, they resolve their triggered effects first. There's only one, so they do 1 damage to Windsweeper and 1 damage to Fangry/Vorath. </li>
-    <li>The Autobot team is the other player. The Autobots have two effects to resolve. They choose to resolve the damage first, doing 1 damage to Perceptor and Snarl, and then they choose to deploy Stylor. </li>
+    <li>Windsweeper attacks into Sergeant Kup, KO'ing him. <i>"Deploy Autobot Stylor"</i> is triggered for the Autobot team. Quake's Bot mode effect is triggered for the Decepticon team. </li>
+    <li>The Decepticon team is the active player, so they resolve their triggered effects first. Per Quake, they do 1 damage to everyone except Quake. </li>
+    <li>The Autobot team is the other player. The Autobots have one effect to resolve, namely deploying Stylor. </li>
     <figure>
         <img src="../images/bits-and-bolts/the-active-player/Play-1-end.png" alt="Screenshot of battlefield"/>
-    </figure>
-</ol>
-
-
-
-
-<p>Normally the defending player will want to deploy their head after the Quake damage is taken; but perhaps the damage cascade is in their favour: </p>
-
-<ol class="play">
-    <li>Let's imagine they choose to deploy Stylor first, then do 1 damage to each of their characters. This KO's Stylor and Quake's effect triggers again. </li>
-    <li>The Decepticon team is still the active player. Another 1 damage is done to Windsweeper and Fangry. </li>
-    <li>Then it's the Autobot team's turn. They have one triggered effect to resolve, so they do 1 more damage to Perceptor and Snarl. </li>
-    <figure>
-        <img src="../images/bits-and-bolts/the-active-player/Play-1-alternate.png" alt="Screenshot of battlefield"/>
     </figure>
 </ol>
 
@@ -83,10 +67,15 @@
         <figcaption>Our starting battlefield</figcaption>
     </figure>
     <li>Perceptor attacks into Fangry, KO'ing him. <i>"Deploy Vorath"</i> is triggered. Quake's Bot mode effect is also triggered. </li>
-    <li>The Autobot team is the active player, so they resolve their triggered effects first. One damage is done to each of their characters. </li>
-    <li>The Decepticon team is the other player, they resolve their triggered effects. They have two effects to resolve and, like the Autobots in the last game, they can choose to deploy the head first to kick off another round of damage, or to do the damage first. </li>
+    <li>The Autobot team is the active player, so they resolve their triggered effects first; however they have no effects here. </li>
+    <li>The Decepticon team is the other player, they resolve their triggered effects. They have two effects to resolve and can choose to deploy the head first to kick off another round of damage, or to do the damage first. </li>
+    <li>If they do the damage first, everyone will take 1 damage and then Vorath will deploy. The battlefield will look like this: </li>
     <figure>
         <img src="../images/bits-and-bolts/the-active-player/Play-2-end.png" alt="Screenshot of battlefield"/>
+    </figure>
+    <li>If, however, they choose to deploy Vorath first and then take the damage, Vorath will be KO'd by the Quake damage and kick off a subsequent Quake effect. Again the active player has no triggered abilities, so the Decepticons do 1 damage to everyone. The battlefield ends up looking like this, with 2 damage on the remaining characters other than Quake: </li>
+    <figure>
+        <img src="../images/bits-and-bolts/the-active-player/Play-2-alternate.png" alt="Screenshot of battlefield"/>
     </figure>
 </ol>
 
@@ -98,65 +87,60 @@
         <figcaption>This time, Perceptor has 11 damage, i.e. only 1 Health remains before he's KO'd</figcaption>
     </figure>
     <li>Let's go back to Decepticons attacking. Windsweeper attacks into Sergeant Kup, KO'ing him. <i>"Deploy Autobot Stylor"</i> is triggered. Quake's Bot mode effect is also triggered. </li>
-    <li>The Decepticon team is the active player, they resolve their triggered effects first. There's only one, so they do 1 damage to Windsweeper and 1 damage to Fangry/Vorath. </li>
-    <li>The Autobot team is the other player. The Autobots have two effects to resolve. They choose to resolve the damage first, doing 1 damage to Perceptor and Snarl. Perceptor gets KO'd. As before, two triggers fire from the KO event. One is Parsec being deployed, the other is Quake's effect. <b>As the Decepticons are the active player, we put the Stylor deployment on hold and go back to the active player.</b></li>
-    <li>The Decepticons do 1 damage to Windsweeper and 1 damage to Fangry/Vorath. </li>
-    <li>Now it's on to the Autobot team. There are two triggers to be resolved here; the damage to Snarl, and the deployment of Parsec. The Autobot player chooses to damage Snarl first. </li>
-    <li>Now we're back to the triggered effect we put on hold. It's time to deploy Stylor. </li>
+    <li>The Decepticon team is the active player, they resolve their triggered effects first. There's only one, so they do 1 damage to each character. This KO's Perceptor, which triggers another Quake effect, and a <i>"Deploy Parsec"</i> trigger. </li>
+    <li>As we have kicked off another triggered ability, we put all of the abilities lined up for resolution on hold, in this case deploying Autobot Stylor, and we resolve the new triggered abilities. To resolve this new trigger, we start with the Active player again, and the Decepticon player does 1 damage to everyone but Quake. </li>
+    <li>Now we go to the Autobot team and they resolve their Deploy Parsec trigger. </li>
+    <li>Now we go back to the triggered abilties we put on hold. The player who was resolving things was the Decepticon player, but they have no remaining triggers to resolve. It's on to the Autobot team. </li>
+    <li>Now it's time to deploy Autobot Stylor. </li>
     <figure>
         <img src="../images/bits-and-bolts/the-active-player/Play-3-end.png" alt="Screenshot of battlefield"/>
     </figure>
 </ol>
 
-<p>It's just as well the Autobot player chose to damage Snarl first, otherwise Parsec would have KO'd and we'd be jumping off to another Quake effect, all before Stylor finally appears. </p>
-
 <p>Note that putting a triggered effect on hold comes from this part of the Expanded Rules: <i>"If multiple abilities trigger at the same time, and during the resolution of those abilities one or more new triggered abilities trigger, the remaining original triggered abilities wait until the newer abilities are all handled"</i>. </p>
 
-<p>As if this isn't getting complex enough, there are other cards that will trigger an ability from a character being KO'd, such as a Revenge effect, Elita-1's played cards, Insecticon Venin with a Bug Bomb, or an Erratic Energy Grenade. What we've covered above should generally help in all of these situations: </p>
+<p>Let's look at one more Quake example. </p>
+
+<ol class="play">
+    <figure>
+        <img src="../images/bits-and-bolts/the-active-player/Play-4.png" alt="Screenshot of battlefield"/>
+        <figcaption>This time, Perceptor has 9 damage, i.e. only 3 Health remains before he's KO'd; and Fangry has 10 damage, i.e. only 1 Health remains before he's KO'd</figcaption>
+    </figure>
+    <li>Sticking with Decepticons attacking. Windsweeper attacks into Sergeant Kup, KO'ing him. <i>"Deploy Autobot Stylor"</i> is triggered. Quake's Bot mode effect is also triggered. </li>
+    <li>The Decepticon team is the active player, they resolve their triggered effects first. There's only one, so they do 1 damage to each character. This KO's Fangry, which triggers another Quake effect, and a <i>"Deploy Vorath"</i> trigger. </li>
+    <figure>
+        <img src="../images/bits-and-bolts/the-active-player/Play-4-mid1.png" alt="Screenshot of battlefield"/>
+    </figure>
+    <li>As we have kicked off another triggered ability, we again put the Deploy Stylor trigger on hold and resolve the new triggered abilitities. To resolve this new trigger, we start with the Active player again. The Decepticon player has two triggers to resolve, and they decide to deploy Vorath first, then they do 1 damage to everyone. This kicks off another Quake effect as Vorath has been KO'd. </li>
+    <figure>
+        <img src="../images/bits-and-bolts/the-active-player/Play-4-mid2.png" alt="Screenshot of battlefield"/>
+    </figure>
+    <li>We don't have any currently resolving triggers to add to the Deploy Stylor trigger that's on hold, so we dive into our Vorath KO Quake effect with the Active player, doing 1 damage to everyone again. Perceptor has now taken 3 damage, from Kup, Fangry and Vorath's KOs, and has been KO'd himself. This triggers a <i>"Deploy Parsec"</i> trigger and another Quake effect trigger. </li>
+    <figure>
+        <img src="../images/bits-and-bolts/the-active-player/Play-4-mid3.png" alt="Screenshot of battlefield"/>
+    </figure>
+    <li>Again we don't have any active triggers other than Deploy Stylor, so the active player does 1 damage to everyone. </li>
+    <li>Next the inactive player deploys Parsec. </li>
+    <li>Lastly we go back to the triggered abilties we put on hold. The player who was resolving things was the Decepticon player, but they have no remaining triggers to resolve. It's on to the Autobot team and Stylor is deployed. </li>
+    <li>Whew - 4 KO's later, we're done. </li>
+    <figure>
+        <img src="../images/bits-and-bolts/the-active-player/Play-4-end.png" alt="Screenshot of battlefield"/>
+    </figure>
+</ol>
+
+<p>Hopefully as you follow through that example you can see that if we would have put a second triggered ability on hold, it would have been the first one to have been resolved. If you've read our previous <a href="showing-off-with-stacks.html">Showing off with Stacks</a> article, you'll see that the same concept is at play here. </p>
+
+<p>As if this isn't getting complex enough, there are other cards that will trigger an ability from a character being KO'd, such as a Revenge effect, Elita-1's played cards, Insecticon Venin with a Bug Bomb, or an Erratic Energy Grenade. What we've covered above should generally help in all of these situations, namely to follow these rules: </p>
 
 <ol class="sidenote">
     <li><b>Active Player First</b>: Resolve triggers for the active player, then the inactive player. </li>
-    <li><b>Player's Choice</b>: A player chooses the order when they have multiple triggered abilities to resolve at the same time. </li>
+    <li><b>Player's Choice</b>: A player chooses the order when they have are resolving multiple triggered abilities at the same time. </li>
     <li><b>Hold the Old</b>: If a new KO happens, put the triggered effects you've not resolved yet on hold until you've dealt with all the triggers from the new KO event. </li>
 </ol>
 
 <p>I hope this helps. Decepticon Quake represents the latest step in the steady-complexity growth of Transformers the Trading Card Game. It'll take us all a little while, but soon enough we'll all be comfortably causing chaos cascades and laughing maniacally. </p>
 
 <p>If you'd like some deeper reading, you can check out the Decepticon Quake <a href="https://tftcg.info/wave-5/keywords/head-mode-body-mode.html#Rules_Roundup-2020-06-10__610-5">Rules Roundup</a> and the "Triggered Abilities" and "Handling Multiple Triggered Abilities" section of the <a href="https://transformerstcg-support.wizards.com/hc/en-us/articles/360035661992-Transformers-TCG-Expanded-Rules-2-0">Expanded Rules 2.0</a>; and of course you can read Ansel Cox and Brian Blair's <a href="https://www.computronslab.com/decklists/featured-decklists/quake">Quake article for Computron's Lab</a>. Thank you for reading! </p>
-
-<hr/>
-<br/>
-<br/>
-<br/>
-
-<p>PS: If you're not finished with Quake, let's set up another for you to read through. </p>
-
-<ol class="play">
-    <figure>
-        <img src="../images/bits-and-bolts/the-active-player/Play-4.png" alt="Screenshot of battlefield"/>
-        <figcaption>This time, Perceptor has 11 damage, i.e. only 1 Health remains before he's KO'd; and Fangry has 8 damage, i.e. only 3 Health remains before he's KO'd</figcaption>
-    </figure>
-    <li>Let's go back to Decepticons attacking. Windsweeper attacks into Sergeant Kup, KO'ing him. <i>"Deploy Autobot Stylor"</i> is triggered. Quake's Bot mode effect is also triggered. </li>
-    <li>The Decepticon team is the active player, they resolve their triggered effects first. There's only one, so they do 1 damage to Windsweeper and 1 damage to Fangry/Vorath. </li>
-    <li>The Autobot team is the other player. The Autobots have two effects to resolve. They choose to deploy Stylor first, then they do 1 damage to Perceptor, Snarl, and Stylor.  Perceptor gets KO'd. So does Stylor. Now three triggers have fired from the KO event. One is Parsec being deployed, the other two are from Quake's effect. There are no active triggers to put on hold, so it's back to the active player as we resolve these. </li>
-    <figure>
-        <img src="../images/bits-and-bolts/the-active-player/Play-4-mid1.png" alt="Screenshot of battlefield"/>
-    </figure>
-    <li>The Decepticons do 1 damage to Windsweeper and 1 damage to Fangry/Vorath. </li>
-    <li>Then the Decepticons do another 1 damage to Windsweeper and another 1 damage to Fangry/Vorath. Fangry is KO'd. Another pair of triggered abilities are generated; Vorath deploying and Quake's effect (yet again!). We put the inactive players 1+1 Quake damage and Parsec deployment on hold. The Decepticon chooses to deploy Vorath first, then do Quake's effect. Vorath is KO'd. So yet again we put the inactive player's 1 Quake damage (from Fangry this time) on hold. </li>
-    <li>The Decepticons do 1 damage to Windsweeper from the Vorath KO. </li>
-    <figure>
-        <img src="../images/bits-and-bolts/the-active-player/Play-4-mid2.png" alt="Screenshot of battlefield"/>
-    </figure>
-    <li>Now it's on to the Autobot team. First they have to do a damage to their remaining character (Snarl) for Vorath's KO. Then, taking our first on hold Quake trigger, we do another for Fangry's KO. </li>
-    <li>Now we're back to the triggered effects that were first put on hold. The Autobot team could deploy Parsec first, or they could do a damage, then deploy Parsec, then do a damage; or they could do a damage, do another damage, and then deploy Parsec. Lots of choices for the Autobots. Let's assume they're tired and want a rest. They do the 2 damage and then deploy Parsec. </li>
-    <li>Whew - 5 KO's later, we're done. </li>
-    <figure>
-        <img src="../images/bits-and-bolts/the-active-player/Play-4-end.png" alt="Screenshot of battlefield"/>
-    </figure>
-</ol>
-
-<p>These cascades are destined to create some of the best stories you'll tell over a Cybertronian campfire :) Happy Chaos!</p>
 
 </div>
 </div>
