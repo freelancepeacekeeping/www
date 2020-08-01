@@ -46,9 +46,9 @@ function icon_letter_to_img_html(letter) {
     switch(letter) {
         case "O" :
             return '<img src="img/piporange.png"/>';
-        case "B" :
+        case "U" :
             return '<img src="img/pipblue.png"/>';
-        case "K" :
+        case "B" :
             return '<img src="img/pipblack.png"/>';
         case "W" :
             return '<img src="img/pipwhite.png"/>';
@@ -59,7 +59,7 @@ function icon_letter_to_img_html(letter) {
     }
 }
 
-let colour_map = { 'W' : 1, 'O' : 2, 'K' : 3, 'B' : 4, 'G' : 5 }
+let colour_map = { 'W' : 1, 'O' : 2, 'B' : 3, 'U' : 4, 'G' : 5 }
 
 function get_icons() {
     // get the three pip colors
@@ -84,7 +84,7 @@ function get_icons() {
         if(battleicons_3 != "X") {
             pips.push(battleicons_3);
         }
-        // Custom sort these to the order WOKBG
+        // Custom sort these to the order WOBUG
         pips = pips.sort( function(pip1, pip2) { return pip1 < pip2; } );
 
         for ( let pip of pips ) {

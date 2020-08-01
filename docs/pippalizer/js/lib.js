@@ -9,8 +9,8 @@ function deck_shuffle(arr) {
     }
 }
 
-// OB12O12B16 etc.
-// Ranges are OB3:36:3  (start/end/step)
+// OU12O12U16 etc.
+// Ranges are OU3:36:3  (start/end/step)
 function pattern_to_pip_set(pip_pattern) {
     // convert [A-Z]*[0-9]* to array of [A-Z]* : [0-9]*
     results = pip_pattern.replace(/\s/g,'').split(/([\d:]+)/);
@@ -213,7 +213,7 @@ function has_operator(condition) {
  */
 function precompile_statement(condition, flip_result) {
     // Parse the condition
-    let found = condition.match(/([A-Za-z_]+)\(([*OBKGW]+)\)([=<>]+)?(.*)?/);
+    let found = condition.match(/([A-Za-z_]+)\(([*WOBUG]+)\)([=<>]+)?(.*)?/);
     if(found) {
         let term = found[1]
         let pip_combination = found[2]

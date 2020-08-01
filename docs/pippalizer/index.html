@@ -28,7 +28,7 @@
                   This will involve various rejigging in the engine of the code.
         TODO: Some kind of best fit notion. Have it run over the flips looking for the best return value.
               This involves indicating something is variable. 
-              One approach is to indicate the deck as WG*BK*, and it will adjust those numbers, keeping a max of 40.
+              One approach is to indicate the deck as WG*UB*, and it will adjust those numbers, keeping a max of 40.
               It could know the counts for how many of each pip type there are. Or maybe just the ones that have less 
               than 14 cards. 
         TODO: Load pips from FM. Maybe focus on the OCTGN file format and allow one to upload it. 
@@ -78,24 +78,24 @@
                       <option value="X"></option>
                       <option value="W">White</option>
                       <option value="O">Orange</option>
-                      <option value="K">Black</option>
-                      <option value="B">Blue</option>
+                      <option value="B">Black</option>
+                      <option value="U">Blue</option>
                       <option value="G">Green</option>
                   </select>
                   <select id="battleicons2">
                       <option value="X"></option>
                       <option value="W">White</option>
                       <option value="O">Orange</option>
-                      <option value="K">Black</option>
-                      <option value="B">Blue</option>
+                      <option value="B">Black</option>
+                      <option value="U">Blue</option>
                       <option value="G">Green</option>
                   </select>
                   <select id="battleicons3">
                       <option value="X"></option>
                       <option value="W">White</option>
                       <option value="O">Orange</option>
-                      <option value="K">Black</option>
-                      <option value="B">Blue</option>
+                      <option value="B">Black</option>
+                      <option value="U">Blue</option>
                       <option value="G">Green</option>
                   </select>
               <fieldset>
@@ -119,7 +119,7 @@
                     <span class="help">
                         <input type="image" onclick="toggleHelp('help-pip-pattern');" src="img/help-circle.svg" class="help-icon"/>
                         <span class="help-text" id="help-pip-pattern">
-                            The Pip Pattern is an Experts feature. Rather than building the deck, you can enter it in one go. For example, "W6 G4 OK15 BK15" would be a deck with 6 white, 4 green, 15 orange-black, and 15 blue-black pipped cards. An example range is "B3:15:2" to indicate varying the blue-pip count from 3, to 15, in steps of 2. X is recommended for no-pip cads. 
+                            The Pip Pattern is an Experts feature. Rather than building the deck, you can enter it in one go. For example, "W6 G4 OB15 UB15" would be a deck with 6 white, 4 green, 15 orange-black, and 15 blue-black pipped cards. An example range is "U3:15:2" to indicate varying the blue-pip count from 3, to 15, in steps of 2. X is recommended for no-pip cads. 
                         </span>
                     </span>
               <fieldset>
@@ -168,27 +168,27 @@
               <label for="canned">Canned Queries:</label>
               <select id="canned" onchange="replace_pipql('canned')">
                   <option value=""></option>
-                  <option value="count(W),count(O),count(B),count(K),count(G)">Average number of each colour flipped</option>
+                  <option value="count(W),count(O),count(U),count(B),count(G)">Average number of each colour flipped</option>
                   <option value="count(W)&gt;=1">[W] Acute Reflexes, Skywarp, Hound, etc.</option>
                   <option value="count(W)&gt;=2">[WW] Bike Gang, Bumblebee, Chromia, Jazz, Pteraxadon</option>
                   <option value="count(W)&gt;=3">[WWW] Mirage - Lone Wolf</option>
                   <option value="count(W),count(W)&gt;4">[WWWW] Plasma Horns</option>
-                  <option value="count(O)&gt;=2 AND count(B)&gt;=2 AND count(W)&gt;=2">[WWOOBB] Metroplex</option>
-                  <option value="colours(WOKB)=4">[WOKB] Cerebros</option>
-                  <option value="colours(WOKBG)=5">[WOKBG] Overwhelming Advantage</option>
-                  <option value="colours(WOB)=3">[WOB] Red Alert, Optimus Prime, Silverbolt, Bluestreak</option>
-                  <option value="colours(WB)=2,colours(OK)=2">[WB] and [OK] Fortress Maximus</option>
+                  <option value="count(O)&gt;=2 AND count(U)&gt;=2 AND count(W)&gt;=2">[WWOOUU] Metroplex</option>
+                  <option value="colours(WOBU)=4">[WOBU] Cerebros</option>
+                  <option value="colours(WOBUG)=5">[WOBUG] Overwhelming Advantage</option>
+                  <option value="colours(WOU)=3">[WOU] Red Alert, Optimus Prime, Silverbolt, Bluestreak</option>
+                  <option value="colours(WU)=2,colours(OB)=2">[WU] and [OB] Fortress Maximus</option>
                   <option value="count(O)&gt;=1">[O] Megatron - Fallen Hero, Energized Field</option>
                   <option value="count(O)&gt;=2">[OO] Electrified Spikes</option>
                   <option value="count(O)&gt;=3">[OOO] Sparkstalker</option>
                   <option value="count(O)&gt;=4">[OOOO] Cindersaur</option>
-                  <option value="count(O)&gt;=2 AND count(B)&gt;=2">[OOBB] Ultra Magnus</option>
-                  <option value="colours(OB)=2">[OB] Blitzwing, Drag Strip, Optimus Prime, Turbo Board</option>
-                  <option value="count(K)&gt;=1">[K] Sgt Thundercracker, Mindwipe, RR Disruptor, Composite</option>
-                  <option value="count(K)&gt;=2">[KK] Nightstick</option>
-                  <option value="count(B)&gt;=1">[B] Nautica, Whirl</option>
-                  <option value="count(B)&gt;=2">[BB] Breakdown, Sgt Chromia</option>
-                  <option value="count(B)&gt;=3">[BBB] Raider Aimless</option>
+                  <option value="count(O)&gt;=2 AND count(U)&gt;=2">[OOUU] Ultra Magnus</option>
+                  <option value="colours(OU)=2">[OU] Blitzwing, Drag Strip, Optimus Prime, Turbo Board</option>
+                  <option value="count(B)&gt;=1">[B] Sgt Thundercracker, Mindwipe, RR Disruptor, Composite</option>
+                  <option value="count(B)&gt;=2">[BB] Nightstick</option>
+                  <option value="count(U)&gt;=1">[U] Nautica, Whirl</option>
+                  <option value="count(U)&gt;=2">[UU] Breakdown, Sgt Chromia</option>
+                  <option value="count(U)&gt;=3">[UUU] Raider Aimless</option>
                   <option value="count(G)&gt;=1">[G] Raider Chop Shop, Combiner Swoop, Wolfwire, Tailwind</option>
                   <option value="colours(*)=4">Grapple flipping 4 colours</option>
                   <option value="colours(*)">Colours flipped - Smashdown, Versatility, Brawn</option>
@@ -196,10 +196,10 @@
                   <option value="count(O),colours(*)">Masters of Metallikato</option>
                   <option value="colours(*)&gt;2">Slipstream flipping &gt;2 colours</option>
                   <option value="">--- For the below: Uncheck +2 on White above ---</option>
-                  <option value="colours(WOB)=3">[WOB] Fuel Cache</option>
-                  <option value="count(O),count(B)">[O][B] Swarm!</option>
-                  <option value="count(B)=1">[B]Sergeant Mirage</option>
-                  <option value="count(K)=1,count(K)=2,count(K)=3">[K] Sgt Thundercracker (alt)</option>
+                  <option value="colours(WOU)=3">[WOU] Fuel Cache</option>
+                  <option value="count(O),count(U)">[O][U] Swarm!</option>
+                  <option value="count(U)=1">[U]Sergeant Mirage</option>
+                  <option value="count(B)=1,count(B)=2,count(B)=3">[B] Sgt Thundercracker (alt)</option>
                   <option value="colours(*)=0,colours(*)=1,colours(*)=2,colours(*)=3">Colours - Ratbat</option>
                   <option value="colours(*)&gt;=2">Colours &gt;= 2 - Windblade</option>
               </select>
@@ -212,7 +212,7 @@
 
           <!--
               TODO: Canned queries:
-              Shock Absorbers, Cybertronian Bow O and B equal (not supported yet?)
+              Shock Absorbers, Cybertronian Bow O and U equal (not supported yet?)
 
               TODO: Special situations:
               Wearing Inverted.  Also W5 Belligerence/End Hostilities
