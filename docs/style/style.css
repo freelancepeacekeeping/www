@@ -76,23 +76,19 @@ hr.divider {
   padding: 0.5em 2em;
   border-style: ridge;
 }
-.play {
+.boxed {
   width: 80%;
-  background-color: #ddf;
   margin-left: 5%;
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 0.5em 2em;
   border-style: ridge;
 }
-.design-questions {
-  width: 80%;
+.play {
+  background-color: #ddf;
+}
+.design {
   background-color: #dfd;
-  margin-left: 5%;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding: 0.5em 2em;
-  border-style: ridge;
 }
 
 @media (min-width: 900px) {
