@@ -24,11 +24,18 @@
   padding: 1em;
   font-style: italic;
 }
-p, ul, ol {
+p, ul, ol, dt, dd {
   font-size: 15px;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   letter-spacing: -0.004em;
   line-height: 1.58;
+}
+dt {
+    text-decoration: underline;
+    margin-top: 1em;
+}
+dd {
+    margin-bottom: 1em;
 }
 .diary p:not(.commentary), .diary ul, .diary ol {
     font-family: Roboto;
@@ -78,6 +85,15 @@ hr.divider {
   padding: 0.5em 2em;
   border-style: ridge;
 }
+.design-questions {
+  width: 80%;
+  background-color: #dfd;
+  margin-left: 5%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0.5em 2em;
+  border-style: ridge;
+}
 
 @media (min-width: 900px) {
   .content {
@@ -91,7 +107,7 @@ hr.divider {
   .article {
     padding: 1em 4em;
   }
-  p, ul, ol {
+  p, ul, ol, dt, dd {
     font-size: 21px;
   }
   figure img {
