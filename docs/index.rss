@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Freelance Peacekeeping</title>
+  <link>https://www.freelancepeacekeeping.com/</link>
+  <description>Articles on Transformers TCG, yes?</description>
+  <image>
+    <url>https://www.freelancepeacekeeping.com/favicon.png</url>
+    <title>FLPK Cog Logo</title>
+    <link>https://www.freelancepeacekeeping.com/</link>
+  </image>
+
+  <item>
+    <title>Alpha Trion - Firecons Stratagem Reveal</title>
+    <link>https://www.freelancepeacekeeping.com/alpha-trion-fanbrew/firecons-stratagem-reveal.html</link>
+    <description>XYZ</description>
+    <category>Alpha Trion Protocols</category> 
+    <pubDate>2021.02.17</pubDate>
+  </item>
+  <item>
+    <title>Bayformers - A Little Pell Mell</title>
+    <link>https://www.freelancepeacekeeping.com/alpha-trion-fanbrew/week-1.html</link>
+    <description>XYZ</description>
+    <category>Bayformers</category> 
+    <pubDate>2020.10.23</pubDate>
+  </item>
+  <item>
+    <title>Alpha Trion - Inferno Stratagem Reveal</title>
+    <link>https://www.freelancepeacekeeping.com/alpha-trion-fanbrew/inferno-stratagem-reveal.html</link>
+    <description>XYZ</description>
+    <category>Alpha Trion Protocols</category> 
+    <pubDate>2020.09.12</pubDate>
+  </item>
+  <item>
+    <title>Alpha Trion - Week 1</title>
+    <link>https://www.freelancepeacekeeping.com/alpha-trion-fanbrew/week-1.html</link>
+    <description>XYZ</description>
+    <category>Alpha Trion Protocols</category> 
+    <pubDate>2020.08.03</pubDate>
+  </item>
+
+  <item>
+    <title>Brewing: Card Rarity</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/brewing/card-rarity.html</link>
+    <description>XYZ</description>
+    <category>Brewing Bots</category> 
+    <pubDate>2020.09.20</pubDate>
+  </item>
+  <item>
+    <title>Sideboards</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/sideboards.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020.08.06</pubDate>
+  </item>
+  <item>
+    <title>Mercenary Synergy</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/mercenary-synergy.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020.07.22</pubDate>
+  </item>
+  <item>
+    <title>The Active Player</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/the-active-player.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020-07-10</pubDate>
+  </item>
+  <item>
+    <title>Showing Off with Stacks</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/showing-off-with-stacks.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020-07-03</pubDate>
+  </item>
+  <item>
+    <title>Avoiding Scrapping</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/avoiding-scrapping.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020-06-26</pubDate>
+  </item>
+  <item>
+    <title>Counting with Damage Modifiers</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/counting-with-damage-modifiers.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020-06-23</pubDate>
+  </item>
+  <item>
+    <title>Sergeant Springer and EMP Wave</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/springer-emp.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020-06-19</pubDate>
+  </item>
+  <item>
+    <title>Peace Through Tyranny</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/peace-through-tyranny.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020-06-17</pubDate>
+  </item>
+  <item>
+    <title>Time for a Plan</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/time-for-a-plan.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020.06.15</pubDate>
+  </item>
+  <item>
+    <title>Play vs Put</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/play-vs-put.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020.06.12</pubDate>
+  </item>
+  <item>
+    <title>Cerebros Tactics</title>
+    <link>https://www.freelancepeacekeeping.com/bits-and-bolts/cerebros-tactics.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020.06.10</pubDate>
+  </item>
+  <item>
+    <title>Alpha Trion Tournament Report - July 2020</title>
+    <link>https://www.freelancepeacekeeping.com/articles/alpha-trion-july-2020.html</link>
+    <description>XYZ</description>
+    <category>Alpha Trion Protocols</category> 
+    <pubDate>2020.08.11</pubDate>
+  </item>
+  <item>
+    <title>Grappling the Challenge</title>
+    <link>https://www.freelancepeacekeeping.com/articles/grapple.html</link>
+    <description>XYZ</description>
+    <category>Deck Review</category> 
+    <pubDate>2020.04.26</pubDate>
+  </item>
+  <item>
+    <title>It's Clobbering Time</title>
+    <link>https://www.freelancepeacekeeping.com/articles/its-clobbering-time.html</link>
+    <description>XYZ</description>
+    <category>Deck Review</category> 
+    <pubDate>2020.04.03</pubDate>
+  </item>
+  <item>
+    <title>Deck Review: Operation Volcano</title>
+    <link>https://www.freelancepeacekeeping.com/articles/operation-volcano.html</link>
+    <description>XYZ</description>
+    <category>Deck Review</category> 
+    <pubDate>2020.01.31</pubDate>
+  </item>
+  <item>
+    <title>Reusability of Ready-to-Play Deck Battle Cards</title>
+    <link>https://www.freelancepeacekeeping.com/articles/ready-to-play-battle-cards.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2020.01.16</pubDate>
+  </item>
+  <item>
+    <title>Micromasters (Part 5)</title>
+    <link>https://www.freelancepeacekeeping.com/articles/micromasters-part-5.html</link>
+    <description>XYZ</description>
+    <category>New Wave</category> 
+    <pubDate>2019.10.30</pubDate>
+  </item>
+  <item>
+    <title>Friendly Bots</title>
+    <link>https://www.freelancepeacekeeping.com/articles/friendly-bots.html</link>
+    <description>XYZ</description>
+    <category>Bits and Bolts</category> 
+    <pubDate>2019.10.25</pubDate>
+  </item>
+  <item>
+    <title>Micromasters (Part 4)</title>
+    <link>https://www.freelancepeacekeeping.com/articles/micromasters-part-4.html</link>
+    <description>XYZ</description>
+    <category>New Wave</category> 
+    <pubDate>2019.10.20</pubDate>
+  </item>
+  <item>
+    <title>Micromasters (Part 3)</title>
+    <link>https://www.freelancepeacekeeping.com/articles/micromasters-part-3.html</link>
+    <description>XYZ</description>
+    <category>New Wave</category> 
+    <pubDate>2019.10.16</pubDate>
+  </item>
+  <item>
+    <title>Micromasters (Part 2)</title>
+    <link>https://www.freelancepeacekeeping.com/articles/micromasters-part-2.html</link>
+    <description>XYZ</description>
+    <category>New Wave</category> 
+    <pubDate>2019.10.11</pubDate>
+  </item>
+  <item>
+    <title>Micromasters (Part 1)</title>
+    <link>https://www.freelancepeacekeeping.com/articles/micromasters-part-1.html</link>
+    <description>XYZ</description>
+    <category>New Wave</category> 
+    <pubDate>2019.10.10</pubDate>
+  </item>
+
+  <item>
+    <title>Grapple's Flippin' Pippalizer</title>
+    <link>https://www.freelancepeacekeeping.com/pippalizer/index.html</link>
+    <description>XYZ</description>
+    <category>Deckbuilding Tools</category>
+    <pubDate>2020.04.26</pubDate>
+  </item>
+
+  <item>
+    <title>Head Flipper Fun</title>
+    <link>https://www.freelancepeacekeeping.com/head-flipper/index.html</link>
+    <description>XYZ</description>
+    <category>New Wave</category>
+    <pubDate>2020.04.12</pubDate>
+  </item>
+  <item>
+    <title>Nightbeat's Wave 5 Log</title>
+    <link>https://www.freelancepeacekeeping.com/articles/nightbeat-wave5-log.html</link>
+    <description>XYZ</description>
+    <category>New Wave</category>
+    <pubDate>2019.12.19</pubDate>
+  </item>
+
+  <item>
+    <title>Reverse Engineering the Design Manual</title>
+    <link>https://www.freelancepeacekeeping.com/ruminations/reverse-engineering-the-design-manual.html</link>
+    <description>XYZ</description>
+    <category>Brewing Bots</category>
+    <pubDate>2020.07.24</pubDate>
+  </item>
+  <item>
+    <title>Rolling Turbo Adaptive for Wave 3/4</title>
+    <link>https://www.freelancepeacekeeping.com/ruminations/rolling-turbo-adaptive-W3W4.html</link>
+    <description>XYZ</description>
+    <category>Formats</category> 
+    <pubDate>2020.01.23</pubDate>
+  </item>
+  <item>
+    <title>Rolling Turbo Adaptive</title>
+    <link>https://www.freelancepeacekeeping.com/ruminations/rolling-turbo-adaptive.html</link>
+    <description>XYZ</description>
+    <category>Formats</category> 
+    <pubDate>2019.12.13</pubDate>
+  </item>
+  <item>
+    <title>Overwhelming Advantage Combinations</title>
+    <link>https://www.freelancepeacekeeping.com/ruminations/overwhelming-advantage-combos.html</link>
+    <description>XYZ</description>
+    <category>Deckbuilding Tools</category> 
+    <pubDate>2019.12.13</pubDate>
+  </item>
+  <item>
+    <title>Sealed League</title>
+    <link>https://www.freelancepeacekeeping.com/ruminations/sealed-league.html</link>
+    <description>XYZ</description>
+    <category>Formats</category> 
+    <pubDate>2019.10.31</pubDate>
+  </item>
+
+</channel>
+
+</rss> 
