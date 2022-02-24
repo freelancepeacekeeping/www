@@ -1,0 +1,50 @@
+
+
+Bruticus	6	34	2
+
+Splitting 34 health. Want the leader to feel at least a touch bigger.   7.7.5.6.9  (As the tank wants lower health)
+
+Tank[5]		3*.3/3*.1	
+Helicopter[6]	2b1.1/2p3.1	
+Spaceship[7]	3.1/4.0	
+Truck[7]	2.3/3.2		
+Big Truck[9]	2.2/3.1	
+
+Defensor	6	32	2
+
+Splitting 32 health.  Want the leader to feel at least a touch bigger.  6.6.6.7.7
+
+Helicopter[6]	2p2.1/2*.1	
+Car[6]		2b1.2/2f2.2	
+Truck[7]	2.2t1/3.1*		
+Motorcycle[6]	2.1/2.1	
+Big Truck[7]	2.2/3.1
+
+
+Existing stat pairings for combiner pieces
+
+(Mostly Planes)
+2.1.8/2.1.8 (Heli)
+3.0.8/4.0.8
+1.2.7/2.2.7
+3.1.8/3.2.8
+	2.1.7/3.1.7
+
+All Cars:
+2.2.7/2.2.7
+2.2.7/3.1.7
+3.2.7/4.0.7
+2.3.6/3.2.6 (Truck)
+	2.2.8/3.1.8  (Truck)
+
+
+
+W1/2 Tanks: 3/3 or 4/2.
+
+W1/2 Trucks: 3/3 or 2/3.  Flips to increased attack, decreased defense.
+
+W1/2 Car: 2/2 or 3/2  [Jazz being weird]. Flips to increased attack, decreased defense.
+
+Spaceships in general have high deltas; but are usually expensive characters.
+
+W1/2 Motorcycle:  2/1 or 3/1. No real change on flip.
