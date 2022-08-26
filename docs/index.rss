@@ -10,7 +10,14 @@
     <title>FLPK Cog Logo</title>
     <link>https://www.freelancepeacekeeping.com/</link>
   </image>
-  <li><a href="bits-and-bolts/soundblaster-oa.html">Soundblaster OA</a> [2021.03.11]</li>
+
+  <item>
+    <title>King of the Road Deck Challenge</title>
+    <link>https://www.freelancepeacekeeping.com/articles/deckchallenge.html</link>
+    <description>Building some Wheelie synergy</description>
+    <category>Deck Review</category>
+    <pubDate>2022.05.14</pubDate>
+  </item>
 
   <item>
     <title>Soundblaster loves Overwhelming Advantage</title>
